@@ -36,7 +36,7 @@ def get_daily_routes():
         return routes
 
     rows = frappe.get_all(
-        "Daily Routes",
+        "Child table",
         filters={"parent": parent, "parenttype": "Attendance Control"},
         fields=["day_of_week", "strat_time", "end_time", "late_cutoff", "early_exist", "break_start", "break_end"],
     )

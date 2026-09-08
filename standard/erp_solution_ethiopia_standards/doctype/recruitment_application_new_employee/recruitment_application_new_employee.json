@@ -1,0 +1,165 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "ReANE.#####",
+ "creation": "2026-08-12 10:33:23.505664",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_jl1p",
+  "employee_name",
+  "recruitment_notice",
+  "designation_choice",
+  "employement_type",
+  "desig",
+  "start_date_ec",
+  "from_date",
+  "end_date_ec",
+  "end_date_gc",
+  "column_break_xelk",
+  "aplication_date_ec",
+  "application_date_gc",
+  "gender",
+  "attach",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_jl1p",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "\u12e8\u1230\u122b\u1270\u129b\u12cd \u1235\u121d"
+  },
+  {
+   "fieldname": "recruitment_notice",
+   "fieldtype": "Link",
+   "label": "\u121b\u1235\u1273\u12c8\u1242\u12eb\u12cd \u12e8\u12c8\u1323\u1260\u1275 \u1241\u1325\u122d",
+   "options": "Recruitment Notice"
+  },
+  {
+   "fieldname": "designation_choice",
+   "fieldtype": "Select",
+   "label": "Designation Choice"
+  },
+  {
+   "fieldname": "employement_type",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "\u12e8\u1245\u1325\u122d \u12a0\u12ed\u1290\u1275"
+  },
+  {
+   "fieldname": "desig",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "\u12e8\u1235\u122b \u1218\u12f0\u1265",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "start_date_ec",
+   "fieldtype": "Data",
+   "label": "Start Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "Start Date Gc",
+   "read_only": 1
+  },
+  {
+   "fieldname": "end_date_ec",
+   "fieldtype": "Data",
+   "label": "End Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "end_date_gc",
+   "fieldtype": "Date",
+   "label": "End Date Gc",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_xelk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "aplication_date_ec",
+   "fieldtype": "Data",
+   "label": "Application Date"
+  },
+  {
+   "fieldname": "application_date_gc",
+   "fieldtype": "Date",
+   "label": "Application Date Gc",
+   "read_only": 1
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "label": "\u1346\u1273",
+   "options": "Gender"
+  },
+  {
+   "fieldname": "attach",
+   "fieldtype": "Attach Image",
+   "label": "\u12e8\u1275\u121d\u1205\u122d\u1275 \u1218\u1228\u1303 \u12eb\u12eb\u12ed\u12d9"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Recruitment Application New Employee",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-09-08 11:32:41.937258",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Recruitment Application New Employee",
+ "naming_rule": "Expression",
+ "owner": "assegagebeyehu21@gmail.com",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

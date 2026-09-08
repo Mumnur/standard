@@ -1,0 +1,434 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "Medical Payment-.####",
+ "creation": "2026-08-10 09:50:19.079338",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_cptb",
+  "employee_id",
+  "project",
+  "employee_name",
+  "designation",
+  "gender",
+  "type_of_injury",
+  "column_break_3",
+  "budget_year",
+  "date_ec",
+  "date",
+  "type_of_employee",
+  "injury_type",
+  "account_number",
+  "if_transport_expense",
+  "if_bed_expense",
+  "medical_form_section",
+  "medicine",
+  "section_break_12",
+  "total_amount",
+  "sira_asra",
+  "family_total",
+  "health_total",
+  "welid_total",
+  "kulalit_total",
+  "column_break_p2gg",
+  "glass_total",
+  "ear_total",
+  "death_total",
+  "phis_total",
+  "lib_total",
+  "section_break_hwan",
+  "grand_total",
+  "approval_section",
+  "requested_by",
+  "requested_date",
+  "requested_signature",
+  "column_break_26",
+  "prepared_by",
+  "prepared_date",
+  "prepared_signature",
+  "column_break_29",
+  "checked_by",
+  "checked_date",
+  "checked_signature",
+  "column_break_32",
+  "approved_by",
+  "approved_date",
+  "column_break_35",
+  "assigned_by",
+  "assigned_date",
+  "column_break_38",
+  "prepared_by1",
+  "prepared_date1",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_cptb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "label": "Employee Id",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee_id.custom_project",
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "\u1355\u122e\u1300\u12ad\u1275",
+   "options": "Project",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee_id.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee_id.designation",
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee_id.gender",
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender",
+   "read_only": 1
+  },
+  {
+   "fieldname": "type_of_injury",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type of Injury",
+   "options": "\n\u12a8\u1235\u122b \u130b\u122d \u12eb\u120d\u1270\u12eb\u12eb\u12d8 \u1309\u12f3\u1275\n\u12e8\u1235\u122b \u120b\u12ed \u1309\u12f3\u1275",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "budget_year",
+   "fieldtype": "Link",
+   "label": "Budget Year",
+   "options": "Budget Year",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_ec",
+   "fieldtype": "Data",
+   "label": "Date EC"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "type_of_employee",
+   "fieldtype": "Select",
+   "label": "Type of Employee",
+   "options": "\n\u1208\u1230\u122b\u1270\u129b\n\u1208\u1235\u122b \u1218\u122a\n\u1208\u1235\u122b \u12a0\u1235\u1348\u1343\u121a",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.type_of_injury == '\u12e8\u1235\u122b \u120b\u12ed \u1309\u12f3\u1275'",
+   "fieldname": "injury_type",
+   "fieldtype": "Select",
+   "label": "Injury Type",
+   "mandatory_depends_on": "eval:doc.type_of_injury == '\u12e8\u1235\u122b \u120b\u12ed \u1309\u12f3\u1275'",
+   "options": "\n\u1260\u1309\u12f3\u1271 \u121d\u12ad\u1295\u12eb\u1275 \u12e8\u12c8\u1323\u12cd \u12c8\u132d\n\u121e\u1275\n\u124b\u121a \u12e8\u12a0\u12ab\u120d \u1309\u12f3\u1275\n\u12a8\u134a\u120d \u12e8\u12a0\u12ab\u120d \u1309\u12f3\u1275"
+  },
+  {
+   "fieldname": "account_number",
+   "fieldtype": "Data",
+   "label": "Account Number"
+  },
+  {
+   "fieldname": "if_transport_expense",
+   "fieldtype": "Currency",
+   "label": "If Transport Expense",
+   "read_only": 1
+  },
+  {
+   "fieldname": "if_bed_expense",
+   "fieldtype": "Currency",
+   "label": "If Bed Expense",
+   "read_only": 1
+  },
+  {
+   "fieldname": "medical_form_section",
+   "fieldtype": "Section Break",
+   "label": "Medical Form"
+  },
+  {
+   "fieldname": "medicine",
+   "fieldtype": "Table",
+   "label": "Medicine",
+   "options": "Medical Form"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "\u12e8\u1235\u122b \u1218\u122a Total"
+  },
+  {
+   "fieldname": "sira_asra",
+   "fieldtype": "Currency",
+   "label": "\u12e8\u1235\u122b \u12a0\u1235\u1348\u1343\u121a Total"
+  },
+  {
+   "fieldname": "family_total",
+   "fieldtype": "Currency",
+   "label": "\u12e8\u1264\u1270\u1230\u1265 Total"
+  },
+  {
+   "fieldname": "health_total",
+   "fieldtype": "Currency",
+   "label": "\u12e8\u1205\u12ad\u121d\u1293 Total"
+  },
+  {
+   "fieldname": "welid_total",
+   "fieldtype": "Currency",
+   "label": "\u12e8\u12c8\u120a\u12f5 Total"
+  },
+  {
+   "fieldname": "kulalit_total",
+   "fieldtype": "Float",
+   "label": "\u1208\u12a9\u120b\u120a\u1275 \u12a5\u1325\u1260\u1275 Total"
+  },
+  {
+   "fieldname": "column_break_p2gg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "glass_total",
+   "fieldtype": "Currency",
+   "label": "\u12e8\u1218\u1290\u1345\u122d Total"
+  },
+  {
+   "fieldname": "ear_total",
+   "fieldtype": "Currency",
+   "label": "\u12e8\u1306\u122e \u121b\u12f3\u1218\u132b total"
+  },
+  {
+   "fieldname": "death_total",
+   "fieldtype": "Currency",
+   "label": "\u12e8\u120a\u1295\u1235 Total"
+  },
+  {
+   "fieldname": "phis_total",
+   "fieldtype": "Currency",
+   "label": "\u134a\u12da\u12a6 \u1274\u122b\u1352 Total"
+  },
+  {
+   "fieldname": "lib_total",
+   "fieldtype": "Float",
+   "label": "\u1208\u120d\u1265 \u1205\u1218\u121d Total"
+  },
+  {
+   "fieldname": "section_break_hwan",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand total"
+  },
+  {
+   "fieldname": "approval_section",
+   "fieldtype": "Section Break",
+   "label": "Approval"
+  },
+  {
+   "fieldname": "requested_by",
+   "fieldtype": "Data",
+   "label": "Requested By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "requested_date",
+   "fieldtype": "Date",
+   "label": "Requested Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "requested_signature",
+   "fieldtype": "Signature",
+   "label": "Signature",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "prepared_by",
+   "fieldtype": "Data",
+   "label": "Prepared By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "prepared_date",
+   "fieldtype": "Date",
+   "label": "Prepared Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "prepared_signature",
+   "fieldtype": "Signature",
+   "label": "Signature",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_29",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Data",
+   "label": "Checked by",
+   "read_only": 1
+  },
+  {
+   "fieldname": "checked_date",
+   "fieldtype": "Date",
+   "label": "Checked Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "checked_signature",
+   "fieldtype": "Signature",
+   "label": "Signature",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_32",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Data",
+   "label": "Approved By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "approved_date",
+   "fieldtype": "Date",
+   "label": "Approved Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_35",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "assigned_by",
+   "fieldtype": "Data",
+   "label": "Assigned By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "assigned_date",
+   "fieldtype": "Date",
+   "label": "Assigned Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_38",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "prepared_by1",
+   "fieldtype": "Data",
+   "label": "Prepared By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "prepared_date1",
+   "fieldtype": "Date",
+   "label": "Prepared Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Employee Medical Form",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-09-08 11:32:42.745930",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Employee Medical Form",
+ "naming_rule": "Expression",
+ "owner": "assegagebeyehu21@gmail.com",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Common Role",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

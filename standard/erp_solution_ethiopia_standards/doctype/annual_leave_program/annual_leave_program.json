@@ -1,0 +1,244 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "AnnualPr-.#####",
+ "creation": "2026-08-20 09:22:31.391311",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_wpvu",
+  "employee",
+  "employee_name",
+  "department",
+  "projects",
+  "\u1230\u122b\u1270\u129b\u12e8\u1235\u122b_\u1218\u122a",
+  "column_break_5",
+  "employee_id_no",
+  "budget_year",
+  "leave_type",
+  "unused_annual_leave_balance",
+  "section_break_9",
+  "programm_table",
+  "section_break_xaui",
+  "requestedd",
+  "column_break_2tit",
+  "givenn",
+  "section_break_10",
+  "prepared_by",
+  "prepared_date",
+  "column_break_13",
+  "checked_by",
+  "checked_date",
+  "column_break_16",
+  "approve_by",
+  "approve_date",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_wpvu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name"
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fetch_from": "employee.custom_project",
+   "fieldname": "projects",
+   "fieldtype": "Link",
+   "label": "\u12e8\u1235\u122b \u1266\u1273",
+   "options": "Project"
+  },
+  {
+   "fieldname": "\u1230\u122b\u1270\u129b\u12e8\u1235\u122b_\u1218\u122a",
+   "fieldtype": "Select",
+   "label": "\u1230\u122b\u1270\u129b/\u12e8\u1235\u122b \u1218\u122a",
+   "options": "\n\u1230\u122b\u1270\u129b\n\u12e8\u1235\u122b \u1218\u122a"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee.custom_employee_id",
+   "fieldname": "employee_id_no",
+   "fieldtype": "Data",
+   "label": "Employee ID No"
+  },
+  {
+   "fieldname": "budget_year",
+   "fieldtype": "Link",
+   "label": "\u1260\u1300\u1275 \u12d3\u1218\u1275",
+   "options": "Budget Year"
+  },
+  {
+   "fieldname": "leave_type",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "\u12e8\u1348\u1243\u12f5"
+  },
+  {
+   "fieldname": "unused_annual_leave_balance",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "\u12e8\u12d3\u1218\u1275 \u12a5\u1228\u134d\u1275"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "programm_table",
+   "fieldtype": "Table",
+   "label": "\u12e8\u1348\u1243\u12f5 \u1355\u122e\u130d\u122b\u121d",
+   "options": "Leave Programme Table"
+  },
+  {
+   "fieldname": "section_break_xaui",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "requestedd",
+   "fieldtype": "Float",
+   "label": "\u12e8\u1320\u12e8\u1240\u12cd  \u1320\u1245\u120b\u120b \u1348\u1243\u12f5 \u12f5\u121d\u122d"
+  },
+  {
+   "fieldname": "column_break_2tit",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "givenn",
+   "fieldtype": "Float",
+   "label": "\u12e8\u1270\u1348\u1240\u12f0 \u1320\u1245\u120b\u120b \u1348\u1243\u12f5 \u12f5\u121d\u122d"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "prepared_by",
+   "fieldtype": "Data",
+   "label": "Requested By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "prepared_date",
+   "fieldtype": "Date",
+   "label": "Requested Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Data",
+   "label": "Approved By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "checked_date",
+   "fieldtype": "Date",
+   "label": "Approve Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approve_by",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "\u12eb\u1340\u12f0\u1240\u12cd"
+  },
+  {
+   "fieldname": "approve_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "\u12eb\u1340\u12f0\u1240\u1260\u1275 \u1240\u1295"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Annual Leave Program",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-09-08 11:32:38.147378",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Annual Leave Program",
+ "naming_rule": "Expression",
+ "owner": "assegagebeyehu21@gmail.com",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Common Role",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

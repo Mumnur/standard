@@ -1,0 +1,168 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2026-07-24 09:51:43.149619",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_lfcc",
+  "designation",
+  "department",
+  "section_break_3",
+  "required_educational_preparation",
+  "service",
+  "column_break_6",
+  "relevant_work_experience",
+  "special_ability",
+  "live_work_experience_for_work",
+  "section_break_9",
+  "grade",
+  "quantity",
+  "is_project_designation",
+  "column_break_13",
+  "low_project",
+  "medium_project",
+  "high_project"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_lfcc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "required_educational_preparation",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "\u1270\u1348\u120b\u130a \u12e8\u1275\u121d\u1205\u122d\u1275 \u12dd\u130d\u1305\u1275"
+  },
+  {
+   "fieldname": "service",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "\u12a0\u1308\u120d\u130d\u120e\u1275"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "relevant_work_experience",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "\u12a0\u130d\u1263\u1265 \u12eb\u1208\u12cd \u12e8\u1225\u122b \u120d\u121d\u12f5"
+  },
+  {
+   "fieldname": "special_ability",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "\u120d\u12e9 \u127d\u120e\u1273"
+  },
+  {
+   "fieldname": "live_work_experience_for_work",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "\u1208\u1235\u122b \u1218\u12f0\u1261 \u1240\u1325\u1273 \u12e8\u1235\u122b \u120d\u121d\u12f5"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Link",
+   "label": "\u12f0\u1228\u1303",
+   "options": "Employee Grade"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Data",
+   "label": "\u1265\u12db\u1275"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_project_designation",
+   "fieldtype": "Check",
+   "label": "Is Project Designation"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "low_project",
+   "fieldtype": "Data",
+   "label": "\u12dd\u1245\u1270\u129b \u1355\u122e\u1300\u12ad\u1275 \u1265\u12db\u1275"
+  },
+  {
+   "fieldname": "medium_project",
+   "fieldtype": "Data",
+   "label": "\u1218\u12ab\u12a8\u1208\u129b \u1355\u122e\u1300\u12ad\u1275 \u1265\u12db\u1275"
+  },
+  {
+   "fieldname": "high_project",
+   "fieldtype": "Data",
+   "label": "\u12a8\u134d\u1270\u129b \u1355\u122e\u1300\u12ad\u1275 \u1265\u12db\u1275"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-08 11:32:47.253542",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Company Structure",
+ "owner": "assegagebeyehu21@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "designation"
+}

@@ -1,0 +1,144 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-08-13 10:45:00.404971",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_hrzm",
+  "employee",
+  "names",
+  "employement_type",
+  "from_3",
+  "from_23",
+  "perf",
+  "dis",
+  "displine",
+  "birth_dat",
+  "age",
+  "age_nu",
+  "age_10",
+  "from_bos",
+  "gen",
+  "gend_3",
+  "total_100",
+  "rank"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_hrzm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "names",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u1235\u121d"
+  },
+  {
+   "fieldname": "employement_type",
+   "fieldtype": "Data",
+   "label": "Employement Type"
+  },
+  {
+   "fieldname": "from_3",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "\u1240\u1228\u1264\u1273 \u12a835%"
+  },
+  {
+   "fieldname": "from_23",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "\u1240\u1228\u1264\u1273 \u12a830%"
+  },
+  {
+   "fieldname": "perf",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "\u12e8\u1235\u122b \u12a0\u1348\u1343\u1345\u121d \u12a840%"
+  },
+  {
+   "bold": 1,
+   "fieldname": "dis",
+   "fieldtype": "Data",
+   "label": "\u12e8\u121b\u1205\u12f0\u122d \u1325\u122b\u1275"
+  },
+  {
+   "fieldname": "displine",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "\u12e8\u121b\u1205\u12f0\u122d \u1325\u122b\u1275 10%"
+  },
+  {
+   "fieldname": "birth_dat",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Birth Dat"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "\u12a5\u12f5\u121c"
+  },
+  {
+   "fieldname": "age_nu",
+   "fieldtype": "Float",
+   "label": "\u12a5\u12f5\u121c 5%"
+  },
+  {
+   "fieldname": "age_10",
+   "fieldtype": "Float",
+   "label": "\u12a5\u12f5\u121c 10%"
+  },
+  {
+   "fieldname": "from_bos",
+   "fieldtype": "Float",
+   "label": "\u12a8\u1245\u122d\u1265 \u1200\u120b\u134a 10%"
+  },
+  {
+   "fieldname": "gen",
+   "fieldtype": "Data",
+   "label": "\u1346\u1273"
+  },
+  {
+   "fieldname": "gend_3",
+   "fieldtype": "Int",
+   "label": "\u12e8\u1346\u1273 5%"
+  },
+  {
+   "fieldname": "total_100",
+   "fieldtype": "Float",
+   "label": "\u12f5\u121d\u122d \u12cd\u1324\u1275 \u12a8100%"
+  },
+  {
+   "fieldname": "rank",
+   "fieldtype": "Int",
+   "label": "Rank"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-09-08 11:32:39.590236",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Education Training Table",
+ "owner": "assegagebeyehu21@gmail.com",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

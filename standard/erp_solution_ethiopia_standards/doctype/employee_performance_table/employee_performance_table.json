@@ -1,0 +1,204 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-08-04 11:06:16.841027",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_fljz",
+  "goals",
+  "perspective",
+  "goalss",
+  "weight",
+  "type",
+  "uom",
+  "uoms",
+  "per_weightage",
+  "point",
+  "column_break_8",
+  "done",
+  "score",
+  "is_reverse_calculation",
+  "grade",
+  "weight_score",
+  "\u12e8_\u12e8\u12a0\u1348\u1343\u1340\u121d_\u12f0\u1228\u1303_section",
+  "four",
+  "column_break_13",
+  "to_three",
+  "column_break_15",
+  "from_three",
+  "column_break_17",
+  "to_two"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_fljz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "goals",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u12e8\u12a0\u1348\u133b\u1338\u121d \u130d\u1265 \u1270\u12ae\u122d \u1270\u130d\u1263\u122b\u1275 ID",
+   "options": "Performance Goals",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "goals.perspective",
+   "fieldname": "perspective",
+   "fieldtype": "Data",
+   "label": "Perspective"
+  },
+  {
+   "fetch_from": "goals.data_1",
+   "fieldname": "goalss",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u12e8\u12a0\u1348\u133b\u1338\u121d \u130d\u1265 \u1270\u12ae\u122d \u1270\u130d\u1263\u122b\u1275",
+   "read_only": 1
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "\u12e8\u130d\u1265 \u1270\u12ae\u122d \u1270\u130d\u1263\u1229 \u12e8\u121a\u1296\u1228\u12cd \u12ad\u1265\u12f0\u1275",
+   "read_only": 1
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "\u12a0\u12ed\u1290\u1275",
+   "options": "\n\u1218\u1320\u1295\n\u130a\u12dc\n\u1325\u122b\u1275\n\u12c8\u132d",
+   "read_only": 1
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u12e8\u12a0\u1348\u133b\u1338\u121d \u1218\u1208\u12aa\u12eb ID",
+   "options": "Performance Measures",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "uom.data_1",
+   "fieldname": "uoms",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u12e8\u12a0\u1348\u133b\u1338\u121d \u1218\u1208\u12aa\u12eb",
+   "read_only": 1
+  },
+  {
+   "fieldname": "per_weightage",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "\u12ad\u1265\u12f0\u1275",
+   "read_only": 1
+  },
+  {
+   "fieldname": "point",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "\u12d2\u120b\u121b",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "done",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "\u12ad\u1295\u12cd\u1295"
+  },
+  {
+   "fieldname": "score",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "\u12cd\u1324\u1275",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_reverse_calculation",
+   "fieldtype": "Check",
+   "label": "Is Reverse Calculation"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "\u12f0\u1228\u1303",
+   "options": "\n1\n2\n3\n4"
+  },
+  {
+   "fieldname": "weight_score",
+   "fieldtype": "Float",
+   "label": "\u12a0\u121b\u12ab\u12ed \u12cd\u1324\u1275",
+   "read_only": 1
+  },
+  {
+   "fieldname": "\u12e8_\u12e8\u12a0\u1348\u1343\u1340\u121d_\u12f0\u1228\u1303_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "\u12e8 \u12e8\u12a0\u1348\u1343\u1340\u121d \u12f0\u1228\u1303"
+  },
+  {
+   "fieldname": "four",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "4 "
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "to_three",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "3"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "from_three",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "2"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "to_two",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "1"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-09-08 11:32:45.441542",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Employee Performance Table",
+ "owner": "assegagebeyehu21@gmail.com",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

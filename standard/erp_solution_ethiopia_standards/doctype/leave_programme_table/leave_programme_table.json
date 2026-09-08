@@ -1,0 +1,120 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-08-20 09:25:56.273224",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_9ish",
+  "hea",
+  "date_ec",
+  "i_date_ec",
+  "from_date",
+  "to_date",
+  "requested",
+  "column_break_wmao",
+  "a",
+  "ec_date_ec",
+  "ed_date_ec",
+  "from_date_gc",
+  "to_date_gc",
+  "given"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_9ish",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "hea",
+   "fieldtype": "Heading",
+   "label": "\u1348\u1243\u12f5 \u1218\u12cd\u1230\u12f5 \u12e8\u121a\u1348\u120d\u130d\u1260\u1275 \u130a\u12dc"
+  },
+  {
+   "fieldname": "date_ec",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u12a8"
+  },
+  {
+   "fieldname": "i_date_ec",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u12a5\u1235\u12a8"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "requested",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "\u12e8\u1320\u12e8\u1240\u12cd \u1348\u1243\u12f5 \u1240\u1295 \u1265\u12db\u1275"
+  },
+  {
+   "fieldname": "column_break_wmao",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "a",
+   "fieldtype": "Heading",
+   "label": "\u1348\u1243\u12f5 \u12e8\u1270\u1230\u1320\u1260\u1275 \u130a\u12dc"
+  },
+  {
+   "fieldname": "ec_date_ec",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u12a8"
+  },
+  {
+   "fieldname": "ed_date_ec",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u12a5\u1235\u12a8"
+  },
+  {
+   "fieldname": "from_date_gc",
+   "fieldtype": "Date",
+   "label": "From Date Gc",
+   "read_only": 1
+  },
+  {
+   "fieldname": "to_date_gc",
+   "fieldtype": "Date",
+   "label": "To Date Gc",
+   "read_only": 1
+  },
+  {
+   "fieldname": "given",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "\u1348\u1243\u12f5 \u12e8\u1270\u1230\u1320\u1260\u1275 \u130a\u12dc \u1265\u12db\u1275"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-09-08 11:32:38.051265",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Leave Programme Table",
+ "owner": "assegagebeyehu21@gmail.com",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

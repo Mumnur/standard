@@ -1,0 +1,41 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-08-17 14:16:14.848929",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_hvsl",
+  "depa"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_hvsl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "depa",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u130d\u120d\u1263\u132d",
+   "options": "Department"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-09-08 11:32:39.038877",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Glbach",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

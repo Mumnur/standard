@@ -1,0 +1,74 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-08-10 09:55:07.063626",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_zlwi",
+  "reason",
+  "data_3",
+  "amount_paid",
+  "percent",
+  "amount",
+  "insu"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_zlwi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "\u12ad\u134d\u12eb\u12cd \u12e8\u1270\u1348\u1338\u1218\u1260\u1275 \u121d\u12ad\u1295\u12eb\u1275",
+   "options": "\n\u1320\u1245\u120b\u120b \u1205\u12ad\u121d\u1293 \u1208\u1230\u122b\u1270\u129b\n\u1320\u1245\u120b\u120b \u1205\u12ad\u121d\u1293 \u1208\u1235\u122b \u1218\u122a\n\u1320\u1245\u120b\u120b \u1205\u12ad\u121d\u1293 \u1208\u1235\u122b \u12a0\u1235\u1348\u1343\u121a\n\u12e8\u1218\u1290\u1345\u122d\n\u12e8\u1218\u1290\u1338\u122d \u120c\u1295\u1225\n\u12e8\u1306\u122e \u121b\u12f3\u1218\u132b\n\u12e8\u1205\u12ad\u121d\u1293 \u1208\u1264\u1270\u1230\u1265\n\u12e8\u12c8\u120a\u12f5\n\u134a\u12da\u12ee \u1274\u122b\u1352\n\u1208\u12a9\u120b\u120a\u1275 \u12a5\u1325\u1260\u1275\n\u1208\u120d\u1265 \u1205\u1218\u121d"
+  },
+  {
+   "fieldname": "data_3",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "\u12e8\u1205\u12ad\u121d\u1293 \u1270\u1241\u121d",
+   "options": "\n\u12e8\u1218\u1295\u130d\u1235\u1275\n\u12e8\u130d\u120d"
+  },
+  {
+   "fieldname": "amount_paid",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "\u12e8\u1270\u1320\u12e8\u1240 "
+  },
+  {
+   "fieldname": "percent",
+   "fieldtype": "Float",
+   "label": "\u1350\u122d\u1230\u1295\u1275 \u1218\u1320\u1295"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Float",
+   "label": "\u12e8\u1270\u12a8\u1348\u1208\u12cd \u12e8\u1265\u122d \u1218\u1320\u1295"
+  },
+  {
+   "fieldname": "insu",
+   "fieldtype": "Currency",
+   "label": "\u1260\u12a2\u1295\u1239\u122b\u1235 \u12e8\u1270\u1238\u1348\u1290 \u12c8\u132d"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-09-08 11:32:42.645594",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Medical Form",
+ "owner": "assegagebeyehu21@gmail.com",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

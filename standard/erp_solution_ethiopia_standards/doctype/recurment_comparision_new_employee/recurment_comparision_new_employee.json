@@ -1,0 +1,151 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "ReCNewEmployee.#####",
+ "creation": "2026-08-10 09:36:41.130824",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_boyi",
+  "from_date_ec",
+  "from",
+  "column_break_2",
+  "to_date_ec",
+  "to",
+  "column_break_4",
+  "designation",
+  "type_comp",
+  "section_break_4",
+  "recruitment_comparison",
+  "compare",
+  "section_break_6",
+  "recruitment_comparison__rank",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_boyi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "from_date_ec",
+   "fieldtype": "Data",
+   "label": "\u12a8"
+  },
+  {
+   "fieldname": "from",
+   "fieldtype": "Date",
+   "label": "From Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_date_ec",
+   "fieldtype": "Data",
+   "label": "\u12a5\u1235\u12a8"
+  },
+  {
+   "fieldname": "to",
+   "fieldtype": "Date",
+   "label": "To Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "\u12e8\u1235\u122b \u1218\u12f0\u1265",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "type_comp",
+   "fieldtype": "Data",
+   "label": "\u12e8\u12cd\u12f5\u12f5\u1229 \u12a0\u12ed\u1290\u1275"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "recruitment_comparison",
+   "fieldtype": "Table",
+   "label": "Recruitment Comparison",
+   "options": "Recruitment Comparison Table New"
+  },
+  {
+   "fieldname": "compare",
+   "fieldtype": "Button",
+   "label": "Compare"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "recruitment_comparison__rank",
+   "fieldtype": "Table",
+   "label": "Recruitment Comparison  rank",
+   "options": "Recruitment Comparison Table rank new Employee"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Recurment Comparision New Employee",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-09-08 11:32:43.129767",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Recurment Comparision New Employee",
+ "naming_rule": "Expression",
+ "owner": "assegagebeyehu21@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

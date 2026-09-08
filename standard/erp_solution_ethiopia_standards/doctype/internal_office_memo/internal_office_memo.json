@@ -1,0 +1,140 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-08-13 21:32:03.125174",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_g5gj",
+  "data_1",
+  "data_2",
+  "data_3",
+  "data_4",
+  "date_ec",
+  "date_gc",
+  "refdoc",
+  "\u12a0\u1263\u122a",
+  "section_break_7",
+  "description",
+  "naming_series",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_g5gj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "data_1",
+   "fieldtype": "Link",
+   "label": "To / \u1208",
+   "options": "Department"
+  },
+  {
+   "fieldname": "data_2",
+   "fieldtype": "Link",
+   "label": "From / \u12a8",
+   "options": "Department"
+  },
+  {
+   "fieldname": "data_3",
+   "fieldtype": "Small Text",
+   "label": "\u1309\u12f3\u12e9\u1361-"
+  },
+  {
+   "fieldname": "data_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_ec",
+   "fieldtype": "Data",
+   "label": "Date (E.c)"
+  },
+  {
+   "fieldname": "date_gc",
+   "fieldtype": "Date",
+   "label": "Date (G.C)"
+  },
+  {
+   "fieldname": "refdoc",
+   "fieldtype": "Link",
+   "label": "Refernce doc type",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "\u12a0\u1263\u122a",
+   "fieldtype": "Dynamic Link",
+   "label": "\u12a0\u1263\u122a",
+   "options": "refdoc"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "options": "InternalOffice-"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Internal Office Memo",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-09-08 11:32:39.364840",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Internal Office Memo",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "assegagebeyehu21@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Common Role",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "data_2"
+}

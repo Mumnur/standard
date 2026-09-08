@@ -1,0 +1,91 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-08-01 11:04:23.555608",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "project_detail_section",
+  "project",
+  "column_break_rwut",
+  "date",
+  "section_break_nbhk",
+  "heavy_vehicle__demand_table",
+  "light_vehicle__demand_table",
+  "machinery__demand_table",
+  "construction_equipemnt_demand_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Project Detail "
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Data",
+   "label": "Project "
+  },
+  {
+   "fieldname": "column_break_rwut",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_nbhk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "heavy_vehicle__demand_table",
+   "fieldtype": "Data",
+   "label": "Heavy Vehicle  Demand Table"
+  },
+  {
+   "fieldname": "light_vehicle__demand_table",
+   "fieldtype": "Data",
+   "label": "Light Vehicle  Demand table "
+  },
+  {
+   "fieldname": "machinery__demand_table",
+   "fieldtype": "Data",
+   "label": "Machinery  Demand Table "
+  },
+  {
+   "fieldname": "construction_equipemnt_demand_table",
+   "fieldtype": "Data",
+   "label": "Construction Equipemnt Demand Table "
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-08 11:32:46.241205",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Project Equipment Supply Plan",
+ "owner": "fikerbdu@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

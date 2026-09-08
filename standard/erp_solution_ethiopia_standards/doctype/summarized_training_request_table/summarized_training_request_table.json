@@ -1,0 +1,385 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-08-12 11:58:59.221183",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_drao",
+  "item_code",
+  "description",
+  "column_break_4",
+  "total_quantity",
+  "market_price",
+  "total_price",
+  "remark",
+  "section_break_9",
+  "float_5",
+  "floa_1",
+  "float_6",
+  "floa_2",
+  "float_7",
+  "floa_3",
+  "float_8",
+  "floa_4",
+  "float_9",
+  "floa_5",
+  "column_break_14",
+  "float_10",
+  "floa_6",
+  "float_11",
+  "floa_7",
+  "float_12",
+  "floa_8",
+  "float_13",
+  "floa_9",
+  "float_14",
+  "floa_10",
+  "float_15",
+  "floa_11",
+  "column_break_17",
+  "float_16",
+  "floa_12",
+  "float_17",
+  "floa_13",
+  "float_18",
+  "floa_14",
+  "float_19",
+  "floa_15",
+  "float_20",
+  "floa_16",
+  "float_21",
+  "floa_17",
+  "column_break_23",
+  "float_22",
+  "floa_18",
+  "float_23",
+  "floa_19",
+  "float_24",
+  "floa_20",
+  "float_25",
+  "floa_21",
+  "float_26",
+  "floa_22",
+  "float_27",
+  "floa_23"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_drao",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Training Type",
+   "options": "Training Type"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Quantity"
+  },
+  {
+   "fieldname": "market_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Unit Price"
+  },
+  {
+   "fieldname": "total_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Price"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Small Text",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "float_5",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "\u12cb\u1293 \u1225\u122b \u12a0\u1235\u1348\u133b\u121a \u133d/\u1264\u1275 - WWC"
+  },
+  {
+   "fieldname": "floa_1",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "\u1205\u130d\u1363 \u1225\u1290-\u121d\u130d\u1263\u122d\u1293 \u1218\u120d\u12ab\u121d \u12a0\u1235\u1270\u12f3\u12f0\u122d \u12f3\u12ed\u122c\u12ad\u1276\u122c\u1275 - WWC"
+  },
+  {
+   "fieldname": "float_6",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "\u12e8\u12cd\u1235\u1325 \u12a6\u12f2\u1275 \u12f3\u12ed\u122c\u12ad\u1276\u122c\u1275 - WWC"
+  },
+  {
+   "fieldname": "floa_2",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "\u12a5\u1245\u12f5 \u12dd\u130d\u1305\u1275\u1293 \u12ad\u1275\u1275\u120d \u12f3\u12ed\u122c\u12ad\u1276\u122c\u1275 - WWC"
+  },
+  {
+   "fieldname": "float_7",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "\u12cd\u120d\u1293 \u1355\u122e\u1300\u12ad\u1275 \u12ad\u1275\u1275\u120d \u12cb\u1293 \u12f3\u12ed\u122c\u12ad\u1276\u122c\u1275 - WWC"
+  },
+  {
+   "fieldname": "floa_3",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "\u1262\u12dd\u1290\u1235 \u12f0\u1268\u120e\u1355\u1218\u1295\u1275\u1293 \u12a2\u1296\u126c\u123d\u1295 \u12cb\u1293 \u12f3\u12ed\u122c\u12ad\u1276\u122c\u1275 - WWC"
+  },
+  {
+   "fieldname": "float_8",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "\u12ae\u1295\u1235\u1275\u122b\u12ad\u123d\u1295 \u12d8\u122d\u134d \u121d/\u12cb/ \u1235\u122b \u12a0\u1235\u1348\u133b\u121a - WWC"
+  },
+  {
+   "fieldname": "floa_4",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "\u12ae\u1295\u1235\u1275\u122b\u12ad\u123d\u1295 \u12a6\u1355\u122c\u123d\u1295 \u12f3\u12ed\u122c\u12ad\u1276\u122c\u1275 - WWC"
+  },
+  {
+   "fieldname": "float_9",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "\u12e8\u1200\u12ed\u12f5\u122e \u12a4\u120c\u12ad\u1275\u122e \u121c\u12ab\u1292\u12ab\u120d \u12f3\u12ed\u122c\u12ad\u1276\u122c\u1275 - WWC"
+  },
+  {
+   "fieldname": "floa_5",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "\u12e8\u1309\u12f5\u1313\u12f5 \u1241\u134b\u122e \u12a5\u1293 \u1302\u12a6\u1274\u12ad\u1292\u12ad \u12d8\u122d\u134d \u121d/\u12cb/\u1235\u122b \u12a0\u1235\u1348\u133b\u121a - WWC"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "float_10",
+   "fieldtype": "Float",
+   "label": "\u12e8\u1309\u12f5\u1313\u12f5 \u1241\u134b\u122e \u12cb\u1293 \u12f3\u12ed\u122c\u12ad\u1276\u122c\u1275 - WWC"
+  },
+  {
+   "fieldname": "floa_6",
+   "fieldtype": "Float",
+   "label": "\u12e8\u1302\u12a6\u1274\u12ad\u1292\u12ad \u12f3\u12ed\u122c\u12ad\u1276\u122c\u1275 - WWC"
+  },
+  {
+   "fieldname": "float_11",
+   "fieldtype": "Float",
+   "label": "\u1218\u1233\u122a\u12eb \u12a0\u1235\u1270\u12f3\u12f0\u122d\u1364\u12a0\u1320\u1243\u1240\u121d\u1293 \u1325\u1308\u1293 \u12d8\u122d\u134d \u121d/\u12cb/\u1235\u122b \u12a0\u1235\u1348\u133b\u121a - WWC"
+  },
+  {
+   "fieldname": "floa_7",
+   "fieldtype": "Float",
+   "label": "\u1218\u1223\u122a\u12eb \u12a0\u1235\u1270\u12f3\u12f0\u122d\u1293 \u12a0\u1320\u1243\u1240\u121d \u12f3\u12f3\u12ed\u122c\u12ad\u1276\u122c\u1275 - WWC"
+  },
+  {
+   "fieldname": "float_12",
+   "fieldtype": "Float",
+   "label": "\u12e8\u1218\u1223\u122a\u12eb \u1325\u1308\u1293 \u12f3\u12ed\u122c\u12ad\u1276\u122c\u1275 - WWC"
+  },
+  {
+   "fieldname": "floa_8",
+   "fieldtype": "Float",
+   "label": "\u134b\u12ed\u1293\u1295\u1235 \u12f3\u12ed\u122c\u12ad\u1276\u122c\u1275 - WWC"
+  },
+  {
+   "fieldname": "float_13",
+   "fieldtype": "Float",
+   "label": "\u12e8\u130d\u12e5\u1293 \u12a0\u1245\u122d\u1266\u1275 \u12f3\u12ed\u122c\u12ad\u1276\u122c\u1275 - WWC"
+  },
+  {
+   "fieldname": "floa_9",
+   "fieldtype": "Float",
+   "label": "\u1295\u1265\u1228\u1275 \u12a0\u1235\u1270\u12f3\u12f0\u122d \u12f3\u12ed\u122c\u12ad\u1276\u122c\u1275 - WWC"
+  },
+  {
+   "fieldname": "float_14",
+   "fieldtype": "Float",
+   "label": "\u12ae\u122d\u1356\u122c\u1275 \u12e8\u1230\u12cd \u1200\u1265\u1275 \u120d\u121b\u1275\u1293 \u12a0\u1218\u122b\u122d \u12cb\u1293 \u12f3\u12ed\u122c\u12ad\u1276\u122c\u1275 - WWC"
+  },
+  {
+   "fieldname": "floa_10",
+   "fieldtype": "Float",
+   "label": "\u12cb\u1293 \u121b\u1235\u1270\u1263\u1260\u122a\u12eb \u133d/\u1264\u1275 - WWC"
+  },
+  {
+   "fieldname": "float_15",
+   "fieldtype": "Float",
+   "label": "\u1355\u122e\u1300\u12ad\u1275 \u1225\u122b-\u12a0\u1235\u12aa\u12eb\u1305 \u133d/\u1264\u1275 - WWC\u1355\u122e\u1300\u12ad\u1275 \u1225\u122b-\u12a0\u1235\u12aa\u12eb\u1305 \u133d/\u1264\u1275 - WWC"
+  },
+  {
+   "fieldname": "floa_11",
+   "fieldtype": "Float",
+   "label": "\u12c9\u120d\u1293 \u1355\u122e\u1300\u12ad\u1275 \u12ad\u1275\u1275\u120d \u12cb\u1293 \u12f3\u12ed\u122c\u12ad\u1276\u122c\u1275 - WWC"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "float_16",
+   "fieldtype": "Float",
+   "label": "\u12e8\u12a0\u1235\u1270\u12f3\u12f0\u122d \u12d8\u122d\u134d \u121d/\u12cb/ \u1235/\u12a0\u1235\u1348\u133b\u121a - WWC"
+  },
+  {
+   "fieldname": "floa_12",
+   "fieldtype": "Float",
+   "label": "\u12a0\u12f2\u1235 \u12a0\u1260\u1263 \u121b\u1235\u1270\u1263\u1260\u122a\u12eb \u133d/\u1264\u1275 - WWC\u12a0\u12f2\u1235 \u12a0\u1260\u1263 \u121b\u1235\u1270\u1263\u1260\u122a\u12eb \u133d/\u1264\u1275 - WWC"
+  },
+  {
+   "fieldname": "float_17",
+   "fieldtype": "Float",
+   "label": "\u1218\u1233\u122a\u12eb \u12a0\u1235\u1270\u12f3\u12f0\u122d\u1364\u12a0\u1320\u1243\u1240\u121d\u1293 \u1325\u1308\u1293 \u12d8\u122d\u134d - WWC"
+  },
+  {
+   "fieldname": "floa_13",
+   "fieldtype": "Float",
+   "label": "\u121b\u121d\u1228\u127b \u121b\u12a5\u12a8\u120d - WWC"
+  },
+  {
+   "fieldname": "float_18",
+   "fieldtype": "Float",
+   "label": "\u121b\u1230\u120d\u1320\u129b \u121b\u12a5\u12a8\u120d - WWC"
+  },
+  {
+   "fieldname": "floa_14",
+   "fieldtype": "Float",
+   "label": "\u1218\u1233\u122a\u12eb \u12a0\u1235\u1270\u12f3\u12f0\u122d\u1364\u12a0\u1320\u1243\u1240\u121d\u1293 \u1325\u1308\u1293 \u12d8\u122d\u134d - WWC"
+  },
+  {
+   "fieldname": "float_19",
+   "fieldtype": "Float",
+   "label": "\u1295\u1265\u1228\u1275 \u12a0\u1235\u1270\u12f3\u12f0\u122d \u12f3\u12ed\u122c\u12ad\u1276\u122c\u1275 \u12a0\u1218\u122b\u122d"
+  },
+  {
+   "fieldname": "floa_15",
+   "fieldtype": "Float",
+   "label": "\u1295\u1265\u1228\u1275 \u12a0\u1235\u1270\u12f3\u12f0\u122d \u12f3\u12ed\u122c\u12ad\u1276\u122c\u1275 \u1230\u122b\u1270\u129b"
+  },
+  {
+   "fieldname": "float_20",
+   "fieldtype": "Float",
+   "label": "\u12ae\u122d\u1356\u122c\u1275 \u12e8\u1230\u12cd \u1200\u1265\u1275 \u120d\u121b\u1275\u1293 \u12a0\u1218\u122b\u122d \u12cb\u1293 \u12f3\u12ed\u122c\u12ad\u1276\u122c\u1275 \u12a0\u1218\u122b\u122d"
+  },
+  {
+   "fieldname": "floa_16",
+   "fieldtype": "Float",
+   "label": "\u12ae\u122d\u1356\u122c\u1275 \u12e8\u1230\u12cd \u1200\u1265\u1275 \u120d\u121b\u1275\u1293 \u12a0\u1218\u122b\u122d \u12cb\u1293 \u12f3\u12ed\u122c\u12ad\u1276\u122c\u1275 \u1230\u122b\u1270\u129b"
+  },
+  {
+   "fieldname": "float_21",
+   "fieldtype": "Float",
+   "label": "\u12e8\u130d\u12e5\u1293 \u12a0\u1245\u122d\u1266\u1275 \u12f3\u12ed\u122c\u12ad\u1276\u122c\u1275 \u12a0\u1218\u122b\u122d"
+  },
+  {
+   "fieldname": "floa_17",
+   "fieldtype": "Float",
+   "label": "\u12e8\u130d\u12e5\u1293 \u12a0\u1245\u122d\u1266\u1275 \u12f3\u12ed\u122c\u12ad\u1276\u122c\u1275 \u1230\u122b\u1270\u129b"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "float_22",
+   "fieldtype": "Float",
+   "label": "\u12e8\u134b\u12ed\u1293\u1295\u1235 \u12f3\u12ed\u122c\u12ad\u1276\u122c\u1275 \u12a0\u1218\u122b\u122d"
+  },
+  {
+   "fieldname": "floa_18",
+   "fieldtype": "Float",
+   "label": "\u12e8\u134b\u12ed\u1293\u1295\u1235 \u12f3\u12ed\u122c\u12ad\u1276\u122c\u1275 \u1230\u122b\u1270\u129b"
+  },
+  {
+   "fieldname": "float_23",
+   "fieldtype": "Float",
+   "label": "\u12a2\u1296\u126c\u123d\u1295\u1293 \u1262\u12dd\u1290\u1235 \u120d\u121b\u1275 \u121d/\u12cb/\u1235\u122b \u12a0\u1235\u1348\u133b\u121a \u12a0\u1218\u122b\u122d"
+  },
+  {
+   "fieldname": "floa_19",
+   "fieldtype": "Float",
+   "label": "\u12a2\u1296\u126c\u123d\u1295\u1293 \u1262\u12dd\u1290\u1235 \u120d\u121b\u1275 \u121d/\u12cb/\u1235\u122b \u12a0\u1235\u1348\u133b\u121a \u1230\u122b\u1270\u129b"
+  },
+  {
+   "fieldname": "float_24",
+   "fieldtype": "Float",
+   "label": "\u1205\u130d \u12a0\u1308\u120d\u130d\u120e\u1275 \u12f3\u12ed\u122c\u12ad\u1276\u122c\u1275 \u12a0\u1218\u122b\u122d"
+  },
+  {
+   "fieldname": "floa_20",
+   "fieldtype": "Float",
+   "label": "\u1205\u130d \u12a0\u1308\u120d\u130d\u120e\u1275 \u12f3\u12ed\u122c\u12ad\u1276\u122c\u1275 \u1230\u122b\u1270\u129b"
+  },
+  {
+   "fieldname": "float_25",
+   "fieldtype": "Float",
+   "label": "\u12e8\u12cd\u1235\u1325 \u12a6\u12f2\u1275 \u12f3\u12ed\u122c\u12ad\u1276\u122c\u1275 \u12a0\u1218\u122b\u122d"
+  },
+  {
+   "fieldname": "floa_21",
+   "fieldtype": "Float",
+   "label": "\u12e8\u12cd\u1235\u1325 \u12a6\u12f2\u1275 \u12f3\u12ed\u122c\u12ad\u1276\u122c\u1275 \u1230\u122b\u1270\u129b"
+  },
+  {
+   "fieldname": "float_26",
+   "fieldtype": "Float",
+   "label": "\u12a0\u12f2\u1235 \u12a0\u1260\u1263 \u121b\u1235\u1270\u1263\u1260\u122a\u12eb \u133d/\u1264\u1275 \u12a0\u1218\u122b\u122d"
+  },
+  {
+   "fieldname": "floa_22",
+   "fieldtype": "Float",
+   "label": "\u12a0\u12f2\u1235 \u12a0\u1260\u1263 \u121b\u1235\u1270\u1263\u1260\u122a\u12eb \u133d/\u1264\u1275 \u1230\u122b\u1270\u129b"
+  },
+  {
+   "fieldname": "float_27",
+   "fieldtype": "Float",
+   "label": "\u121d\u1235\u122b\u1245 \u12a0\u121b\u122b \u121b\u1235\u1270\u1263\u1260\u122a\u12eb \u133d/\u1264\u1275 \u12a0\u1218\u122b\u122d"
+  },
+  {
+   "fieldname": "floa_23",
+   "fieldtype": "Float",
+   "label": "\u121d\u1235\u122b\u1245 \u12a0\u121b\u122b \u121b\u1235\u1270\u1263\u1260\u122a\u12eb \u133d/\u1264\u1275 \u1230\u122b\u1270\u129b"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-09-08 11:32:41.238943",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Summarized Training Request table",
+ "owner": "assegagebeyehu21@gmail.com",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

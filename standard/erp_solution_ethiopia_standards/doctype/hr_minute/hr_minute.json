@@ -1,0 +1,179 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "HrMinute.#####",
+ "creation": "2026-08-12 14:19:59.756648",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_xm3y",
+  "place",
+  "column_break_2",
+  "date_ec",
+  "column_break_4",
+  "time",
+  "\u1270\u1233\u1273\u134a\u12ce\u127d_section",
+  "table_5",
+  "section_break_6",
+  "recruit",
+  "notice",
+  "table_10",
+  "secc",
+  "comparision",
+  "table_18",
+  "rec_new",
+  "new_employee",
+  "idea",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_xm3y",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "place",
+   "fieldtype": "Data",
+   "label": "\u12e8\u1235\u1265\u1230\u1263 \u1266\u1273"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_ec",
+   "fieldtype": "Data",
+   "label": "\u12e8\u1235\u1265\u1230\u1263 \u1240\u1295"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Float",
+   "label": "\u12e8\u1235\u1265\u1230\u1263 \u1230\u12d3\u1275"
+  },
+  {
+   "fieldname": "\u1270\u1233\u1273\u134a\u12ce\u127d_section",
+   "fieldtype": "Section Break",
+   "label": "\u12ae\u121a\u1274\u12ce\u127d"
+  },
+  {
+   "fieldname": "table_5",
+   "fieldtype": "Table",
+   "options": "participants"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "recruit",
+   "fieldtype": "Select",
+   "label": "\u12e8\u1245\u1325\u122d \u1201\u1294\u1273",
+   "options": "\n\u12dd\u12c9\u12c9\u122d\n\u12e8\u12f0\u1228\u1303 \u12a5\u12f5\u1308\u1275\n\u12a0\u12f2\u1235 \u1245\u1325\u122d"
+  },
+  {
+   "fieldname": "notice",
+   "fieldtype": "Link",
+   "label": "\u121b\u1235\u1273\u12c8\u1242\u12eb",
+   "options": "Recruitment Notice"
+  },
+  {
+   "fieldname": "table_10",
+   "fieldtype": "Table",
+   "options": "Minute Table",
+   "read_only": 1
+  },
+  {
+   "fieldname": "secc",
+   "fieldtype": "Section Break",
+   "label": "\u121b\u12c8\u12f3\u12f0\u122a\u12eb"
+  },
+  {
+   "fieldname": "comparision",
+   "fieldtype": "Link",
+   "label": "\u1208\u12cd\u1235\u1325",
+   "options": "Recruitment Comparison"
+  },
+  {
+   "fieldname": "table_18",
+   "fieldtype": "Table",
+   "label": "Comparision Internal",
+   "options": "Recruitment Comparison Table rank",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rec_new",
+   "fieldtype": "Link",
+   "label": "\u1208\u12a0\u12f2\u1235 \u1245\u1325\u122d",
+   "options": "Recurment Comparision New Employee"
+  },
+  {
+   "fieldname": "new_employee",
+   "fieldtype": "Table",
+   "label": "New Employee",
+   "options": "Recruitment Comparison Table rank new Ems",
+   "read_only": 1
+  },
+  {
+   "fieldname": "idea",
+   "fieldtype": "Text Editor",
+   "label": "\u12a0\u1300\u1295\u12f3"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "HR Minute",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-09-08 11:32:40.711418",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "HR Minute",
+ "naming_rule": "Expression",
+ "owner": "assegagebeyehu21@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

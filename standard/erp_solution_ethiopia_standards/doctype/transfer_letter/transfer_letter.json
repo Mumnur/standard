@@ -1,0 +1,211 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-08-09 03:09:25.025884",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_rnql",
+  "employee_id",
+  "employee_name",
+  "designaion",
+  "current_grade",
+  "employment_type",
+  "salary",
+  "salary_in_word",
+  "current_place",
+  "\u12a0\u1201\u1295_\u12e8\u1270\u12db\u12c8\u1228\u1260\u1275_\u1355\u122e\u1300\u12ad\u1275",
+  "column_break_gzc7",
+  "number",
+  "date_ec",
+  "transfer_request",
+  "transfer_reason",
+  "start_date_ec",
+  "department",
+  "table",
+  "new_designation",
+  "new_project",
+  "da_date_ec",
+  "glbach",
+  "naming_series"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_rnql",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "label": "Employee Id",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee_id.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee_id.designation",
+   "fieldname": "designaion",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u12e8\u1225\u122b \u1218\u12f0\u1265",
+   "options": "Designation"
+  },
+  {
+   "fetch_from": "employee_id.grade",
+   "fieldname": "current_grade",
+   "fieldtype": "Data",
+   "label": "\u12e8\u12a0\u1201\u1295 \u12f0\u1228\u1303",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee_id.employment_type",
+   "fieldname": "employment_type",
+   "fieldtype": "Data",
+   "label": "\u12e8\u1245\u1325\u122d \u1201\u1294\u1273",
+   "read_only": 1
+  },
+  {
+   "fieldname": "salary",
+   "fieldtype": "Data",
+   "label": "salary"
+  },
+  {
+   "fieldname": "salary_in_word",
+   "fieldtype": "Data",
+   "label": "Salary In word",
+   "read_only": 1
+  },
+  {
+   "fieldname": "current_place",
+   "fieldtype": "Data",
+   "label": "\u12e8\u12a0\u1201\u1295 \u12e8\u1235\u122d \u1266\u1273"
+  },
+  {
+   "fieldname": "\u12a0\u1201\u1295_\u12e8\u1270\u12db\u12c8\u1228\u1260\u1275_\u1355\u122e\u1300\u12ad\u1275",
+   "fieldtype": "Link",
+   "label": "\u12a0\u1201\u1295 \u12e8\u1270\u12db\u12c8\u1228\u1260\u1275 \u1355\u122e\u1300\u12ad\u1275",
+   "options": "Project"
+  },
+  {
+   "fieldname": "column_break_gzc7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "number",
+   "fieldtype": "Data",
+   "label": "\u1241\u1325\u122d"
+  },
+  {
+   "fetch_from": "transfer_request.date_ec",
+   "fieldname": "date_ec",
+   "fieldtype": "Data",
+   "label": "\u1240\u1295"
+  },
+  {
+   "fieldname": "transfer_request",
+   "fieldtype": "Link",
+   "label": "Transfer Request",
+   "options": "Employee Transfer Request"
+  },
+  {
+   "fieldname": "transfer_reason",
+   "fieldtype": "Data",
+   "label": "\u1309\u12f3\u12e9",
+   "read_only": 1
+  },
+  {
+   "fieldname": "start_date_ec",
+   "fieldtype": "Data",
+   "label": "\u1235\u122b \u12e8\u121a\u1300\u121d\u1229\u1260\u1275 \u1240\u1295"
+  },
+  {
+   "fetch_from": "transfer_request.department_name1",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "department"
+  },
+  {
+   "fieldname": "table",
+   "fieldtype": "Table",
+   "label": "Table",
+   "options": "Employee Transfer Request Table"
+  },
+  {
+   "fieldname": "new_designation",
+   "fieldtype": "Link",
+   "label": "\u12a0\u12f2\u1235 \u1218\u12f0\u1265",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "new_project",
+   "fieldtype": "Data",
+   "label": "\u12a0\u12f2\u1235 \u1355\u122e\u1300\u12ad\u1275"
+  },
+  {
+   "fieldname": "da_date_ec",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Start From"
+  },
+  {
+   "fieldname": "glbach",
+   "fieldtype": "Table",
+   "label": "Glbach",
+   "options": "Glbach"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "TransferLetter-"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-08 11:34:14.043988",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Transfer Letter",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "assegagebeyehu21@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_bulk_edit": 1,
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:data_1",
  "creation": "2026-08-10 11:29:58.203495",
@@ -24,7 +25,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-08-10 11:50:22.160623",
+ "modified": "2026-09-08 11:32:42.252256",
  "modified_by": "Administrator",
  "module": "ERP Solution Ethiopia Standards",
  "name": "Uniform Type",

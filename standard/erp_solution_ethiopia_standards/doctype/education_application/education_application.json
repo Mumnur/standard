@@ -1,0 +1,263 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "EdApplication.#####",
+ "creation": "2026-08-13 10:32:39.707647",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_id",
+  "employee_name",
+  "birth_dat_ec",
+  "birth_date",
+  "age",
+  "employement_type",
+  "education_opp",
+  "edu_level",
+  "level_edu",
+  "column_break_9",
+  "application_date_ec",
+  "application_date_gc",
+  "gender",
+  "tyep_of_training",
+  "experiance",
+  "\u12e8\u1275\u121d\u1205\u122d\u1275_\u12a5\u12f5\u120d",
+  "gpa",
+  "custom_name",
+  "section_break_18",
+  "reports_to",
+  "result",
+  "\u1240\u1228\u1264\u1273_\u12a835",
+  "ker_30",
+  "column_break_20",
+  "discipline",
+  "bsc11",
+  "attach_image_8",
+  "reason_for_rejection",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "label": "ID",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee_id.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u12e8\u1230\u122b\u1270\u129b\u12cd \u1235\u121d"
+  },
+  {
+   "fetch_from": "employee_id.custom_birth_date_ec",
+   "fieldname": "birth_dat_ec",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Birth Date"
+  },
+  {
+   "fetch_from": "employee_id.date_of_birth",
+   "fieldname": "birth_date",
+   "fieldtype": "Date",
+   "label": "Birth Date Gc"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Float",
+   "label": "\u12a5\u12f5\u121c"
+  },
+  {
+   "fetch_from": "employee_id.employment_type",
+   "fieldname": "employement_type",
+   "fieldtype": "Data",
+   "label": "\u12e8\u1245\u1325\u122d \u1201\u1294\u1273"
+  },
+  {
+   "fieldname": "education_opp",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u121b\u1235\u1273\u12c8\u1242\u12eb\u12cd \u12e8\u12c8\u1323\u1260\u1275 \u1241\u1325\u122d",
+   "options": "Educational Opportunity",
+   "reqd": 1
+  },
+  {
+   "fieldname": "edu_level",
+   "fieldtype": "Select",
+   "label": "\u1218\u121b\u122d \u12e8\u1348\u1208\u1309\u1275 \u12e8\u1275\u121d\u1205\u122d\u1275 \u12f0\u1228\u1303",
+   "options": "\u1208\u12f2\u130d\u122a \u1355\u122e\u130d\u122b\u121d\n\u1208\u1201\u1208\u1270\u129b \u12f2\u130d\u122a/\u121b\u1235\u1270\u122d \u1355\u122e\u130d\u122b\u121d\n\u1208\u1352\u12a4\u127d\u12f2  \u1355\u122e\u130d\u122b\u121d"
+  },
+  {
+   "fieldname": "level_edu",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "\u1218\u121b\u122d \u12e8\u1348\u1208\u1309\u1275  \u1275\u121d\u1205\u122d\u1275"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "application_date_ec",
+   "fieldtype": "Data",
+   "label": "Application Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "application_date_gc",
+   "fieldtype": "Date",
+   "label": "Application Date Gc",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee_id.gender",
+   "fieldname": "gender",
+   "fieldtype": "Data",
+   "label": "\u1346\u1273"
+  },
+  {
+   "fieldname": "tyep_of_training",
+   "fieldtype": "Select",
+   "label": "\u12e8\u1235\u120d\u1320\u1293\u12cd \u12a0\u12ed\u1290\u1275",
+   "options": "\u12e8\u1228\u12e3\u121d\n\u12e8\u12a0\u132d\u122d"
+  },
+  {
+   "fieldname": "experiance",
+   "fieldtype": "Table",
+   "label": "\u12e8\u12a0\u1308\u120d\u130d\u120e\u1275 \u12d8\u1218\u1295 \u1260\u12f5\u122d\u1305\u1271",
+   "options": "Experiance Child Table"
+  },
+  {
+   "fieldname": "\u12e8\u1275\u121d\u1205\u122d\u1275_\u12a5\u12f5\u120d",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "\u12e8\u1275\u121d\u1205\u122d\u1275 \u12a5\u12f5\u120d"
+  },
+  {
+   "fieldname": "gpa",
+   "fieldtype": "Float",
+   "label": "\u12e8\u1275\u121d\u1205\u122d\u1275 \u12cd\u1324\u1275/GPA"
+  },
+  {
+   "fieldname": "custom_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Custom Name"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "reports_to",
+   "fieldtype": "Data",
+   "label": "\u12e8\u1245\u122d\u1265 \u12a0\u1208\u1243"
+  },
+  {
+   "fieldname": "result",
+   "fieldtype": "Float",
+   "label": "\u1260\u1245\u122d\u1265   \u12a0\u1208\u1243 \u12e8\u121a\u121e\u1208\u120b 10%"
+  },
+  {
+   "fieldname": "\u1240\u1228\u1264\u1273_\u12a835",
+   "fieldtype": "Float",
+   "label": "\u1240\u1228\u1264\u1273 \u12a835%"
+  },
+  {
+   "fieldname": "ker_30",
+   "fieldtype": "Float",
+   "label": "\u1240\u1228\u1264\u1273 \u12a830%"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "discipline",
+   "fieldtype": "Float",
+   "label": "discipline"
+  },
+  {
+   "fieldname": "bsc11",
+   "fieldtype": "Float",
+   "label": "Bsc11"
+  },
+  {
+   "fieldname": "attach_image_8",
+   "fieldtype": "Attach Image",
+   "label": "\u12e8\u1275\u121d\u1205\u122d\u1275 \u1218\u1228\u1303 \u12eb\u12eb\u12ed\u12d9"
+  },
+  {
+   "fieldname": "reason_for_rejection",
+   "fieldtype": "Small Text",
+   "label": "Reason For Rejection"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Education Application",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-09-08 11:32:39.844373",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Education Application",
+ "naming_rule": "Expression",
+ "owner": "assegagebeyehu21@gmail.com",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Common Role",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

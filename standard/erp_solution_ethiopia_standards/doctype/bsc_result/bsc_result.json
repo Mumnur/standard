@@ -1,0 +1,62 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-07-27 15:48:08.186630",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_tw1t",
+  "data_1",
+  "data_2",
+  "data_3",
+  "data_4"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_tw1t",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "data_1",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "\u12e8\u12a0\u1348\u133b\u1338\u121d \u12cd\u1324\u1275 1"
+  },
+  {
+   "fieldname": "data_2",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "\u12e8\u12a0\u1348\u133b\u1338\u121d \u12cd\u1324\u1275 2"
+  },
+  {
+   "fieldname": "data_3",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "\u12a0\u121b\u12ab\u12ed"
+  },
+  {
+   "fieldname": "data_4",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u1260\u1300\u1275 \u12d3\u1218\u1275",
+   "options": "Budget Year"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-09-08 11:32:46.942304",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Bsc result",
+ "owner": "assegagebeyehu21@gmail.com",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

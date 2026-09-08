@@ -1,0 +1,177 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-08-10 09:12:29.824152",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_yyl8",
+  "amended_from",
+  "naming_series",
+  "section_break_ojvq",
+  "requested_at",
+  "purchase_order",
+  "supplier",
+  "column_break_qlvn",
+  "inspection_date_ec",
+  "inspection_date_gc",
+  "status",
+  "section_break_cskj",
+  "items",
+  "section_break_waev",
+  "committees_decision"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_yyl8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Purchase Inspection",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "naming_series",
+   "options": "PUR-INS-.YYYY.-"
+  },
+  {
+   "fieldname": "section_break_ojvq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "requested_at",
+   "fieldtype": "Link",
+   "label": "Requested At",
+   "options": "Requested At"
+  },
+  {
+   "fieldname": "purchase_order",
+   "fieldtype": "Link",
+   "label": "Purchase Order",
+   "options": "Purchase Order"
+  },
+  {
+   "fetch_from": "purchase_order.supplier",
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_qlvn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "inspection_date_ec",
+   "fieldtype": "Data",
+   "label": "Inspection Date EC"
+  },
+  {
+   "default": "Today",
+   "fieldname": "inspection_date_gc",
+   "fieldtype": "Date",
+   "label": "Inspection Date GC",
+   "read_only": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Accepted\nRejected",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_cskj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Purchase Inspection Table"
+  },
+  {
+   "fieldname": "section_break_waev",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "committees_decision",
+   "fieldtype": "Small Text",
+   "label": "committee's decision"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-09-08 11:32:43.583392",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Purchase Inspection",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "aymen.dev@erp.com",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Purchase User",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock User",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Common Role",
+   "share": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

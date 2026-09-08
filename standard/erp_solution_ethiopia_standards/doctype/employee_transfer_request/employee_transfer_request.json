@@ -1,0 +1,287 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-08-04 14:41:26.689169",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_h66x",
+  "naming_series",
+  "department_name",
+  "department_name1",
+  "column_break_3",
+  "status",
+  "purpose",
+  "date_ec",
+  "gc_date",
+  "section_break_5",
+  "employee_transfer_request_table",
+  "section_break_944",
+  "transfer_processed",
+  "section_break_9",
+  "requested_by",
+  "requested_date",
+  "column_break_14",
+  "approve_by",
+  "approve_date",
+  "column_break_bdax",
+  "confirmed_by",
+  "confirmed_date",
+  "column_break_vl3g",
+  "checkd_hr",
+  "checked_hr_date",
+  "column_break_17",
+  "prepared_by",
+  "prepared_date",
+  "column_break_11",
+  "column_break_23",
+  "authorized_by",
+  "authorized_date",
+  "column_break_26",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_h66x",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "WWC-ETR-"
+  },
+  {
+   "fieldname": "department_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u1208",
+   "options": "Department"
+  },
+  {
+   "fieldname": "department_name1",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u12a8",
+   "options": "Department"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u12e8\u1245\u1325\u122d \u1201\u1294\u1273",
+   "options": "Employment Type"
+  },
+  {
+   "fieldname": "purpose",
+   "fieldtype": "Select",
+   "label": "\u1309\u12f3\u12e9",
+   "options": "\u12e8\u1220\u122b\u1270\u129b \u12dd\u12cd\u12cd\u122d\u1295 \u12ed\u1218\u1208\u12a8\u1273\u120d\n\u130a\u12da\u12eb\u12ca \u121d\u12f0\u1263\u1295 \u12ed\u1218\u1208\u12a8\u1273\u120d"
+  },
+  {
+   "fieldname": "date_ec",
+   "fieldtype": "Data",
+   "label": "\u1240\u1295"
+  },
+  {
+   "fieldname": "gc_date",
+   "fieldtype": "Date",
+   "label": "Gc Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "employee_transfer_request_table",
+   "fieldtype": "Table",
+   "label": "Employee Transfer Request Table",
+   "options": "Employee Transfer Request Table"
+  },
+  {
+   "fieldname": "section_break_944",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "transfer_processed",
+   "fieldtype": "Check",
+   "label": "Transfer Processed"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "requested_by",
+   "fieldtype": "Data",
+   "label": "Requested By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "requested_date",
+   "fieldtype": "Date",
+   "label": "Requested Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approve_by",
+   "fieldtype": "Data",
+   "label": "Checkd By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "approve_date",
+   "fieldtype": "Date",
+   "label": "Checked Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_bdax",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "confirmed_by",
+   "fieldtype": "Data",
+   "label": "Confirmed By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "confirmed_date",
+   "fieldtype": "Data",
+   "label": "Confirmed Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_vl3g",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "checkd_hr",
+   "fieldtype": "Data",
+   "label": "\u12eb\u1228\u130b\u1308\u1320\u12cd Hr",
+   "read_only": 1
+  },
+  {
+   "fieldname": "checked_hr_date",
+   "fieldtype": "Date",
+   "label": "\u12eb\u1228\u130b\u1308\u1320\u12cd Hr Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "prepared_by",
+   "fieldtype": "Data",
+   "label": "\u12eb\u12d8\u130b\u1300\u12cd",
+   "read_only": 1
+  },
+  {
+   "fieldname": "prepared_date",
+   "fieldtype": "Date",
+   "label": "\u12eb\u12d8\u130b\u1300\u1260\u1275 \u1240\u1295",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "authorized_by",
+   "fieldtype": "Data",
+   "label": "\u12eb\u1340\u12f0\u1240\u12cd",
+   "read_only": 1
+  },
+  {
+   "fieldname": "authorized_date",
+   "fieldtype": "Date",
+   "label": "\u12eb\u1340\u12f0\u1240\u1260\u1275 \u1240\u1295",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Employee Transfer Request",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-09-08 11:32:45.293869",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Employee Transfer Request",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "assegagebeyehu21@gmail.com",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Common Role",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

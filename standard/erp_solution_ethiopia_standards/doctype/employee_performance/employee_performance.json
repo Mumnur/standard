@@ -1,0 +1,294 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-08-04 10:49:49.628197",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_xpvs",
+  "amended_from",
+  "naming_series",
+  "employee_id",
+  "employee_name",
+  "designation",
+  "department",
+  "budget_year",
+  "evaluation_period",
+  "column_break_5",
+  "date_ec",
+  "date_gc",
+  "employee_performance_template",
+  "from_date_ec",
+  "from_date",
+  "to_date_ec",
+  "to_date",
+  "evaluation_type",
+  "section_break_2",
+  "goals",
+  "section_break_15",
+  "total_score_40",
+  "total_score_60",
+  "section_break_27",
+  "prepared_by",
+  "prepared_date",
+  "prepared_signature",
+  "column_break_30",
+  "checked_by",
+  "checked_date",
+  "checked_signature",
+  "column_break_33",
+  "approve_by",
+  "approve_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_xpvs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Employee Performance",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "WCC-EP-"
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "label": "Employee Id",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee_id.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee_id.designation",
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee_id.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department",
+   "read_only": 1
+  },
+  {
+   "fieldname": "budget_year",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Budget Year",
+   "options": "Budget Year",
+   "reqd": 1
+  },
+  {
+   "description": "Terms",
+   "fetch_from": "employee_performance_template.phase",
+   "fieldname": "evaluation_period",
+   "fieldtype": "Select",
+   "label": "Terms",
+   "options": "\nPhase1\nPhase2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_ec",
+   "fieldtype": "Data",
+   "label": "Date EC",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date_gc",
+   "fieldtype": "Date",
+   "label": "Date GC",
+   "read_only": 1
+  },
+  {
+   "fieldname": "employee_performance_template",
+   "fieldtype": "Link",
+   "label": "Employee Performance Template",
+   "options": "Employee Performance Template"
+  },
+  {
+   "fieldname": "from_date_ec",
+   "fieldtype": "Data",
+   "label": "From Date Ec",
+   "read_only": 1
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date Gc",
+   "read_only": 1
+  },
+  {
+   "fieldname": "to_date_ec",
+   "fieldtype": "Data",
+   "label": "To Date Ec"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date Gc",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee_performance_template.evaluation_type",
+   "fieldname": "evaluation_type",
+   "fieldtype": "Select",
+   "label": "Evaluation Type",
+   "options": "\n\u130d\u1265 \u12a5\u1245\u12f5\n\u12e8\u1263\u1205\u122a \u12a5\u1245\u12f5"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "goals",
+   "fieldtype": "Table",
+   "label": "Goals",
+   "options": "Employee Performance Table"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_score_40",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Total Score",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_score_60",
+   "fieldtype": "Float",
+   "label": "Total Score",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_27",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "prepared_by",
+   "fieldtype": "Data",
+   "label": "Prepared By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "prepared_date",
+   "fieldtype": "Date",
+   "label": "Prepared Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "prepared_signature",
+   "fieldtype": "Signature",
+   "label": "Signature",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_30",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Data",
+   "label": "Accepted By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "checked_date",
+   "fieldtype": "Date",
+   "label": "Accepted Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "checked_signature",
+   "fieldtype": "Signature",
+   "label": "Signature",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_33",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approve_by",
+   "fieldtype": "Data",
+   "label": "Submitted By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "approve_date",
+   "fieldtype": "Date",
+   "label": "Submitted Date",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-09-08 11:33:57.892475",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Employee Performance",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "assegagebeyehu21@gmail.com",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Common Role",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

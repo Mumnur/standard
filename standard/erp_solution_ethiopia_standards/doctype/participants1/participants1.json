@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-08-31 14:22:37.604682",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_giqo",
+  "employee_id",
+  "name1",
+  "responsible_person",
+  "status",
+  "firma",
+  "signature"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_giqo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "label": "Employee ID",
+   "options": "Employee",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee_id.employee_name",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u1235\u121d",
+   "read_only": 1
+  },
+  {
+   "fieldname": "responsible_person",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Responsible Person",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "\u1230\u1265\u1233\u1262\n\u1270\u12c8\u12ab\u12ed\n\u12a0\u1263\u120d\n\u12a0\u1263\u120d\u1293 \u1340\u1210\u134a",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "firma",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "\u1260\u134a\u122d\u121b\u12e8 \u12a0\u1228\u130b\u130d\u132b\u1208\u1201",
+   "read_only_depends_on": "eval:doc.responsible_person != frappe.session.user"
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Signature",
+   "in_list_view": 1,
+   "label": "Signature",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-09-08 11:32:36.204993",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "participants1",
+ "owner": "assegagebeyehu21@gmail.com",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

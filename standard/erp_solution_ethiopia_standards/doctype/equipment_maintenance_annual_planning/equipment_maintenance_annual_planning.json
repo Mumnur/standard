@@ -1,0 +1,86 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-08-01 10:43:12.578783",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "total_planned_maintenance_section",
+  "data_ttew",
+  "preventive_mantenance_plan_section",
+  "preventive_maintenance_plan_table",
+  "break_down_maintenance_plan_section",
+  "break_down_maintenance__plan_table",
+  "reinnovation_maintenance__plan_section",
+  "re_innovation_maintenance__plan_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "total_planned_maintenance_section",
+   "fieldtype": "Section Break",
+   "label": "Total Planned Maintenance "
+  },
+  {
+   "fieldname": "data_ttew",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "preventive_mantenance_plan_section",
+   "fieldtype": "Section Break",
+   "label": "Preventive Mantenance Plan"
+  },
+  {
+   "fieldname": "preventive_maintenance_plan_table",
+   "fieldtype": "Data",
+   "label": "preventive maintenance plan table"
+  },
+  {
+   "fieldname": "break_down_maintenance_plan_section",
+   "fieldtype": "Section Break",
+   "label": "Break Down maintenance plan"
+  },
+  {
+   "fieldname": "break_down_maintenance__plan_table",
+   "fieldtype": "Data",
+   "label": "Break down maintenance  plan table "
+  },
+  {
+   "fieldname": "reinnovation_maintenance__plan_section",
+   "fieldtype": "Section Break",
+   "label": "Reinnovation maintenance  Plan"
+  },
+  {
+   "fieldname": "re_innovation_maintenance__plan_table",
+   "fieldtype": "Data",
+   "label": "Re innovation maintenance  plan table "
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-08 11:32:46.535100",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Equipment maintenance annual planning",
+ "owner": "fikerbdu@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

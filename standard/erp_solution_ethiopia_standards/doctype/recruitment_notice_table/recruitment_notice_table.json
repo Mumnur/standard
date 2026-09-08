@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-08-09 03:36:10.748597",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_z4ki",
+  "designation",
+  "recruitment_type",
+  "grade",
+  "quantity",
+  "column_break_vakq",
+  "salary",
+  "education",
+  "experiance",
+  "work_place"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_z4ki",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u12e8\u1225\u122b \u1218\u12f0\u1261 \u1218\u1320\u122a\u12eb",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "recruitment_type",
+   "fieldtype": "Select",
+   "label": "\u12e8\u1245\u1325\u122d \u12d3\u12ed\u1290\u1275",
+   "options": "\n\u124b\u121a\n\u12ae\u1295\u1275\u122b\u1275"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u12f0\u1228\u1303",
+   "options": "Employee Grade"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u1265\u12db\u1275"
+  },
+  {
+   "fieldname": "column_break_vakq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "salary",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u12f0\u1218\u12c8\u12dd"
+  },
+  {
+   "fieldname": "education",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "\u12e8\u1275\u121d\u1205\u122d\u1275 \u12dd\u130d\u1305\u1275"
+  },
+  {
+   "fieldname": "experiance",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "\u12a0\u130d\u1263\u1265 \u12eb\u1208\u12cd \u12e8\u1225\u122b \u120d\u121d\u12f5 "
+  },
+  {
+   "fieldname": "work_place",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u12e8\u1225\u122b \u1266\u1273"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-09-08 11:32:43.981411",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Recruitment Notice Table",
+ "owner": "assegagebeyehu21@gmail.com",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

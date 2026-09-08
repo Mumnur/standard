@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-07-22 10:38:02.625395",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_cnir",
+  "data1",
+  "date_ec",
+  "start_date",
+  "date_ec_end",
+  "end_date",
+  "column_break_pk5v",
+  "data4",
+  "data6",
+  "quantity",
+  "disciplinary_action"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_cnir",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "data1",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u1245\u1323\u1271 \u12d3\u12ed\u1290\u1275",
+   "options": "Displine Type"
+  },
+  {
+   "fieldname": "date_ec",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u1245\u1323\u1271 \u12e8\u121a\u1300\u121d\u122d\u1260\u1275 \u1240\u1295"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Start Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date_ec_end",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u1245\u1323\u1271 \u12e8\u121a\u12eb\u1260\u1243\u1260\u1275 \u1240\u1295"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_pk5v",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "data4",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u12e8\u1325\u134b\u1275 \u12d3\u12ed\u1290\u1275",
+   "options": "Violation Type"
+  },
+  {
+   "fieldname": "data6",
+   "fieldtype": "Select",
+   "label": "\u12cd\u1233\u1294 \u12e8\u1230\u1320\u12cd \u12a0\u12ab\u120d ",
+   "options": "\n\u12e8\u1245\u122d\u1265 \u1283\u120b\u134a\n\u12e8\u12f2\u1235\u1355\u120a\u1295 \u12ae\u121a\u1274"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "label": "Quantity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "disciplinary_action",
+   "fieldtype": "Link",
+   "label": "Disciplinary Action",
+   "options": "Disciplinary Action",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-09-08 11:32:47.478250",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Displine",
+ "owner": "assegagebeyehu21@gmail.com",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

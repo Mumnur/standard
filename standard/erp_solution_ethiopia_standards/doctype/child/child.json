@@ -1,0 +1,69 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-08-16 21:42:01.822545",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_mfju",
+  "rela",
+  "full",
+  "date_ec",
+  "date_gc",
+  "\u1346\u1273"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_mfju",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rela",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u12dd\u121d\u12f5\u1293"
+  },
+  {
+   "fieldname": "full",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u1219\u1209 \u1235\u121d"
+  },
+  {
+   "fieldname": "date_ec",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u12e8\u120d\u12f0\u1275 \u1240\u1295 (E.C.)"
+  },
+  {
+   "fieldname": "date_gc",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "\u12e8\u120d\u12f0\u1275 \u1240\u1295 (G.C.)"
+  },
+  {
+   "fieldname": "\u1346\u1273",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "\u1346\u1273",
+   "options": "\n\u12c8\u1295\u12f5\n\u1234\u1275"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-09-08 11:32:39.266192",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Child",
+ "owner": "assegagebeyehu21@gmail.com",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

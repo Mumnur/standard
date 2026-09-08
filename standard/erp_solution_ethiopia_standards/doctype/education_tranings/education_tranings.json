@@ -1,0 +1,208 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "EdT.#####",
+ "creation": "2026-08-13 10:42:11.441397",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "from_date_ec",
+  "from_date",
+  "column_break_3",
+  "to_date_ec",
+  "to_date",
+  "column_break_5",
+  "date_ec",
+  "tyep_of_training",
+  "edu_level",
+  "lobed_operators_section",
+  "lobed_operators",
+  "compare",
+  "education_training__rank__by_rank",
+  "lobed_operators_rank",
+  "amended_from",
+  "section_break_lwp7",
+  "compared_by",
+  "compared_date",
+  "column_break_w7ez",
+  "approved_by",
+  "approved_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "from_date_ec",
+   "fieldtype": "Data",
+   "label": "\u12a8"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "from"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_date_ec",
+   "fieldtype": "Data",
+   "label": "\u12a5\u1235\u12a8"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_ec",
+   "fieldtype": "Data",
+   "label": "Date"
+  },
+  {
+   "fieldname": "tyep_of_training",
+   "fieldtype": "Select",
+   "label": "\u12e8\u1235\u120d\u1320\u1293\u12cd \u12a0\u12ed\u1290\u1275",
+   "options": "\u12e8\u1228\u12e3\u121d\n\u12e8\u12a0\u132d\u122d"
+  },
+  {
+   "fieldname": "edu_level",
+   "fieldtype": "Select",
+   "label": "\u1218\u121b\u122d \u12e8\u1348\u1208\u1309\u1275 \u12e8\u1275\u121d\u1205\u122d\u1275 \u12f0\u1228\u1303",
+   "options": "\u1208\u12f2\u130d\u122a \u1355\u122e\u130d\u122b\u121d\n\u1208\u1201\u1208\u1270\u129b \u12f2\u130d\u122a/\u121b\u1235\u1270\u122d \u1355\u122e\u130d\u122b\u121d\n\u1208\u1352\u12a4\u127d\u12f2  \u1355\u122e\u130d\u122b\u121d"
+  },
+  {
+   "fieldname": "lobed_operators_section",
+   "fieldtype": "Section Break",
+   "label": "Education Training"
+  },
+  {
+   "fieldname": "lobed_operators",
+   "fieldtype": "Table",
+   "label": "Education Training",
+   "options": "Education Training Table"
+  },
+  {
+   "fieldname": "compare",
+   "fieldtype": "Button",
+   "label": "Compare"
+  },
+  {
+   "fieldname": "education_training__rank__by_rank",
+   "fieldtype": "Section Break",
+   "label": "Education Training  rank  by rank"
+  },
+  {
+   "fieldname": "lobed_operators_rank",
+   "fieldtype": "Table",
+   "label": "Education Training  rank Rank",
+   "options": "Education Training Table rank"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Education Tranings",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "section_break_lwp7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "compared_by",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Prepare By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "compared_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Prepare Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_w7ez",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Approved By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "approved_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Approved Date",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-09-08 11:32:39.703359",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Education Tranings",
+ "naming_rule": "Expression",
+ "owner": "assegagebeyehu21@gmail.com",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Common Role",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,130 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-08-18 00:46:39.372369",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_35ly",
+  "employee_name_raw",
+  "device_id",
+  "employee",
+  "department_raw",
+  "attendance_date",
+  "in_time",
+  "out_time",
+  "exception",
+  "regular_hours",
+  "overtime_hours",
+  "total_hours",
+  "determined_status",
+  "result",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_35ly",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "employee_name_raw",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name (Biometric)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "device_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Device User ID"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Matched Employee",
+   "options": "Employee",
+   "read_only": 1
+  },
+  {
+   "fieldname": "department_raw",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Department"
+  },
+  {
+   "fieldname": "attendance_date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "in_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "In Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "out_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Out Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "exception",
+   "fieldtype": "Data",
+   "label": "Exception (raw)"
+  },
+  {
+   "fieldname": "regular_hours",
+   "fieldtype": "Float",
+   "label": "Regular Hours"
+  },
+  {
+   "fieldname": "overtime_hours",
+   "fieldtype": "Float",
+   "label": "Overtime Hours"
+  },
+  {
+   "fieldname": "total_hours",
+   "fieldtype": "Float",
+   "label": "Total Hours"
+  },
+  {
+   "fieldname": "determined_status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nPresent\nAbsent\nHalf Day\nOn Leave"
+  },
+  {
+   "fieldname": "result",
+   "fieldtype": "Select",
+   "label": "Result",
+   "options": "\nPending\nCreated\nSkipped - Duplicate\nSkipped - No Employee Match\nError"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-09-08 11:32:38.929931",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Biometric Attendance Import Detail",
+ "owner": "assegagebeyehu21@gmail.com",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

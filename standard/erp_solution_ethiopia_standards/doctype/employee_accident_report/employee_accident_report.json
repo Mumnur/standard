@@ -1,0 +1,242 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "EmployeeAccident-.#####",
+ "creation": "2026-08-13 09:35:12.028227",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_ntqh",
+  "amended_from",
+  "depa",
+  "employee",
+  "job_position",
+  "employment_date_ec",
+  "accident_datetime",
+  "accident_location",
+  "treatment_place",
+  "work_performed",
+  "daily_wage",
+  "column_break_m0yz",
+  "requested_at",
+  "injury_description",
+  "monthly_salary",
+  "date_of_birth_ec",
+  "injury_body_part",
+  "section_break_ofs4",
+  "prepared_by",
+  "prepared_date",
+  "column_break_3xgn",
+  "checked_by",
+  "checked_date",
+  "column_break_ld7b",
+  "approved_by",
+  "approved_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_ntqh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Employee Accident Report",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "default": "\u12a0\u1245\u121d \u130d\u1295\u1263\u1273\u1293 \u12e8\u1230\u122b\u1270\u129b \u12f0\u1205\u1295\u1290\u1275 \u12ad\u134d\u120d - WWC",
+   "fieldname": "depa",
+   "fieldtype": "Link",
+   "label": "\u1208",
+   "options": "Department"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.designation",
+   "fieldname": "job_position",
+   "fieldtype": "Data",
+   "label": "\u12e8\u1235\u122b \u1218\u12f0\u1265"
+  },
+  {
+   "fetch_from": "employee.custom_date_of_joining_date_ec",
+   "fieldname": "employment_date_ec",
+   "fieldtype": "Data",
+   "label": "\u12e8\u1245\u1325\u122d \u130a\u12dc"
+  },
+  {
+   "fieldname": "accident_datetime",
+   "fieldtype": "Datetime",
+   "label": "\u12a0\u12f0\u130b\u12cd \u12e8\u12f0\u1228\u1230\u1260\u1275 \u1240\u1295 \u12a5\u1293 \u1230\u12d3\u1275",
+   "reqd": 1
+  },
+  {
+   "fieldname": "accident_location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u12a0\u12f0\u130b\u12cd \u12e8\u12f0\u1228\u1230\u1260\u1275 \u1266\u1273",
+   "reqd": 1
+  },
+  {
+   "fieldname": "treatment_place",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u1205\u12ad\u121d\u1293 \u1266\u1273",
+   "reqd": 1
+  },
+  {
+   "fieldname": "work_performed",
+   "fieldtype": "Small Text",
+   "label": "\u12eb\u12a8\u1293\u12c8\u1291\u1275 \u1235\u122b"
+  },
+  {
+   "fieldname": "daily_wage",
+   "fieldtype": "Currency",
+   "label": "\u12e8\u1235\u122b \u120b\u12ed \u12a0\u12f0\u130b \u12ad\u134d\u12eb"
+  },
+  {
+   "fieldname": "column_break_m0yz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "requested_at",
+   "fieldtype": "Select",
+   "label": "Requested At",
+   "options": "\n\u12cb\u1293\u12cd \u1218\u1235\u122a\u12eb \u1264\u1275/\u121b\u1235\u1270\u1263\u1260\u122a\u12eb\n\u121c\u130b \u1355\u122e\u1300\u12ad\u1275\n\u12a8\u134d\u1270\u129b \u1355\u122e\u1300\u12ad\u1275\n\u1218\u12ab\u12a8\u1208\u129b \u1355\u122e\u1300\u12ad\u1275/\u12a0\u1290\u1235\u1270\u129b \u1355\u122e\u1300\u12ad\u1275",
+   "reqd": 1
+  },
+  {
+   "fieldname": "injury_description",
+   "fieldtype": "Text Editor",
+   "label": "\u12dd\u122d\u12dd\u122d \u1218\u130d\u1208\u132b"
+  },
+  {
+   "fetch_from": "employee.custom_basic_salary",
+   "fieldname": "monthly_salary",
+   "fieldtype": "Currency",
+   "label": "\u12e8\u12c8\u122d \u12f0\u1218\u12c8\u12dd"
+  },
+  {
+   "fetch_from": "employee.custom_birth_date_ec",
+   "fieldname": "date_of_birth_ec",
+   "fieldtype": "Data",
+   "label": "\u12e8\u1275\u12cd\u120d\u12f5 \u1240\u1295"
+  },
+  {
+   "fieldname": "injury_body_part",
+   "fieldtype": "Data",
+   "label": "\u1309\u12f3\u1271 \u12e8\u12f0\u1228\u1230\u1260\u1275 \u1266\u1273"
+  },
+  {
+   "fieldname": "section_break_ofs4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "prepared_by",
+   "fieldtype": "Data",
+   "label": "Prepared By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "prepared_date",
+   "fieldtype": "Date",
+   "label": "Prepared Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3xgn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Data",
+   "label": "Checked By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "checked_date",
+   "fieldtype": "Date",
+   "label": "Checked Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ld7b",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Data",
+   "label": "Approved BY",
+   "read_only": 1
+  },
+  {
+   "fieldname": "approved_date",
+   "fieldtype": "Date",
+   "label": "Approved Date",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-09-08 11:34:34.549397",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Employee Accident Report",
+ "naming_rule": "Expression",
+ "owner": "assegagebeyehu21@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Common Role",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

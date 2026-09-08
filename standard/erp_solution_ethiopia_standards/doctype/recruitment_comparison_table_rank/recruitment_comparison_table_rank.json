@@ -1,0 +1,132 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-08-10 09:27:45.479443",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_w5tz",
+  "full_name",
+  "opp_type",
+  "work_place",
+  "prac_1",
+  "prac_2",
+  "prac_3",
+  "writ_3",
+  "perfo",
+  "disciplin",
+  "gen",
+  "femal",
+  "total_sum",
+  "rank",
+  "opportunity"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_w5tz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u1235\u121d"
+  },
+  {
+   "fieldname": "opp_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u12e8\u1245\u1325\u122d \u1201\u1294\u1273"
+  },
+  {
+   "fieldname": "work_place",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u12e8\u1235\u122b \u1266\u1273"
+  },
+  {
+   "fieldname": "prac_1",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "\u12e8\u1270\u130d\u1263\u122d \u1348\u1270\u1293 \u12a850%"
+  },
+  {
+   "fieldname": "prac_2",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "\u12e8\u1270\u130d\u1263\u122d \u1348\u1270\u1293 \u12a840%"
+  },
+  {
+   "fieldname": "prac_3",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "\u1320\u1245\u120b\u120b \u12e8\u1235\u122b \u120d\u121d\u12f5 \u12a8 25%"
+  },
+  {
+   "fieldname": "writ_3",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "\u12e8\u1345\u1201\u134d \u1348\u1270\u1293 \u12a820%"
+  },
+  {
+   "fieldname": "perfo",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "\u12e8\u1232\u122b \u12a0\u1348\u1343\u1345\u121d %"
+  },
+  {
+   "fieldname": "disciplin",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "\u12e8\u121b\u1205\u12f0\u122d \u1325\u122b\u1275 \u12a810%"
+  },
+  {
+   "fieldname": "gen",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u1346\u1273"
+  },
+  {
+   "fieldname": "femal",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "\u1208\u1234\u1276\u127d \u12a83%"
+  },
+  {
+   "fieldname": "total_sum",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "\u1320\u1245\u120b\u120b \u12f5\u121d\u122d \u12a8100%"
+  },
+  {
+   "fieldname": "rank",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Rank"
+  },
+  {
+   "fieldname": "opportunity",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Opportunity",
+   "options": "\n\u12e8\u1270\u1230\u1320\n\u12eb\u120d\u1270\u1230\u1320"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-09-08 11:32:43.260031",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Recruitment Comparison Table rank",
+ "owner": "assegagebeyehu21@gmail.com",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

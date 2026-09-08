@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-07-27 16:49:22.435308",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_16cc",
+  "company_branch",
+  "department",
+  "designation",
+  "from_date_ec",
+  "to_date_ec",
+  "column_break_aau0",
+  "total_experience_amharic",
+  "from_date",
+  "to_date",
+  "total_experience_english"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_16cc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "company_branch",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company Branch",
+   "options": "Company Branch"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "from_date_ec",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "From Date E.c"
+  },
+  {
+   "fieldname": "to_date_ec",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "To Date E.c"
+  },
+  {
+   "fieldname": "column_break_aau0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_experience_amharic",
+   "fieldtype": "Data",
+   "label": "Total Experience Amharic",
+   "read_only": 1
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_experience_english",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Total Experience English",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-09-08 11:32:46.734139",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Employee Temporary Work",
+ "owner": "assegagebeyehu21@gmail.com",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

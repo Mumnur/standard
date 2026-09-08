@@ -1,0 +1,403 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "Disp.#####",
+ "creation": "2026-08-05 11:28:23.903742",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_sczc",
+  "amended_from",
+  "employee",
+  "employee_name",
+  "column_break_4",
+  "departement",
+  "section_break_6",
+  "violation_type",
+  "column_break_8",
+  "action_taken",
+  "quantity",
+  "section_break_10",
+  "start_date_ec",
+  "start_date",
+  "remark",
+  "column_break_15",
+  "end_date_ec",
+  "end_date",
+  "duration_days",
+  "wusane",
+  "commitite_type",
+  "section_break_16",
+  "go_to_law",
+  "column_break_14",
+  "commtie_member",
+  "section_break_2cjh",
+  "inititated_by",
+  "initiated_date",
+  "ini_sig",
+  "column_break_gudy",
+  "checked_by",
+  "checked_date",
+  "che_sig",
+  "column_break_m8sz",
+  "confirmed_by",
+  "confirmed_date",
+  "con_sig",
+  "column_break_lkrh",
+  "approved_by",
+  "approved_date",
+  "apr_sig",
+  "section_break_uzqv",
+  "committee1",
+  "committee2",
+  "committee3",
+  "committee4",
+  "column_break_20",
+  "name1",
+  "name2",
+  "name3",
+  "name4"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_sczc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Disciplinary Action",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "departement",
+   "fieldtype": "Data",
+   "label": "Departement"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "violation_type",
+   "fieldtype": "Link",
+   "label": "Violation Type",
+   "options": "Violation Type"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "action_taken",
+   "fieldtype": "Link",
+   "label": "Action Taken",
+   "options": "Displine Type"
+  },
+  {
+   "fetch_from": "action_taken.quantity",
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Quantity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "start_date_ec",
+   "fieldtype": "Data",
+   "label": "Start Date Ec"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Small Text",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "end_date_ec",
+   "fieldtype": "Data",
+   "label": "End Date Ec"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "duration_days",
+   "fieldtype": "Data",
+   "label": "\u1245\u1323\u1271 \u12e8\u121a\u1246\u12ed\u1260\u1275 \u130a\u12dc ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "wusane",
+   "fieldtype": "Select",
+   "label": "\u12cd\u1233\u1294 \u12e8\u1230\u1320\u12cd \u12a0\u12ab\u120d",
+   "options": "\n\u12e8\u1245\u122d\u1265 \u1283\u120b\u134a\n\u12e8\u12f2\u1235\u1355\u120a\u1295 \u12ae\u121a\u1274"
+  },
+  {
+   "depends_on": "eval:doc.wusane==\"\u12e8\u12f2\u1235\u1355\u120a\u1295 \u12ae\u121a\u1274\"",
+   "fieldname": "commitite_type",
+   "fieldtype": "Select",
+   "label": "Commitite Type",
+   "mandatory_depends_on": "eval:doc.wusane==\"\u12e8\u12f2\u1235\u1355\u120a\u1295 \u12ae\u121a\u1274\"",
+   "options": "\n\u12e8\u12a0\u1230\u122a \u12ae\u121a\u1274\n\u12e8\u1230\u122b\u1270\u129b \u12ae\u121a\u1274"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "go_to_law",
+   "fieldtype": "Check",
+   "label": "\u12c8\u12f0 \u1205\u130d \u12ad\u134d\u120d \u12ed\u1218\u122b"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.wusane==\"\u12e8\u12f2\u1235\u1355\u120a\u1295 \u12ae\u121a\u1274\"",
+   "fieldname": "commtie_member",
+   "fieldtype": "Table",
+   "label": "Commtie Member",
+   "options": "participants1"
+  },
+  {
+   "fieldname": "section_break_2cjh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "inititated_by",
+   "fieldtype": "Data",
+   "label": "Inititated By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "initiated_date",
+   "fieldtype": "Date",
+   "label": "Initiated Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ini_sig",
+   "fieldtype": "Signature",
+   "label": "Signature",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_gudy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Data",
+   "label": "Checked By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "checked_date",
+   "fieldtype": "Date",
+   "label": "Checked Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "che_sig",
+   "fieldtype": "Signature",
+   "label": "Signature",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_m8sz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "confirmed_by",
+   "fieldtype": "Data",
+   "label": "Confirmed By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "confirmed_date",
+   "fieldtype": "Date",
+   "label": "Confirmed Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "con_sig",
+   "fieldtype": "Signature",
+   "label": "Signature",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_lkrh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Data",
+   "label": "Approved By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "approved_date",
+   "fieldtype": "Date",
+   "label": "Approved Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "apr_sig",
+   "fieldtype": "Signature",
+   "label": "Signature",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_uzqv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.wusane==\"\u12e8\u12f2\u1235\u1355\u120a\u1295 \u12ae\u121a\u1274\"",
+   "fieldname": "committee1",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "\u12ae\u121a\u12741",
+   "options": "Employee"
+  },
+  {
+   "depends_on": "eval:doc.wusane==\"\u12e8\u12f2\u1235\u1355\u120a\u1295 \u12ae\u121a\u1274\"",
+   "fieldname": "committee2",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "\u12ae\u121a\u12742",
+   "options": "Employee"
+  },
+  {
+   "depends_on": "eval:doc.wusane==\"\u12e8\u12f2\u1235\u1355\u120a\u1295 \u12ae\u121a\u1274\"",
+   "fieldname": "committee3",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "\u12ae\u121a\u12743",
+   "options": "Employee"
+  },
+  {
+   "depends_on": "eval:doc.wusane==\"\u12e8\u12f2\u1235\u1355\u120a\u1295 \u12ae\u121a\u1274\"",
+   "fieldname": "committee4",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "\u12ae\u121a\u12744",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "committee1.employee_name",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "committee2.employee_name",
+   "fieldname": "name2",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "committee3.employee_name",
+   "fieldname": "name3",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "committee4.employee_name",
+   "fieldname": "name4",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-09-08 11:32:44.896662",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Disciplinary Action",
+ "naming_rule": "Expression",
+ "owner": "assegagebeyehu21@gmail.com",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Common Role",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

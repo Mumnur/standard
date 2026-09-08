@@ -1,0 +1,97 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-08-20 14:23:10.807294",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_ofq4",
+  "gurante_type",
+  "employee",
+  "employee_name",
+  "was_me_name",
+  "address",
+  "some_date_ec",
+  "some_one_date_ec",
+  "wast",
+  "amount_many"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_ofq4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "gurante_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u12e8\u12cb\u1235\u1275\u1293\u12cd \u12a0\u12ed\u1290\u1275",
+   "options": "Guarente Type"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u12e8\u1230\u122b\u1270\u129b \u1235\u121d",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u12cb\u1235 \u12e8\u1206\u1291\u1208\u1275 \u1230\u12cd \u1235\u121d"
+  },
+  {
+   "fieldname": "was_me_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u12cb\u1235\u1275\u1293 \u12e8\u1270\u133b\u1348\u1208\u1275 \u1218/\u1264\u1275 \u1235\u121d"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u12cb\u1235\u1275\u1293 \u12e8\u1270\u133b\u1348\u1208\u1275 \u1218/\u1264\u1275 \u12a0\u12f5\u122b\u123b"
+  },
+  {
+   "fieldname": "some_date_ec",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u12cb\u1235\u1275\u1293 \u12e8\u1270\u133b\u1348\u1260\u1275  \u1240\u1295"
+  },
+  {
+   "fieldname": "some_one_date_ec",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u12cb\u1235\u1275\u1293\u12cd \u12e8\u1270\u1290\u1233\u1260\u1275 \u1240\u1295"
+  },
+  {
+   "default": "0",
+   "fieldname": "wast",
+   "fieldtype": "Check",
+   "label": "\u12cb\u1235\u1275\u1293\u12cd \u1270\u1290\u1235\u1277\u120d"
+  },
+  {
+   "fieldname": "amount_many",
+   "fieldtype": "Currency",
+   "label": "\u12cb\u1235 \u12e8\u1201\u1291\u1260\u1275 \u12e8\u1265\u122d \u1218\u1320\u1295"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-09-08 11:32:37.546722",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Gurante",
+ "owner": "assegagebeyehu21@gmail.com",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
