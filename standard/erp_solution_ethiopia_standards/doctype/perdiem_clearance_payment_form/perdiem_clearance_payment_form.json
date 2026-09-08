@@ -1,0 +1,350 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-08-04 10:21:02.856831",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_ix3l",
+  "amended_from",
+  "employee_id",
+  "employee_name",
+  "department",
+  "designation",
+  "column_break_3sqt",
+  "project_name",
+  "salary",
+  "cost_center",
+  "reason_for_traveling",
+  "section_break_xfls",
+  "type",
+  "perdiem_clearance_payment_table",
+  "total_no_of_days",
+  "naming_series",
+  "section_break_zqsd",
+  "perdiem_clearance_other_payment",
+  "approval_section",
+  "requested_by",
+  "requested_date",
+  "requester_signature",
+  "column_break_dqfv",
+  "approved_by",
+  "approved_date",
+  "approver_signature",
+  "column_break_p8n5",
+  "authorized_by",
+  "authorized_date",
+  "authorizer_signature",
+  "column_break_ausw",
+  "accountant_name",
+  "accountant_date",
+  "accountant_signature",
+  "only_for_finance_section",
+  "calculate_itax",
+  "perdiem_clearance_finance",
+  "section_break_7rqt",
+  "total_perdiem_amount",
+  "net_payment_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_ix3l",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Perdiem Clearance Payment Form",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee Id",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee_id.employee_name",
+   "fetch_if_empty": 1,
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name"
+  },
+  {
+   "fetch_from": "employee_id.department",
+   "fetch_if_empty": 1,
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fetch_from": "employee_id.designation",
+   "fetch_if_empty": 1,
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "column_break_3sqt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Project Name",
+   "options": "Project"
+  },
+  {
+   "fieldname": "salary",
+   "fieldtype": "Currency",
+   "label": "Salary"
+  },
+  {
+   "fieldname": "reason_for_traveling",
+   "fieldtype": "Data",
+   "label": "Reason for Traveling"
+  },
+  {
+   "fieldname": "section_break_xfls",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "perdiem_clearance_payment_table",
+   "fieldtype": "Table",
+   "label": "Perdiem Clearance Payment Table",
+   "options": "Perdiem Clearance Payment Table"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "naming_series",
+   "options": "ACC.-.Per.-.Cle.-.####"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "approval_section",
+   "fieldtype": "Section Break",
+   "label": "Approval"
+  },
+  {
+   "fieldname": "requested_by",
+   "fieldtype": "Data",
+   "label": "Requested By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "requested_date",
+   "fieldtype": "Date",
+   "label": "Requested Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "requester_signature",
+   "fieldtype": "Signature",
+   "label": "Requester Signature",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_dqfv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Data",
+   "label": "Approved By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "approved_date",
+   "fieldtype": "Date",
+   "label": "Approved Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "approver_signature",
+   "fieldtype": "Signature",
+   "label": "Approver Signature",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_p8n5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "authorized_by",
+   "fieldtype": "Data",
+   "label": "Authorized By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "authorized_date",
+   "fieldtype": "Date",
+   "label": "Authorized Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "authorizer_signature",
+   "fieldtype": "Signature",
+   "label": "Authorizer Signature",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ausw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "accountant_name",
+   "fieldtype": "Data",
+   "label": "Accountant Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "accountant_date",
+   "fieldtype": "Date",
+   "label": "Accountant Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "accountant_signature",
+   "fieldtype": "Signature",
+   "label": "Accountant Signature",
+   "read_only": 1
+  },
+  {
+   "fieldname": "only_for_finance_section",
+   "fieldtype": "Section Break",
+   "label": "Only For Finance"
+  },
+  {
+   "default": "0",
+   "fieldname": "calculate_itax",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Calculate I/Tax"
+  },
+  {
+   "fieldname": "perdiem_clearance_finance",
+   "fieldtype": "Table",
+   "label": "Perdiem Clearance Finance",
+   "options": "Perdiem Clearance Finance"
+  },
+  {
+   "fieldname": "section_break_7rqt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_perdiem_amount",
+   "fieldtype": "Currency",
+   "label": "Total Perdiem Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_zqsd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "perdiem_clearance_other_payment",
+   "fieldtype": "Table",
+   "label": "Perdiem Clearance Other Payment",
+   "options": "Perdiem Clearance Other Payment"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "net_payment_amount",
+   "fieldtype": "Currency",
+   "label": "Net Payment Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_no_of_days",
+   "fieldtype": "Float",
+   "label": "Total no of Days",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cost_center",
+   "fieldtype": "Select",
+   "label": "Cost Center",
+   "options": "\nAdmin\nOperation"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "Normal 10,25,25,40\nSpecial 20,40,40"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-08-19 16:45:49.746646",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Perdiem Clearance Payment Form",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "if_owner": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Common Role",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

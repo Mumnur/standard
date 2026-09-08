@@ -1,0 +1,44 @@
+{
+ "allow_roles": [
+  {
+   "role": "Stock Manager"
+  },
+  {
+   "role": "Stock User"
+  }
+ ],
+ "creation": "2026-07-22 09:42:37.841660",
+ "docstatus": 0,
+ "doctype": "Module Onboarding",
+ "idx": 0,
+ "is_complete": 0,
+ "modified": "2026-07-22 09:42:37.841660",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Inventory Onboarding",
+ "owner": "Administrator",
+ "steps": [
+  {
+   "step": "Setup Warehouse"
+  },
+  {
+   "step": "Create Item"
+  },
+  {
+   "step": "Create Purchase Receipt"
+  },
+  {
+   "step": "Create Transfer Entry"
+  },
+  {
+   "step": "Create Delivery Note"
+  },
+  {
+   "step": "View Stock Balance Report"
+  },
+  {
+   "step": "Review Stock Settings"
+  }
+ ],
+ "title": "Inventory Setup"
+}

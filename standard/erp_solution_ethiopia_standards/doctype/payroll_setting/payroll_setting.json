@@ -1,0 +1,234 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-07-28 09:04:14.322818",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_jo1r",
+  "naming_series",
+  "company_branch",
+  "effective_date",
+  "operation_tab",
+  "salary_expense_account",
+  "pension_expense_account",
+  "column_break_n6gj",
+  "allowance_expense_account",
+  "income_tax_payables_account",
+  "administration_tab",
+  "salary_expense_account_a",
+  "pension_expense_account_a",
+  "column_break_asbc",
+  "allowance_expense_account_a",
+  "income_tax_payables_account_a",
+  "deduction_tab",
+  "pension_account",
+  "credit_association_awwce_account",
+  "labour_union_account",
+  "court_order_account",
+  "column_break_5phr",
+  "edir_account",
+  "ada_account",
+  "andm_account",
+  "operators_association_account",
+  "credit_association_rig_account"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_jo1r",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "company_branch",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Company Branch",
+   "options": "Company Branch",
+   "reqd": 1
+  },
+  {
+   "fieldname": "effective_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Effective Date"
+  },
+  {
+   "fieldname": "operation_tab",
+   "fieldtype": "Tab Break",
+   "label": "Operation"
+  },
+  {
+   "fieldname": "salary_expense_account",
+   "fieldtype": "Link",
+   "label": "Salary Expense Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "pension_expense_account",
+   "fieldtype": "Link",
+   "label": "Pension Expense Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "allowance_expense_account",
+   "fieldtype": "Link",
+   "label": "Allowance Expense Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "income_tax_payables_account",
+   "fieldtype": "Link",
+   "label": "Income Tax Payables Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "labour_union_account",
+   "fieldtype": "Link",
+   "label": "Labour Union Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "court_order_account",
+   "fieldtype": "Link",
+   "label": "Court Order Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "edir_account",
+   "fieldtype": "Link",
+   "label": "Edir Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "ada_account",
+   "fieldtype": "Link",
+   "label": "ADA Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "andm_account",
+   "fieldtype": "Link",
+   "label": "ANDM Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "operators_association_account",
+   "fieldtype": "Link",
+   "label": "Operators Association Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "credit_association_rig_account",
+   "fieldtype": "Link",
+   "label": "Credit Association RIG Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "deduction_tab",
+   "fieldtype": "Tab Break",
+   "label": "Deduction"
+  },
+  {
+   "fieldname": "pension_account",
+   "fieldtype": "Link",
+   "label": "Pension Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "credit_association_awwce_account",
+   "fieldtype": "Link",
+   "label": "Credit Association awwce Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "administration_tab",
+   "fieldtype": "Tab Break",
+   "label": "Administration"
+  },
+  {
+   "fieldname": "salary_expense_account_a",
+   "fieldtype": "Link",
+   "label": "Salary Expense Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "pension_expense_account_a",
+   "fieldtype": "Link",
+   "label": "Pension Expense Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "column_break_asbc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "allowance_expense_account_a",
+   "fieldtype": "Link",
+   "label": "Allowance Expense Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "income_tax_payables_account_a",
+   "fieldtype": "Link",
+   "label": "Income Tax Payables Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "column_break_n6gj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "naming_series",
+   "options": "PS.-.SAL.-.####"
+  },
+  {
+   "fieldname": "column_break_5phr",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-28 09:18:50.188620",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Payroll Setting",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Payroll Accountant",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

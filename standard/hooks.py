@@ -26,7 +26,11 @@ app_license = "mit"
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/standard/css/standard.css"
-# app_include_js = "/assets/standard/js/standard.js"
+
+app_include_js = [
+    "/assets/standard/js/stock_ledger_custom.js",
+    "/assets/standard/js/stock_balance_custom.js",
+]
 
 # include js, css files in header of web template
 # web_include_css = "/assets/standard/css/standard.css"
@@ -44,6 +48,11 @@ app_license = "mit"
 
 # include js in doctype views
 # doctype_js = {"doctype" : "public/js/doctype.js"}
+
+doctype_js = {
+    "Material Request": "public/js/material_request.js"
+}
+
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -183,9 +192,10 @@ app_license = "mit"
 # Overriding Methods
 # ------------------------------
 #
-# override_whitelisted_methods = {
-# 	"frappe.desk.doctype.event.event.get_events": "standard.event.get_events"
-# }
+override_whitelisted_methods = {
+    "erpnext.stock.doctype.material_request.material_request.make_stock_entry":
+        "standard.override.material_request.make_stock_entry"
+}
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,

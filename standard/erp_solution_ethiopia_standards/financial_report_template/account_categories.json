@@ -1,0 +1,14 @@
+[
+  {
+    "account_category_name": "Administrative Expenses",
+    "description": null
+  },
+  {
+    "account_category_name": "Cost of Sales",
+    "description": null
+  },
+  {
+    "account_category_name": "Tax Expense",
+    "description": "Current and deferred income tax obligations. Examples: Current tax provision, deferred tax expense, withholding taxes."
+  }
+]

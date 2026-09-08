@@ -1,0 +1,109 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-08-24 07:27:54.682730",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_s8fq",
+  "description",
+  "wole_seche",
+  "date",
+  "section_break_bnxt",
+  "contract_employee_agreement_table",
+  "mesekeroch_section",
+  "contract_employee_agreement_table_two",
+  "naming_series"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_s8fq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "wole_seche",
+   "fieldtype": "Data",
+   "label": "wole seche"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_bnxt",
+   "fieldtype": "Section Break",
+   "label": "Contract Employees"
+  },
+  {
+   "fieldname": "contract_employee_agreement_table",
+   "fieldtype": "Table",
+   "label": "Contract Employee Agreement Table",
+   "options": "Contract Employee Agreement Table"
+  },
+  {
+   "fieldname": "mesekeroch_section",
+   "fieldtype": "Section Break",
+   "label": "mesekeroch"
+  },
+  {
+   "fieldname": "contract_employee_agreement_table_two",
+   "fieldtype": "Table",
+   "label": "Contract Employee Agreement Table Two",
+   "options": "Contract Employee Agreement Table Two"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "naming_series",
+   "options": "ACC.-.CEAF.-.####"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-08-24 10:51:00.342715",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Contract Employee Agreement Form",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Common Role",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

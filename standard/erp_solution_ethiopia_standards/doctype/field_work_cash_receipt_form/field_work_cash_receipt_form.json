@@ -1,0 +1,267 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-08-10 12:28:12.441503",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "amended_from",
+  "naming_series",
+  "section_break_jcwo",
+  "employee_id",
+  "name_of_tra",
+  "from",
+  "column_break_bjz1",
+  "date",
+  "location",
+  "project",
+  "section_break_pktu",
+  "field_work_cash_receipt_table",
+  "total_amount",
+  "section_break_7mvc",
+  "general_remark",
+  "approval_section",
+  "requested_by",
+  "requested_date",
+  "requester_signature",
+  "column_break_ijda",
+  "approved_by",
+  "approved_date",
+  "approver_signature",
+  "column_break_a6xw",
+  "name_of_receiver",
+  "received_date",
+  "receiver_signature"
+ ],
+ "fields": [
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Field Work Cash Receipt Form",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "naming_series",
+   "options": "ACC.-.FW.-.CRF.-.####"
+  },
+  {
+   "fieldname": "section_break_jcwo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "from",
+   "fieldtype": "Data",
+   "label": "Work Type"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Work place"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "column_break_bjz1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fetch_from": "employee_id.employee_name",
+   "fetch_if_empty": 1,
+   "fieldname": "name_of_tra",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u12e8\u1308\u1295\u12d8\u1265 \u1270\u1240\u1263\u12ed \u1235\u121d"
+  },
+  {
+   "fieldname": "section_break_pktu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "approval_section",
+   "fieldtype": "Section Break",
+   "label": "Approval"
+  },
+  {
+   "fieldname": "requested_by",
+   "fieldtype": "Data",
+   "label": "Name of the payer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "requested_date",
+   "fieldtype": "Date",
+   "label": "Payer Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "requester_signature",
+   "fieldtype": "Signature",
+   "label": "Payer Signature",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ijda",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Data",
+   "label": "Approver Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "approved_date",
+   "fieldtype": "Date",
+   "label": "Approved Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "approver_signature",
+   "fieldtype": "Signature",
+   "label": "Approver Signature",
+   "read_only": 1
+  },
+  {
+   "fieldname": "field_work_cash_receipt_table",
+   "fieldtype": "Table",
+   "label": "Field Work Cash Receipt Table",
+   "options": "Field Work Cash Receipt Table"
+  },
+  {
+   "fieldname": "section_break_7mvc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "general_remark",
+   "fieldtype": "Small Text",
+   "label": "General Remark"
+  },
+  {
+   "fieldname": "column_break_a6xw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "name_of_receiver",
+   "fieldtype": "Data",
+   "label": "Name of Receiver",
+   "read_only": 1
+  },
+  {
+   "fieldname": "received_date",
+   "fieldtype": "Date",
+   "label": "Received Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "receiver_signature",
+   "fieldtype": "Signature",
+   "label": "Receiver Signature",
+   "read_only": 1
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "label": "Employee Id",
+   "options": "Employee"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-08-12 08:55:35.110679",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Field Work Cash Receipt Form",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "if_owner": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Common Role",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Projects Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

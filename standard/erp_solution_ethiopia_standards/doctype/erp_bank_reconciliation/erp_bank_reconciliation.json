@@ -1,0 +1,245 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-08-04 12:20:23.186308",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "bank_account",
+  "account_currency",
+  "from_date",
+  "to_date",
+  "include_reconciled_entries",
+  "include_pos_transactions",
+  "get_payment_entries",
+  "column_break_8",
+  "month",
+  "type",
+  "section_break_11",
+  "payment_entries",
+  "update_clearance_date",
+  "section_break_14",
+  "total_amount",
+  "total_debit",
+  "total_credit",
+  "column_break_18",
+  "system_opening_amount",
+  "system_amount",
+  "system_total_amount",
+  "unreconciled_difference",
+  "column_break_23",
+  "bank_amount",
+  "unreconciled_amount",
+  "deposit_in_transit",
+  "outstanding_checks",
+  "section_break_kixs",
+  "general_remark"
+ ],
+ "fields": [
+  {
+   "fieldname": "bank_account",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Bank Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "account_currency",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Account Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "default": "0",
+   "fieldname": "include_reconciled_entries",
+   "fieldtype": "Check",
+   "label": "Include Reconciled Entries"
+  },
+  {
+   "default": "0",
+   "fieldname": "include_pos_transactions",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Include POS Transactions"
+  },
+  {
+   "fieldname": "get_payment_entries",
+   "fieldtype": "Button",
+   "label": "Get Payment Entries"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "month",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Month",
+   "options": "Budget Month"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "Both\nDebit\nCredit"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "payment_entries",
+   "fieldtype": "Table",
+   "label": "Payment Entries",
+   "options": "ERP Bank Reconciliation Detail"
+  },
+  {
+   "fieldname": "update_clearance_date",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Update Clearance Date"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount",
+   "options": "account_currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_debit",
+   "fieldtype": "Currency",
+   "label": "Total Debit",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_credit",
+   "fieldtype": "Currency",
+   "label": "Total Credit",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "system_opening_amount",
+   "fieldtype": "Currency",
+   "label": "Book Opening Balance",
+   "read_only": 1
+  },
+  {
+   "fieldname": "system_amount",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Book Reconciled Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "system_total_amount",
+   "fieldtype": "Currency",
+   "label": "Book Ending Balance",
+   "read_only": 1
+  },
+  {
+   "fieldname": "unreconciled_difference",
+   "fieldtype": "Currency",
+   "label": "Unreconciled difference",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bank_amount",
+   "fieldtype": "Currency",
+   "label": "Bank Statement Ending Balance"
+  },
+  {
+   "fieldname": "unreconciled_amount",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Unreconciled Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "deposit_in_transit",
+   "fieldtype": "Currency",
+   "label": "Deposit In Transit",
+   "read_only": 1
+  },
+  {
+   "fieldname": "outstanding_checks",
+   "fieldtype": "Currency",
+   "label": "Outstanding Checks",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_kixs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "general_remark",
+   "fieldtype": "Small Text",
+   "label": "General Remark"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-08-11 09:29:58.475368",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "ERP Bank Reconciliation",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

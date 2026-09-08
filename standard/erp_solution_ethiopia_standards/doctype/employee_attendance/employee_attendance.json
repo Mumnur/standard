@@ -1,0 +1,205 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-07-28 08:18:45.946796",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_5re6",
+  "amended_from",
+  "naming_series",
+  "company_branch",
+  "employment_type",
+  "column_break_5xay",
+  "budget_year",
+  "budget_month",
+  "tab_break_ng9k",
+  "employee_attendance_table",
+  "section_break_vuyi",
+  "prepared_by",
+  "prepared_date",
+  "column_break_zstq",
+  "checked_by",
+  "checked_date",
+  "column_break_wbqu",
+  "approved_by",
+  "approved_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_5re6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Employee Attendance",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "company_branch",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Company Branch",
+   "options": "Company Branch",
+   "reqd": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "naming_series",
+   "options": "EMP.-.ATT.-.SAL.-.####"
+  },
+  {
+   "fieldname": "budget_year",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Budget Year",
+   "options": "Budget Year",
+   "reqd": 1
+  },
+  {
+   "fieldname": "budget_month",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Budget Month",
+   "options": "Budget Month",
+   "reqd": 1
+  },
+  {
+   "fieldname": "employment_type",
+   "fieldtype": "Link",
+   "label": "Employment Type",
+   "options": "Employment Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_5xay",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tab_break_ng9k",
+   "fieldtype": "Tab Break",
+   "label": "Employee Attendance Sheet"
+  },
+  {
+   "fieldname": "employee_attendance_table",
+   "fieldtype": "Table",
+   "label": "Employee Attendance Table",
+   "options": "Employee Attendance Table"
+  },
+  {
+   "fieldname": "section_break_vuyi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "prepared_by",
+   "fieldtype": "Data",
+   "label": "Prepared By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "prepared_date",
+   "fieldtype": "Date",
+   "label": "Prepared Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_zstq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Data",
+   "label": "Checked By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "checked_date",
+   "fieldtype": "Date",
+   "label": "Checked Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_wbqu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Data",
+   "label": "Approved By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "approved_date",
+   "fieldtype": "Date",
+   "label": "Approved Date",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-09-03 12:00:31.617615",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Employee Attendance",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Payroll Accountant",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

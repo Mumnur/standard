@@ -1,0 +1,1236 @@
+{
+ "app": "standard",
+ "charts": [],
+ "content": "[{\"id\":\"O-1lR73JM9\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Employee Leave Balance Summary\",\"col\":3}},{\"id\":\"iyglGEqusW\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Employee Birthday\",\"col\":3}},{\"id\":\"M5V2N_8bCp\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Employee Performance\",\"col\":3}},{\"id\":\"HC8ryYsmIk\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Employee Performance Planning Status\",\"col\":3}},{\"id\":\"ZbTSFLgm72\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Human Resource Informations\",\"col\":3}},{\"id\":\"p3HEg2spxY\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Employee Relieving Report\",\"col\":3}},{\"id\":\"OjJyFVuMVO\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Employee Analytics\",\"col\":3}},{\"id\":\"xWgkv1YkQ-\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Employee Summary Report\",\"col\":3}},{\"id\":\"9NEn-9khuO\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Retirement Alert\",\"col\":3}},{\"id\":\"AFYFTQIVY8\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Leave Application Report\",\"col\":3}},{\"id\":\"8mRsFBFoZM\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Annual Leave Program Report\",\"col\":3}},{\"id\":\"aJA3MtP12Y\",\"type\":\"paragraph\",\"data\":{\"text\":\"Click on \\n\\t\\t\\t\\n\\t\\t\\t\\n\\t\\t to edit\",\"col\":12}},{\"id\":\"7D7jP8-mOr\",\"type\":\"card\",\"data\":{\"card_name\":\"Master Data\",\"col\":4}},{\"id\":\"QHYQzr2pSz\",\"type\":\"card\",\"data\":{\"card_name\":\"Employee Attendance\",\"col\":4}},{\"id\":\"J7q2iJTCQ-\",\"type\":\"card\",\"data\":{\"card_name\":\"Payroll Managment\",\"col\":4}},{\"id\":\"95ltg0B0kR\",\"type\":\"card\",\"data\":{\"card_name\":\"Recruitment Managment Internal\",\"col\":4}},{\"id\":\"ycWvklux1y\",\"type\":\"card\",\"data\":{\"card_name\":\"Recruitment Managment External\",\"col\":4}},{\"id\":\"uQXiUYeYvr\",\"type\":\"card\",\"data\":{\"card_name\":\"Leaves and Holiday\",\"col\":4}},{\"id\":\"wNxnv-PjVu\",\"type\":\"card\",\"data\":{\"card_name\":\"Employee Lifecycle\",\"col\":4}},{\"id\":\"glnADq7DcV\",\"type\":\"card\",\"data\":{\"card_name\":\"Performance Management\",\"col\":4}},{\"id\":\"px7c9hApM2\",\"type\":\"card\",\"data\":{\"card_name\":\"Training Management\",\"col\":4}},{\"id\":\"X8nmQteFBu\",\"type\":\"card\",\"data\":{\"card_name\":\"Employee Medical Managment\",\"col\":4}},{\"id\":\"YXD15vuDG5\",\"type\":\"card\",\"data\":{\"card_name\":\"Uniform Managments\",\"col\":4}},{\"id\":\"Is_07xbIlH\",\"type\":\"card\",\"data\":{\"card_name\":\"Clearance Managment\",\"col\":4}},{\"id\":\"078LkwQH-b\",\"type\":\"card\",\"data\":{\"card_name\":\"Daily Labor Managment\",\"col\":4}}]",
+ "creation": "2026-08-13 16:56:44.237816",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "hide_custom": 1,
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "HRMS",
+ "link_type": "DocType",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Performance Template",
+   "link_count": 0,
+   "link_to": "Employee Performance Template",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Performance",
+   "link_count": 0,
+   "link_to": "Employee Performance",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Attendance",
+   "link_count": 0,
+   "link_to": "Employee Attendance",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Upload Attendance",
+   "link_count": 0,
+   "link_to": "Upload Attendance",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employment Request",
+   "link_count": 0,
+   "link_to": "Employment Request",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Recruitment Notice",
+   "link_count": 0,
+   "link_to": "Recruitment Notice",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Recruitment Application",
+   "link_count": 0,
+   "link_to": "Recruitment Application",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Recruitment Comparison",
+   "link_count": 0,
+   "link_to": "Recruitment Comparison",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Recruitment Application New Employee",
+   "link_count": 0,
+   "link_to": "Recruitment Application New Employee",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Recurment Comparision New EmployeeRecurment Comparision New Employee",
+   "link_count": 0,
+   "link_to": "Recurment Comparision New Employee",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Educational Opportunity",
+   "link_count": 0,
+   "link_to": "Educational Opportunity",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Education Application",
+   "link_count": 0,
+   "link_to": "Education Application",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Education Tranings",
+   "link_count": 0,
+   "link_to": "Education Tranings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Training Request Format",
+   "link_count": 0,
+   "link_to": "Training Request Format",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Summarized Training Request",
+   "link_count": 0,
+   "link_to": "Summarized Training Request",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Approved Training Request Form",
+   "link_count": 0,
+   "link_to": "Approved Training Request Form",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Transfer Request",
+   "link_count": 0,
+   "link_to": "Employee Transfer Request",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Transfer Letter",
+   "link_count": 0,
+   "link_to": "Transfer Letter",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Internal Office Memo",
+   "link_count": 0,
+   "link_to": "Internal Office Memo",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Information",
+   "link_count": 0,
+   "link_to": "Employee Information",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Medical Form",
+   "link_count": 0,
+   "link_to": "Employee Medical Form",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Accident Report",
+   "link_count": 0,
+   "link_to": "Employee Accident Report",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Annual Leave Payment",
+   "link_count": 0,
+   "link_to": "Annual Leave Payment",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Severance Payment",
+   "link_count": 0,
+   "link_to": "Severance Payment",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Over Time",
+   "link_count": 0,
+   "link_to": "Over Time",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Training Management",
+   "link_count": 7,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Training Request Format",
+   "link_count": 0,
+   "link_to": "Training Request Format",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Summarized Training Request",
+   "link_count": 0,
+   "link_to": "Summarized Training Request",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Approved Training Request Form",
+   "link_count": 0,
+   "link_to": "Approved Training Request Form",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Educational Opportunity",
+   "link_count": 0,
+   "link_to": "Educational Opportunity",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Education Application",
+   "link_count": 0,
+   "link_to": "Education Application",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Education Tranings",
+   "link_count": 0,
+   "link_to": "Education Tranings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Training Feedback",
+   "link_count": 0,
+   "link_to": "Training Feedback",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Lifecycle",
+   "link_count": 4,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Transfer Request",
+   "link_count": 0,
+   "link_to": "Employee Transfer Request",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Transfer Letter",
+   "link_count": 0,
+   "link_to": "Transfer Letter",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Promotion Letter",
+   "link_count": 0,
+   "link_to": "Promotion Letter",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Internal Office Memo",
+   "link_count": 0,
+   "link_to": "Internal Office Memo",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Medical Managment",
+   "link_count": 11,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Medical Form",
+   "link_count": 0,
+   "link_to": "Employee Medical Form",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Accident Report",
+   "link_count": 0,
+   "link_to": "Employee Accident Report",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Photocopy and Transcription Service Request",
+   "link_count": 0,
+   "link_to": "Photocopy and Transcription Service Request",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Photocopy Service Tracking Form",
+   "link_count": 0,
+   "link_to": "Photocopy Service Tracking Form",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Phone Allowances",
+   "link_count": 0,
+   "link_to": "Phone Allowances",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Phone Allowance Expiry Alert",
+   "link_count": 0,
+   "link_to": "Phone Allowance Expiry Alert",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Internet Report Form",
+   "link_count": 0,
+   "link_to": "Internet Report Form",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Internet Report Summary",
+   "link_count": 0,
+   "link_to": "Internet Report Summary",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Employee Medical Form Summary",
+   "link_count": 0,
+   "link_to": "Employee Medical Form Summary",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Milk Allowance Payment Form",
+   "link_count": 0,
+   "link_to": "Milk Allowance Payment Form",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Milk Allowance Payment Report",
+   "link_count": 0,
+   "link_to": "Milk Allowance Payment Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Daily Labor Managment",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Daily Labor Employee",
+   "link_count": 0,
+   "link_to": "Daily Labor Employee",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Labor Attendance Sheet",
+   "link_count": 0,
+   "link_to": "Labor Attendance Sheet",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Recruitment Managment Internal",
+   "link_count": 6,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Recruitment plan",
+   "link_count": 0,
+   "link_to": "Recruitment plan",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Recruitment Notice",
+   "link_count": 0,
+   "link_to": "Recruitment Notice",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employment Request",
+   "link_count": 0,
+   "link_to": "Employment Request",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Recruitment Application",
+   "link_count": 0,
+   "link_to": "Recruitment Application",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Recruitment Comparison",
+   "link_count": 0,
+   "link_to": "Recruitment Comparison",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "HR Minute",
+   "link_count": 0,
+   "link_to": "HR Minute",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Clearance Managment",
+   "link_count": 4,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Clearance Settings",
+   "link_count": 0,
+   "link_to": "Employee Clearance Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Clearance",
+   "link_count": 0,
+   "link_to": "Employee Clearance",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Questionnaire",
+   "link_count": 0,
+   "link_to": "Questionnaire",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Exit Interviews",
+   "link_count": 0,
+   "link_to": "Exit Interviews",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Leaves and Holiday",
+   "link_count": 7,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Holiday List",
+   "link_count": 0,
+   "link_to": "Holiday List",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Holiday List Assignment",
+   "link_count": 0,
+   "link_to": "Holiday List Assignment",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Leave Type",
+   "link_count": 0,
+   "link_to": "Leave Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Leave Allocation",
+   "link_count": 0,
+   "link_to": "Leave Allocation",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Leave Application",
+   "link_count": 0,
+   "link_to": "Leave Application",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Annual Leave Programe",
+   "link_count": 0,
+   "link_to": "Annual Leave Program",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Annual Leave Transfer Form",
+   "link_count": 0,
+   "link_to": "Annual Leave Transfer Form",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Attendance",
+   "link_count": 7,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Attendance",
+   "link_count": 0,
+   "link_to": "Employee Attendance",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Upload Attendance",
+   "link_count": 0,
+   "link_to": "Upload Attendance",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Information",
+   "link_count": 0,
+   "link_to": "Employee Information",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Dynamic Letter Formats",
+   "link_count": 0,
+   "link_to": "Dynamic Letter Formats",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Contract Renewal",
+   "link_count": 0,
+   "link_to": "Contract Renewal",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Contract Renewal Alerts",
+   "link_count": 0,
+   "link_to": "Contract Renewal Alerts",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Employee Attendance Summary Report",
+   "link_count": 0,
+   "link_to": "Employee Attendance Summary Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Payroll Managment",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Fixed Salary Component",
+   "link_count": 0,
+   "link_to": "Fixed Salary Component",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Variable Salary Component",
+   "link_count": 0,
+   "link_to": "Variable Salary Component",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Recurring Payroll Deduction",
+   "link_count": 0,
+   "link_to": "Recurring Payroll Deduction",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Master Data",
+   "link_count": 7,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee",
+   "link_count": 0,
+   "link_to": "Employee",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Department",
+   "link_count": 0,
+   "link_to": "Department",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Designation",
+   "link_count": 0,
+   "link_to": "Designation",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Company Structure",
+   "link_count": 0,
+   "link_to": "Company Structure",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Salary Matrix",
+   "link_count": 0,
+   "link_to": "Salary Matrix",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Hr Minute Member",
+   "link_count": 0,
+   "link_to": "Hr Minute Member",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Hr Discipline Commitie",
+   "link_count": 0,
+   "link_to": "Hr Discipline Commitie",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Uniform Managments",
+   "link_count": 5,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Uniform Registrations",
+   "link_count": 0,
+   "link_to": "Uniform Registration Wcc",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Uniform Registration Summary",
+   "link_count": 0,
+   "link_to": "Uniform Registration Wcc Summary",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Uniform Type",
+   "link_count": 0,
+   "link_to": "Uniform Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Measurement",
+   "link_count": 0,
+   "link_to": "Measurement",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Time Range",
+   "link_count": 0,
+   "link_to": "Time Range",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Performance Management",
+   "link_count": 5,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Performance Goals",
+   "link_count": 0,
+   "link_to": "Performance Goals",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Performance Measures",
+   "link_count": 0,
+   "link_to": "Performance Measures",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Performance Template",
+   "link_count": 0,
+   "link_to": "Employee Performance Template",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Performance",
+   "link_count": 0,
+   "link_to": "Employee Performance",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Disciplinary Action",
+   "link_count": 0,
+   "link_to": "Disciplinary Action",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Recruitment Managment External",
+   "link_count": 7,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Recruitment Application New Employee",
+   "link_count": 0,
+   "link_to": "Recruitment Application New Employee",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Recurment Comparision New Employee",
+   "link_count": 0,
+   "link_to": "Recurment Comparision New Employee",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "HR Minute",
+   "link_count": 0,
+   "link_to": "HR Minute",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Onboarding Template",
+   "link_count": 0,
+   "link_to": "Employee Onboarding Template",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Onboarding",
+   "link_count": 0,
+   "link_to": "Employee Onboarding",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Onboarding Notice",
+   "link_count": 0,
+   "link_to": "Note",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Offboarding Notice",
+   "link_count": 0,
+   "link_to": "Note",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-09-07 14:50:47.385024",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "HRMS",
+ "number_cards": [],
+ "owner": "Administrator",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 0.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Employee Birthday",
+   "link_to": "Employee Birthday",
+   "report_ref_doctype": "Employee",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Employee Performance",
+   "link_to": "Employee Performance",
+   "report_ref_doctype": "Employee",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Employee Performance Planning Status",
+   "link_to": "Employee Performance Planning Status",
+   "report_ref_doctype": "Employee Performance Template",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Human Resource Informations",
+   "link_to": "Human Resource Informations",
+   "report_ref_doctype": "Employee",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Employee Analytics",
+   "link_to": "Employee Analytics",
+   "report_ref_doctype": "Employee",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Retirement Alert",
+   "link_to": "Retirement Alert",
+   "report_ref_doctype": "Employee",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Employee Relieving Report",
+   "link_to": "Employee Relieving Report",
+   "report_ref_doctype": "Employee",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Employee Summary Report",
+   "link_to": "Employee Summary Report",
+   "report_ref_doctype": "Employee",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Leave Application Report",
+   "link_to": "Leave Application Report",
+   "report_ref_doctype": "Leave Application",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Annual Leave Program Report",
+   "link_to": "Annual Leave Program Report",
+   "report_ref_doctype": "Annual Leave Program",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Employee Leave Balance Summary",
+   "link_to": "Employee Leave Balance Summary",
+   "report_ref_doctype": "Employee",
+   "type": "Report"
+  }
+ ],
+ "title": "HRMS",
+ "type": "Workspace"
+}

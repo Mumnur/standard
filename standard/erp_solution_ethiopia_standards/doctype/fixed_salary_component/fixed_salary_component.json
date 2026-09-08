@@ -1,0 +1,356 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:naming_series",
+ "creation": "2026-07-27 11:16:03.181088",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "employee_id",
+  "employee_full_name",
+  "employment_type",
+  "company_branch",
+  "column_break_xkri",
+  "designation",
+  "department",
+  "date_of_joining_ec",
+  "date_of_joining",
+  "column_break_rykt",
+  "tin_number",
+  "pension_number",
+  "pension",
+  "bank_ac_no",
+  "section_break_uo5f",
+  "basic_salary",
+  "taxable_transport_allowance",
+  "taxable_professional_allowance",
+  "other_taxable_allowance",
+  "column_break_wwd4",
+  "taxable_positional_allowance",
+  "nontaxable_transport_allowance",
+  "other_nontaxable_allowance",
+  "deduction_component_tab",
+  "credit_association",
+  "ada",
+  "edir",
+  "aids_fund",
+  "andm",
+  "column_break_mjh7",
+  "cost_sharing",
+  "red_cross",
+  "operator_association",
+  "abay_dam",
+  "credit_association_rig",
+  "column_break_sz2t",
+  "shemachoche",
+  "defense_contribution",
+  "other_three",
+  "other_one",
+  "other_two"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_uo5f",
+   "fieldtype": "Tab Break",
+   "label": "Earning Component"
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee Id",
+   "options": "Employee",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fetch_from": "employee_id.employee_name",
+   "fetch_if_empty": 1,
+   "fieldname": "employee_full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Full Name",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee_id.employment_type",
+   "fetch_if_empty": 1,
+   "fieldname": "employment_type",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Employment Type",
+   "options": "Employment Type"
+  },
+  {
+   "fetch_from": "employee_id.designation",
+   "fetch_if_empty": 1,
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fetch_from": "employee_id.department",
+   "fetch_if_empty": 1,
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fetch_from": "employee_id.custom_date_of_joining_date_ec",
+   "fetch_if_empty": 1,
+   "fieldname": "date_of_joining_ec",
+   "fieldtype": "Data",
+   "label": "Date of Joining EC"
+  },
+  {
+   "fetch_from": "employee_id.date_of_joining",
+   "fetch_if_empty": 1,
+   "fieldname": "date_of_joining",
+   "fieldtype": "Date",
+   "label": "Date of Joining"
+  },
+  {
+   "fetch_from": "employee_id.custom_tin_number",
+   "fetch_if_empty": 1,
+   "fieldname": "tin_number",
+   "fieldtype": "Data",
+   "label": "Tin Number"
+  },
+  {
+   "fetch_from": "employee_id.custom_pension_number",
+   "fetch_if_empty": 1,
+   "fieldname": "pension_number",
+   "fieldtype": "Data",
+   "label": "Pension Number"
+  },
+  {
+   "default": "0",
+   "description": "\u1321\u1228\u1273 \u1208\u121b\u12ed\u12a8\u134d\u1209 \u1230\u122b\u1270\u129e\u127d \u12ed\u1205\u1295\u1295 \u12ed\u132b\u1291",
+   "fetch_from": "employee_id.custom_pension",
+   "fetch_if_empty": 1,
+   "fieldname": "pension",
+   "fieldtype": "Check",
+   "label": "Pension"
+  },
+  {
+   "fetch_from": "employee_id.bank_ac_no",
+   "fetch_if_empty": 1,
+   "fieldname": "bank_ac_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bank A/C No.",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company_branch",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Company Branch",
+   "options": "Company Branch",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_xkri",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_rykt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "naming_series",
+   "options": "FIX.-.SAL.-.####"
+  },
+  {
+   "fieldname": "taxable_transport_allowance",
+   "fieldtype": "Currency",
+   "label": "Taxable Transport Allowance"
+  },
+  {
+   "fieldname": "taxable_professional_allowance",
+   "fieldtype": "Currency",
+   "label": "Taxable Professional Allowance"
+  },
+  {
+   "fieldname": "taxable_positional_allowance",
+   "fieldtype": "Currency",
+   "label": "Taxable Positional Allowance"
+  },
+  {
+   "fieldname": "nontaxable_transport_allowance",
+   "fieldtype": "Currency",
+   "label": "NonTaxable Transport Allowance"
+  },
+  {
+   "fieldname": "other_taxable_allowance",
+   "fieldtype": "Currency",
+   "label": "Taxable House Allowance"
+  },
+  {
+   "fieldname": "column_break_wwd4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "other_nontaxable_allowance",
+   "fieldtype": "Currency",
+   "label": "Other NonTaxable Allowance"
+  },
+  {
+   "fieldname": "deduction_component_tab",
+   "fieldtype": "Tab Break",
+   "label": "Deduction Component"
+  },
+  {
+   "fieldname": "credit_association",
+   "fieldtype": "Currency",
+   "label": "Credit Association"
+  },
+  {
+   "fieldname": "ada",
+   "fieldtype": "Currency",
+   "label": "ADA"
+  },
+  {
+   "fieldname": "edir",
+   "fieldtype": "Currency",
+   "label": "Edir"
+  },
+  {
+   "fieldname": "aids_fund",
+   "fieldtype": "Currency",
+   "label": "AIDS Fund"
+  },
+  {
+   "fieldname": "andm",
+   "fieldtype": "Currency",
+   "label": "ANDM"
+  },
+  {
+   "fieldname": "cost_sharing",
+   "fieldtype": "Currency",
+   "label": "Cost Sharing"
+  },
+  {
+   "fieldname": "red_cross",
+   "fieldtype": "Currency",
+   "label": "Red Cross"
+  },
+  {
+   "fieldname": "operator_association",
+   "fieldtype": "Currency",
+   "label": "Operator Association"
+  },
+  {
+   "fieldname": "abay_dam",
+   "fieldtype": "Currency",
+   "label": "Abay DAM"
+  },
+  {
+   "fieldname": "credit_association_rig",
+   "fieldtype": "Currency",
+   "label": "Credit Association RIG"
+  },
+  {
+   "fieldname": "shemachoche",
+   "fieldtype": "Currency",
+   "label": "Shemachoche"
+  },
+  {
+   "fieldname": "defense_contribution",
+   "fieldtype": "Currency",
+   "label": "Defense Contribution"
+  },
+  {
+   "fieldname": "other_one",
+   "fieldtype": "Currency",
+   "label": "Other One"
+  },
+  {
+   "fieldname": "other_two",
+   "fieldtype": "Currency",
+   "label": "Other Two"
+  },
+  {
+   "fieldname": "column_break_mjh7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_sz2t",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "other_three",
+   "fieldtype": "Currency",
+   "label": "Court Order"
+  },
+  {
+   "fetch_from": "employee_id.custom_basic_salary",
+   "fetch_if_empty": 1,
+   "fieldname": "basic_salary",
+   "fieldtype": "Currency",
+   "label": "Basic Salary"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-08-31 10:00:33.891818",
+ "modified_by": "assegagebeyehu21@gmail.com",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Fixed Salary Component",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Payroll Accountant",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Administration User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

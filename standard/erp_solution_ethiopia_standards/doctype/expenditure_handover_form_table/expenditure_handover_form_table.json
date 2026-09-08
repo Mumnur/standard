@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-08-18 11:23:22.383658",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_wdie",
+  "\u12e8\u12c8\u132a_\u12a0\u122d\u12d5\u1235\u1275_\u1218\u130d\u1208\u132b",
+  "\u12e8\u121b\u1235\u1228\u1303_\u1265\u12db\u1275_\u1260\u1308\u133d",
+  "\u12e8\u1308\u1295\u12d8\u1265_\u1218\u1320\u1295"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_wdie",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "\u12e8\u12c8\u132a_\u12a0\u122d\u12d5\u1235\u1275_\u1218\u130d\u1208\u132b",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "\u12e8\u12c8\u132a \u12a0\u122d\u12d5\u1235\u1275 \u1218\u130d\u1208\u132b"
+  },
+  {
+   "fieldname": "\u12e8\u121b\u1235\u1228\u1303_\u1265\u12db\u1275_\u1260\u1308\u133d",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u12e8\u121b\u1235\u1228\u1303 \u1265\u12db\u1275 \u1260\u1308\u133d"
+  },
+  {
+   "fieldname": "\u12e8\u1308\u1295\u12d8\u1265_\u1218\u1320\u1295",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "\u12e8\u1308\u1295\u12d8\u1265 \u1218\u1320\u1295"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-08-18 11:24:50.575674",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Expenditure handover Form Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

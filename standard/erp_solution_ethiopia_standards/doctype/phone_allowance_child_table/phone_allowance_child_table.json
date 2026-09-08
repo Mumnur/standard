@@ -1,0 +1,130 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-08-18 10:29:23.961148",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_6uko",
+  "amended_from",
+  "employee_id",
+  "designation",
+  "department",
+  "column_break_okpj",
+  "budget_year",
+  "date_ec",
+  "date_of_sim_issue",
+  "end_date_ec",
+  "end_date_gc",
+  "package",
+  "types_of_package",
+  "amount_in_money"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_6uko",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Phone Allowance Child Table",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee Id",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee_id.designation",
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fetch_from": "employee_id.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "column_break_okpj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "budget_year",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Budget Year",
+   "options": "Budget Year"
+  },
+  {
+   "fieldname": "date_ec",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Date Of Sim Issue"
+  },
+  {
+   "fieldname": "end_date_ec",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "End Date Ec"
+  },
+  {
+   "fieldname": "package",
+   "fieldtype": "Select",
+   "label": "Package",
+   "options": "Package"
+  },
+  {
+   "fieldname": "types_of_package",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Types Of Package",
+   "options": "\nVoice Package\nData Package\nSMS Package"
+  },
+  {
+   "fieldname": "amount_in_money",
+   "fieldtype": "Currency",
+   "label": "Amount In Money"
+  },
+  {
+   "fieldname": "date_of_sim_issue",
+   "fieldtype": "Date",
+   "label": "Date Of Sim Issue"
+  },
+  {
+   "fieldname": "end_date_gc",
+   "fieldtype": "Date",
+   "label": "End Date Gc"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-08-18 10:59:36.440323",
+ "modified_by": "assegagebeyehu21@gmail.com",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Phone Allowance Child Table",
+ "owner": "assegagebeyehu21@gmail.com",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

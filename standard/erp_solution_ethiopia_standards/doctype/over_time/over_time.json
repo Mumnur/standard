@@ -1,0 +1,184 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-07-27 16:02:41.765815",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_sus0",
+  "amended_from",
+  "employee_id",
+  "employee_name",
+  "department",
+  "project_name",
+  "salary",
+  "column_break_yp1z",
+  "date_ec",
+  "data_gc",
+  "budget_year",
+  "month",
+  "employment_type",
+  "naming_series",
+  "tab_break_yiyj",
+  "over_time_table",
+  "section_break_xcw7",
+  "description",
+  "overtime_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_sus0",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Over Time",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee ID",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee_id.employee_name",
+   "fetch_if_empty": 1,
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee_id.department",
+   "fetch_if_empty": 1,
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Department"
+  },
+  {
+   "fieldname": "column_break_yp1z",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_ec",
+   "fieldtype": "Data",
+   "label": "\u1240\u1295 (E.C)"
+  },
+  {
+   "fieldname": "data_gc",
+   "fieldtype": "Date",
+   "label": "\u1240\u1295 (G.C)"
+  },
+  {
+   "fieldname": "budget_year",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Payroll Budget Year",
+   "options": "Budget Year",
+   "reqd": 1
+  },
+  {
+   "fieldname": "month",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Payroll Month",
+   "options": "Budget Month",
+   "reqd": 1
+  },
+  {
+   "fieldname": "employment_type",
+   "fieldtype": "Link",
+   "label": "Employment Type",
+   "options": "Employment Type"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "naming_series",
+   "options": "OT.-.SAL.-.####"
+  },
+  {
+   "default": "\u121b\u1233\u1230\u1262\u12eb\u1361- \u12e8\u1275\u122d\u134d \u1230\u12d3\u1275 \u12e8\u1320\u12e8\u1240\u1260\u1275 \u121d\u12ad\u1295\u12eb\u1275 \u1260\u1339\u1201\u134d \u12ed\u1308\u1208\u133d",
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "\u121b\u1233\u1230\u1262\u12eb"
+  },
+  {
+   "fieldname": "tab_break_yiyj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "over_time_table",
+   "fieldtype": "Table",
+   "label": "Over Time Table",
+   "options": "Over Time Table"
+  },
+  {
+   "fieldname": "section_break_xcw7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "overtime_amount",
+   "fieldtype": "Currency",
+   "label": "Overtime Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Link",
+   "label": "Project Name",
+   "options": "Project"
+  },
+  {
+   "fieldname": "salary",
+   "fieldtype": "Currency",
+   "label": "Gross Salary"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-08-04 11:50:12.053459",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Over Time",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

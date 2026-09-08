@@ -1,0 +1,202 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "EmployeeClearance-.#####",
+ "creation": "2026-08-19 10:30:00.790927",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_qsfh",
+  "employee",
+  "employee_name",
+  "designation",
+  "department",
+  "relieving_date_ec",
+  "date_of_reliveing_gc",
+  "reason_for_leaving",
+  "column_break_d1mm",
+  "clearance_place",
+  "company",
+  "status",
+  "clearance_percent",
+  "section_break_vdev",
+  "clearance_items",
+  "section_break_ls7f",
+  "final_remarks",
+  "cleared_by",
+  "cleared_on",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_qsfh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Employee Clearance",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name"
+  },
+  {
+   "fetch_from": "employee.designation",
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "relieving_date_ec",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Date of Relieving",
+   "reqd": 1
+  },
+  {
+   "fieldname": "reason_for_leaving",
+   "fieldtype": "Link",
+   "label": "Reason for Leaving",
+   "options": "Reason",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_d1mm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "default": "Pending",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nPending\nIn Progress\nCleared\nRejected",
+   "read_only": 1
+  },
+  {
+   "fieldname": "clearance_percent",
+   "fieldtype": "Percent",
+   "label": "Overall Clearance %",
+   "read_only": 1
+  },
+  {
+   "fieldname": "clearance_items",
+   "fieldtype": "Table",
+   "label": "Clearance Items",
+   "options": "Employee Clearance Item"
+  },
+  {
+   "fieldname": "section_break_vdev",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_ls7f",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "\u121b\u1233\u1230\u1262\u12eb \u1361- \n1. \u1220\u122b\u1270\u129b\u12cd \u12c8\u12ed\u121d \u1235\u122b \u1218\u122a\u12cd \u12a8\u1208\u1240\u1240 \u12c8\u12ed\u121d \u12a8\u1270\u12db\u12c8\u1228 \u1260\u128b\u120b \u12d8\u130d\u12ed\u1276 \u12e8\u121a\u1308\u129d \u12e8\u12ae\u122d\u1356\u122c\u123d\u1291  \u1265\u1228\u1275/ \u1308\u1295\u12d8\u1265 \u1260\u130d\u1208\u1230\u1261 \u120b\u12ed \u12a8\u1270\u1308\u1298 \u12ed\u1205 \u1245\u133d \u12a8\u1218\u1320\u12e8\u1245    \u12a0\u12eb\u12f5\u1295\u121d\u1364\n2. \u1220\u122b\u1270\u129b\u12cd \u1235\u122b \u1218\u122a\u12cd \u1260\u12cb\u1293\u12cd \u121b\u1235\u1270\u1263\u1260\u122a\u12eb \u133d/\u1264\u1275\u1363 \u1260\u12a0\u12f2\u1235 \u12a0\u1260\u1263 \u121b\u1235\u1270\u1263\u1260\u122a\u12eb \u133d/\u1264\u1275 \u12a5\u1293 \u1298\u122e\u1300\u12ad\u1275 \u120b\u12ed \u1270\u1218\u12f5\u1260\u12cd                               \u12e8\u121a\u1230\u1229 \u12a8\u1206\u1290 \u1260\u1245\u12f5\u121a\u12eb \u12a8\u1290\u1260\u1229\u1260\u1275 \u1266\u1273 \u120b\u12ed \u12e8\u122d\u12ad\u12ad\u1265 \u121b\u1235\u1228\u1303 \u1245\u133d /\u12ad\u120a\u122b\u1295\u1235/ \u121b\u1245\u1228\u1265 \u12a0\u1208\u1263\u1278\u12cd\u1361\u1361\n3. \u12ed\u1205 \u12e8\u122d\u12ad\u12ad\u1265 \u121b\u1235\u1228\u1303 \u1245\u133d /\u12ad\u120a\u122b\u1295\u1235/ \u1208\u1230\u122b\u1270\u129b\u12cd \u12e8\u121a\u1230\u1320\u12cd \u1230\u122b\u1270\u129b\u12cd \u12a8\u1225\u122b \u1232\u1230\u1293\u1260\u1275 \u12c8\u12ed\u121d \u1260\u12dd\u12cd\u12cd\u122d \u1232\u1208\u1245 /\u12ae\u122d\u1356\u122c\u123d\u1291/\u1263\u120b\u12c8\u1240\u12cd    \u120c\u120e\u127d \u121d\u12ad\u1295\u12eb\u1276\u127d \u12ad\u120a\u122b\u1295\u1235 \u12a5\u1295\u12f2\u12eb\u1240\u122d\u1265 \u12a8\u121a\u1218\u1208\u12a8\u1270\u12cd \u12e8\u1225\u122b \u12ad\u134d\u120d \u121b\u1235\u1228\u1303 \u1232\u12eb\u1240\u122d\u1265 \u12c8\u12ed\u121d \u1260\u122b\u1231 \u1320\u12eb\u1242\u1290\u1275 \u12ed\u1206\u1293\u120d\u1361\u1361\n4. \u12a5\u12f3 \u12eb\u1208\u1260\u1275 \u12ad\u120a\u122b\u1295\u1230 \u12a0\u12df\u122a \u12e8\u1235\u122b \u1218\u122a/\u1230\u122b\u1270\u129b \u12a5\u12f3\u12cd\u1295 \u12a8\u121a\u12eb\u12cd\u1240\u12cd \u12ad\u134d\u120d \u120b\u12ed \u120a\u12eb\u1235\u1348\u122d\u121d \u12ad\u120a\u122b\u1295\u1235 \u134e\u122d\u121d \u1232\u12eb\u1240\u122d\u1265 \u12a5\u12f3\u12cd\u1295    \u12a5\u1295\u12f2\u12a8\u134d\u120d \u121b\u1235\u12f0\u1228\u130d \u12a5\u1295\u1305 \u12a5\u12f3\u12cd\u1295 \u1308\u120d\u1346 \u1218\u1348\u1228\u121d \u12e8\u121b\u12ed\u127b\u120d \u1218\u1206\u1291\u1295 \u12a5\u1293\u1233\u12cd\u1243\u1208\u1295\u1361\u1361 \n5. \u12ed\u1205 \u12ad\u120a\u122b\u1295\u1235 \u134e\u122d\u121d \u1205\u130b\u12ca \u12e8\u121a\u1206\u1290\u12cd \u12e8\u12ae\u122d\u1356\u122c\u123d\u1291 \u121b\u1205\u1270\u121d \u1232\u1296\u1228\u12cd \u1265\u127b \u1290\u12cd\u1361\u1361 \n6. \u12e8\u121a\u1230\u1229\u1260\u1275 \u12e8\u1235\u122b \u12ad\u134d\u120d \u12e8\u121a\u1208\u12c9 \u1260\u1309/\u1241/\u12cd/\u1218/\u134d \u12cb\u1293 \u12f3\u12ed\u122c\u12ad\u1276\u122c\u1275 \u12a5\u1293 \u1260\u12ae\u1295\u1235\u1275\u122b\u12ad\u123d\u1295 \u12a6\u1355\u1228\u123d\u1295 \u12cb\u1293\u12f3\u12ed\u122c\u12ad\u1276\u122c\u1275 \u1235\u122d \u12eb\u1209\u1275 \u1230\u122b\u1270\u1296\u127d \u1232\u1208\u1241 \u1235\u122b\u12ce\u127d\u1295 \u1208\u121b\u1235\u1228\u12a8\u1263\u1278\u12cd \u12a8\u12cb\u1293 \u12f3\u12ed\u122c\u12ad\u1276\u122c\u1271 \u121b\u1228\u130b\u1308\u132b \u120a\u1240\u122d\u1265 \u12ed\u1308\u1263\u120d \u12e8\u121a\u1208\u12c9\u1295 \u12eb\u12ab\u1275\u1273\u120d\u1361\u1361 ",
+   "fieldname": "final_remarks",
+   "fieldtype": "Small Text",
+   "label": "Final Remarks"
+  },
+  {
+   "fieldname": "cleared_by",
+   "fieldtype": "Link",
+   "label": "Cleared By",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cleared_on",
+   "fieldtype": "Datetime",
+   "label": "Cleared On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date_of_reliveing_gc",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Date Of Reliveing Gc",
+   "read_only": 1
+  },
+  {
+   "fieldname": "clearance_place",
+   "fieldtype": "Link",
+   "label": "Clearance Place",
+   "options": "Clearance Place",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-08-20 09:05:55.209298",
+ "modified_by": "assegagebeyehu21@gmail.com",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Employee Clearance",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Common Role",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

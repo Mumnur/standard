@@ -1,0 +1,38 @@
+{
+ "add_total_row": 1,
+ "add_translate_data": 0,
+ "columns": [],
+ "creation": "2026-07-30 09:38:07.698745",
+ "disable_prepared_report_automation": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 1,
+ "is_standard": "Yes",
+ "letter_head": null,
+ "modified": "2026-08-18 11:08:06.074536",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Payroll Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Employee Payroll",
+ "report_name": "Payroll Report",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Payroll Accountant"
+  },
+  {
+   "role": "GL Division Head"
+  },
+  {
+   "role": "Finance Directorate"
+  }
+ ],
+ "timeout": 0
+}

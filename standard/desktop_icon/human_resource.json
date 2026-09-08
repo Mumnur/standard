@@ -1,0 +1,22 @@
+{
+ "app": "standard",
+ "bg_color": "blue",
+ "creation": "2026-08-13 15:28:01.037871",
+ "docstatus": 0,
+ "doctype": "Desktop Icon",
+ "hidden": 1,
+ "icon_type": "Link",
+ "idx": 1,
+ "label": "Human Resource",
+ "link_to": "",
+ "link_type": "Workspace Sidebar",
+ "modified": "2026-08-13 18:56:42.079090",
+ "modified_by": "Administrator",
+ "name": "Human Resource",
+ "owner": "aymen.dev@erp.com",
+ "parent_icon": "",
+ "restrict_removal": 0,
+ "roles": [],
+ "sidebar": "Human Resource",
+ "standard": 1
+}

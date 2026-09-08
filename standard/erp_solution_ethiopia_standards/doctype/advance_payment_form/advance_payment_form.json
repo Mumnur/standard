@@ -1,0 +1,325 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-08-03 08:58:03.450812",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "amended_from",
+  "employee_id",
+  "employee_name",
+  "department",
+  "designation",
+  "column_break_7ox9",
+  "project_name",
+  "salary",
+  "place",
+  "column_break_xyi1",
+  "requesting_date",
+  "transport_type",
+  "planned_from_date",
+  "planned_to_date",
+  "naming_series",
+  "section_break_0c9t",
+  "advance_payment_form_table",
+  "section_break_bghj",
+  "column_break_g2yr",
+  "general_remark",
+  "column_break_ij0n",
+  "grand_total_amount_in_figure",
+  "grand_total_amount_in_word",
+  "approval_section",
+  "requested_by",
+  "requested_date",
+  "requester_signature",
+  "column_break_nid7",
+  "approved_by",
+  "approved_date",
+  "approver_signature",
+  "column_break_x4nn",
+  "accountant_name",
+  "accountant_date",
+  "accountant_signature"
+ ],
+ "fields": [
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Advance Payment Form",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee Id",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee_id.employee_name",
+   "fetch_if_empty": 1,
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee_id.department",
+   "fetch_if_empty": 1,
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Department",
+   "options": "Department",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee_id.designation",
+   "fetch_if_empty": 1,
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Project Name",
+   "options": "Project"
+  },
+  {
+   "fieldname": "place",
+   "fieldtype": "Data",
+   "label": "Place"
+  },
+  {
+   "fieldname": "salary",
+   "fieldtype": "Currency",
+   "label": "Salary"
+  },
+  {
+   "fieldname": "requesting_date",
+   "fieldtype": "Date",
+   "label": "Requesting Date"
+  },
+  {
+   "fieldname": "transport_type",
+   "fieldtype": "Select",
+   "label": "Transport Type",
+   "options": "\nCompany Car\nLand Transport\nAir lines"
+  },
+  {
+   "fieldname": "planned_from_date",
+   "fieldtype": "Date",
+   "label": "Planned From Date"
+  },
+  {
+   "fieldname": "planned_to_date",
+   "fieldtype": "Date",
+   "label": "Planned To date"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "naming_series",
+   "options": "ACC.-.Adv.-.Pay.-.####"
+  },
+  {
+   "fieldname": "column_break_7ox9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_xyi1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_0c9t",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "advance_payment_form_table",
+   "fieldtype": "Table",
+   "label": "Advance Payment Form Table",
+   "options": "Advance Payment Form Table"
+  },
+  {
+   "fieldname": "approval_section",
+   "fieldtype": "Section Break",
+   "label": "Approval"
+  },
+  {
+   "fieldname": "requested_by",
+   "fieldtype": "Data",
+   "label": "Requested By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "requested_date",
+   "fieldtype": "Date",
+   "label": "Requested Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "requester_signature",
+   "fieldtype": "Signature",
+   "label": "Requester Signature",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_nid7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Data",
+   "label": "Approved By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "approved_date",
+   "fieldtype": "Date",
+   "label": "Approved Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "approver_signature",
+   "fieldtype": "Signature",
+   "label": "Approver Signature",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_x4nn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "accountant_name",
+   "fieldtype": "Data",
+   "label": "Authorized By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "accountant_date",
+   "fieldtype": "Date",
+   "label": "Authorized Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "accountant_signature",
+   "fieldtype": "Signature",
+   "label": "Authorizer Signature",
+   "read_only": 1
+  },
+  {
+   "fieldname": "grand_total_amount_in_figure",
+   "fieldtype": "Currency",
+   "label": "Grand Total Amount in Figure",
+   "read_only": 1
+  },
+  {
+   "fieldname": "grand_total_amount_in_word",
+   "fieldtype": "Data",
+   "label": "Grand Total Amount in Word",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_bghj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_g2yr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ij0n",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "general_remark",
+   "fieldtype": "Small Text",
+   "label": "General Remark"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-08-10 10:26:50.863924",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Advance Payment Form",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "if_owner": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Common Role",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "cancel": 1,
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "if_owner": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Dept Head",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

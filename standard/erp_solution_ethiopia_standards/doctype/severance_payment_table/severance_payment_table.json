@@ -1,0 +1,161 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-07-30 10:11:49.435125",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_xfuf",
+  "employee_id",
+  "employee_name",
+  "current_salary",
+  "worked_years_decimal",
+  "total_paid_month",
+  "column_break_k8l6",
+  "joining_date",
+  "current_date",
+  "worked_year",
+  "working_days",
+  "column_break_qwko",
+  "total_severance_earning",
+  "income_tax_on_basic_salary",
+  "income_tax_on_prorate_salary",
+  "total_income_tax",
+  "net_severance_pay"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_xfuf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee ID",
+   "options": "Employee",
+   "reqd": 1,
+   "sticky": 1
+  },
+  {
+   "fetch_from": "employee_id.custom_basic_salary",
+   "fetch_if_empty": 1,
+   "fieldname": "current_salary",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Monthly Salary"
+  },
+  {
+   "fieldname": "worked_years_decimal",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Worked Year In Decimal",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_paid_month",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Paid Month",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_k8l6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "joining_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Joining Date"
+  },
+  {
+   "fieldname": "worked_year",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Worked Year",
+   "read_only": 1
+  },
+  {
+   "fieldname": "working_days",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Working days",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_qwko",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_severance_earning",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Severance Earning",
+   "read_only": 1
+  },
+  {
+   "fieldname": "income_tax_on_basic_salary",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Income tax on Basic Salary",
+   "read_only": 1
+  },
+  {
+   "fieldname": "income_tax_on_prorate_salary",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Income tax on Prorate Salary",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_income_tax",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Income Tax",
+   "read_only": 1
+  },
+  {
+   "fieldname": "net_severance_pay",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Net Severance Pay",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee_id.employee_name",
+   "fetch_if_empty": 1,
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name",
+   "read_only": 1,
+   "sticky": 1
+  },
+  {
+   "fieldname": "current_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Relieving Date"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-08-10 10:37:55.328994",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Severance Payment Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

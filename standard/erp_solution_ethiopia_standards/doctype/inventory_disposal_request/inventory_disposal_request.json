@@ -1,0 +1,145 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-08-17 11:05:58.050332",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_scis",
+  "amended_from",
+  "naming_series",
+  "section_break_euey",
+  "requested_at",
+  "warehouse",
+  "project",
+  "column_break_riqh",
+  "date_ec",
+  "date_gc",
+  "section_break_qphi",
+  "items"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_scis",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Inventory Disposal Request",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "naming_series",
+   "options": "STK-IDR-.YYYY.-"
+  },
+  {
+   "fieldname": "section_break_euey",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "requested_at",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Requested At",
+   "options": "Requested At",
+   "reqd": 1
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Warehouse",
+   "options": "Warehouse",
+   "reqd": 1
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_riqh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_qphi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Inventory Disposal Request Table"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date_gc",
+   "fieldtype": "Date",
+   "label": "Date GC",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date_ec",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Date EC",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-08-17 11:15:28.030623",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Inventory Disposal Request",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

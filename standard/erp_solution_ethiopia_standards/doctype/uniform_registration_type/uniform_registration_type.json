@@ -1,0 +1,485 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-08-13 22:33:44.418442",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_xcxs",
+  "employee_id",
+  "employee_name",
+  "designation",
+  "column_break_4",
+  "data_6",
+  "data_7",
+  "data_8",
+  "data_9",
+  "column_break_9",
+  "data_10",
+  "data_11",
+  "data_12",
+  "data_13",
+  "column_break_14",
+  "data_15",
+  "data_16",
+  "data_17",
+  "data_18",
+  "section_break_19",
+  "data_20",
+  "data_21",
+  "data_22",
+  "data_23",
+  "column_break_24",
+  "data_25",
+  "data_26",
+  "data_27",
+  "data_28",
+  "column_break_29",
+  "data_30",
+  "data_31",
+  "data_32",
+  "data_33",
+  "column_break_34",
+  "data_35",
+  "data_36",
+  "data_37",
+  "data_38",
+  "section_break_39",
+  "data_40",
+  "data_41",
+  "data_42",
+  "data_43",
+  "column_break_44",
+  "data_45",
+  "data_46",
+  "data_47",
+  "data_48",
+  "column_break_49",
+  "data_50",
+  "data_51",
+  "data_52",
+  "data_53",
+  "column_break_54",
+  "data_54",
+  "data_55",
+  "data_56",
+  "da_77",
+  "section_break_59",
+  "data_57",
+  "data_58",
+  "data_59",
+  "da_78",
+  "column_break_63",
+  "data_60",
+  "data_61",
+  "data_62",
+  "da_80",
+  "total_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_xcxs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee Id",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "data_6",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Uniform Type 1",
+   "options": "Uniform Type"
+  },
+  {
+   "fieldname": "data_7",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Measurement",
+   "options": "Measurement"
+  },
+  {
+   "fieldname": "data_8",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "data_9",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Time Range",
+   "options": "Time Range"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "data_10",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Uniform Type 2",
+   "options": "Uniform Type"
+  },
+  {
+   "fieldname": "data_11",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Measurement",
+   "options": "Measurement"
+  },
+  {
+   "fieldname": "data_12",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "data_13",
+   "fieldtype": "Link",
+   "label": "Time Range",
+   "options": "Time Range"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "data_15",
+   "fieldtype": "Link",
+   "label": "Uniform Type 3",
+   "options": "Uniform Type"
+  },
+  {
+   "fieldname": "data_16",
+   "fieldtype": "Link",
+   "label": "Measurement",
+   "options": "Measurement"
+  },
+  {
+   "fieldname": "data_17",
+   "fieldtype": "Float",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "data_18",
+   "fieldtype": "Link",
+   "label": "Time Range",
+   "options": "Time Range"
+  },
+  {
+   "fieldname": "section_break_19",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "data_20",
+   "fieldtype": "Link",
+   "label": "Uniform Type 4",
+   "options": "Uniform Type"
+  },
+  {
+   "fieldname": "data_21",
+   "fieldtype": "Link",
+   "label": "Measurement",
+   "options": "Measurement"
+  },
+  {
+   "fieldname": "data_22",
+   "fieldtype": "Float",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "data_23",
+   "fieldtype": "Link",
+   "label": "Time Range",
+   "options": "Time Range"
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "data_25",
+   "fieldtype": "Link",
+   "label": "Uniform Type 5",
+   "options": "Uniform Type"
+  },
+  {
+   "fieldname": "data_26",
+   "fieldtype": "Link",
+   "label": "Measurement",
+   "options": "Measurement"
+  },
+  {
+   "fieldname": "data_27",
+   "fieldtype": "Float",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "data_28",
+   "fieldtype": "Link",
+   "label": "Time Range",
+   "options": "Time Range"
+  },
+  {
+   "fieldname": "column_break_29",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "data_30",
+   "fieldtype": "Link",
+   "label": "Uniform Type 6",
+   "options": "Uniform Type"
+  },
+  {
+   "fieldname": "data_31",
+   "fieldtype": "Link",
+   "label": "Measurement",
+   "options": "Measurement"
+  },
+  {
+   "fieldname": "data_32",
+   "fieldtype": "Float",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "data_33",
+   "fieldtype": "Link",
+   "label": "Time Range",
+   "options": "Time Range"
+  },
+  {
+   "fieldname": "column_break_34",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "data_35",
+   "fieldtype": "Link",
+   "label": "Uniform Type 7",
+   "options": "Uniform Type"
+  },
+  {
+   "fieldname": "data_36",
+   "fieldtype": "Link",
+   "label": "Measurement",
+   "options": "Measurement"
+  },
+  {
+   "fieldname": "data_37",
+   "fieldtype": "Float",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "data_38",
+   "fieldtype": "Link",
+   "label": "Time Range",
+   "options": "Time Range"
+  },
+  {
+   "fieldname": "section_break_39",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "data_40",
+   "fieldtype": "Link",
+   "label": "Uniform Type 8",
+   "options": "Uniform Type"
+  },
+  {
+   "fieldname": "data_41",
+   "fieldtype": "Link",
+   "label": "Measurement",
+   "options": "Measurement"
+  },
+  {
+   "fieldname": "data_42",
+   "fieldtype": "Float",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "data_43",
+   "fieldtype": "Link",
+   "label": "Time Range",
+   "options": "Time Range"
+  },
+  {
+   "fieldname": "column_break_44",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "data_45",
+   "fieldtype": "Link",
+   "label": "Uniform Type 9",
+   "options": "Uniform Type"
+  },
+  {
+   "fieldname": "data_46",
+   "fieldtype": "Link",
+   "label": "Measurement",
+   "options": "Measurement"
+  },
+  {
+   "fieldname": "data_47",
+   "fieldtype": "Float",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "data_48",
+   "fieldtype": "Link",
+   "label": "Time Range",
+   "options": "Time Range"
+  },
+  {
+   "fieldname": "column_break_49",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "data_50",
+   "fieldtype": "Link",
+   "label": "Uniform Type 10",
+   "options": "Uniform Type"
+  },
+  {
+   "fieldname": "data_51",
+   "fieldtype": "Link",
+   "label": "Measurement",
+   "options": "Measurement"
+  },
+  {
+   "fieldname": "data_52",
+   "fieldtype": "Float",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "data_53",
+   "fieldtype": "Link",
+   "label": "Time Range",
+   "options": "Time Range"
+  },
+  {
+   "fieldname": "column_break_54",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "data_54",
+   "fieldtype": "Link",
+   "label": "Uniform Type 11",
+   "options": "Uniform Type"
+  },
+  {
+   "fieldname": "data_55",
+   "fieldtype": "Link",
+   "label": "Measurement",
+   "options": "Measurement"
+  },
+  {
+   "fieldname": "data_56",
+   "fieldtype": "Float",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "da_77",
+   "fieldtype": "Link",
+   "label": "Time Range",
+   "options": "Time Range"
+  },
+  {
+   "fieldname": "section_break_59",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "data_57",
+   "fieldtype": "Link",
+   "label": "Uniform Type 12",
+   "options": "Uniform Type"
+  },
+  {
+   "fieldname": "data_58",
+   "fieldtype": "Link",
+   "label": "Measurement",
+   "options": "Measurement"
+  },
+  {
+   "fieldname": "data_59",
+   "fieldtype": "Float",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "da_78",
+   "fieldtype": "Link",
+   "label": "Time Range",
+   "options": "Time Range"
+  },
+  {
+   "fieldname": "column_break_63",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "data_60",
+   "fieldtype": "Link",
+   "label": "Uniform Type 13",
+   "options": "Uniform Type"
+  },
+  {
+   "fieldname": "data_61",
+   "fieldtype": "Link",
+   "label": "Measurement",
+   "options": "Measurement"
+  },
+  {
+   "fieldname": "data_62",
+   "fieldtype": "Float",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "da_80",
+   "fieldtype": "Link",
+   "label": "Time Range",
+   "options": "Time Range"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-08-13 22:40:28.340728",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Uniform Registration Type",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

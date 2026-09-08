@@ -1,0 +1,131 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-08-04 12:16:05.452216",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "payment_document",
+  "payment_entry",
+  "against_account",
+  "amount",
+  "debit",
+  "credit",
+  "column_break_7",
+  "posting_date",
+  "cheque_number",
+  "cheque_date",
+  "clearance",
+  "clearance_date",
+  "voucher_detail_no",
+  "remark"
+ ],
+ "fields": [
+  {
+   "fieldname": "payment_document",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Payment Document",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "payment_entry",
+   "fieldtype": "Dynamic Link",
+   "in_list_view": 1,
+   "label": "Payment Entry",
+   "options": "payment_document",
+   "sticky": 1
+  },
+  {
+   "fieldname": "against_account",
+   "fieldtype": "Text",
+   "label": "Against Account",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Data",
+   "label": "Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "debit",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Debit",
+   "read_only": 1
+  },
+  {
+   "fieldname": "credit",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Credit",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Posting Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cheque_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Cheque Number",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cheque_date",
+   "fieldtype": "Date",
+   "label": "Cheque Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "clearance_date",
+   "fieldtype": "Date",
+   "label": "Clearance Date",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "clearance",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Clearance"
+  },
+  {
+   "fieldname": "voucher_detail_no",
+   "fieldtype": "Data",
+   "label": "voucher_detail_no",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Data",
+   "label": "Remark"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-08-10 16:39:59.868970",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "ERP Bank Reconciliation Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

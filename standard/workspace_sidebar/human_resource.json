@@ -1,0 +1,28 @@
+{
+ "app": "standard",
+ "creation": "2026-08-13 16:48:00.539073",
+ "docstatus": 0,
+ "doctype": "Workspace Sidebar",
+ "idx": 0,
+ "items": [
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "HRMS",
+   "link_to": "Human Resource",
+   "link_type": "Workspace",
+   "show_arrow": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-08-13 23:21:48.565595",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Human Resource",
+ "owner": "Administrator",
+ "standard": 1,
+ "title": "Human Resource"
+}

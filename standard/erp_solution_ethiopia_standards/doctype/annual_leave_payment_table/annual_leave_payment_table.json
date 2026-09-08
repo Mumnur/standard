@@ -1,0 +1,168 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-07-30 10:32:06.498519",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_bxe2",
+  "employee_id",
+  "employee_name",
+  "work_day",
+  "payment_per_day",
+  "income_tax_basic",
+  "column_break_z87i",
+  "basic_salary",
+  "gross_payment",
+  "payment_per_month",
+  "salary_income_tax",
+  "income_tax_for_this_month",
+  "column_break_vipx",
+  "income_tax_for_1_month",
+  "income_tax_for_12_month",
+  "other_deduction",
+  "total_deduction",
+  "net_payment"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_bxe2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee ID",
+   "options": "Employee",
+   "reqd": 1,
+   "sticky": 1
+  },
+  {
+   "fetch_from": "employee_id.employee_name",
+   "fetch_if_empty": 1,
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name",
+   "read_only": 1,
+   "sticky": 1
+  },
+  {
+   "fieldname": "work_day",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "work Day"
+  },
+  {
+   "fieldname": "payment_per_day",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Payment Per day",
+   "read_only": 1
+  },
+  {
+   "fieldname": "income_tax_basic",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Income tax basic",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_z87i",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee_id.custom_basic_salary",
+   "fieldname": "basic_salary",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Basic salary"
+  },
+  {
+   "fieldname": "gross_payment",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Gross Payment",
+   "read_only": 1
+  },
+  {
+   "fieldname": "payment_per_month",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Payment Per month",
+   "read_only": 1
+  },
+  {
+   "fieldname": "salary_income_tax",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Salary Income Tax",
+   "read_only": 1
+  },
+  {
+   "fieldname": "income_tax_for_this_month",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Gross Earning I/Tax",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_vipx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "income_tax_for_1_month",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Income Tax for 1 month",
+   "read_only": 1
+  },
+  {
+   "fieldname": "income_tax_for_12_month",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Income Tax for 12 month",
+   "read_only": 1
+  },
+  {
+   "fieldname": "other_deduction",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Other deduction"
+  },
+  {
+   "fieldname": "total_deduction",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "total_deduction",
+   "read_only": 1
+  },
+  {
+   "fieldname": "net_payment",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Net Payment",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-08-20 15:27:59.779215",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Annual Leave Payment Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

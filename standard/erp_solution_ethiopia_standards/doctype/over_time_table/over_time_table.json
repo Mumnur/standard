@@ -1,0 +1,130 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-07-27 16:09:03.051768",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_fkfk",
+  "date_ec",
+  "date_gc",
+  "time_option",
+  "data_4",
+  "column_break_ewaa",
+  "data_5",
+  "data_6",
+  "d3",
+  "d5",
+  "column_break_rs0q",
+  "d4",
+  "d6",
+  "d7"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_fkfk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "date_ec",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u1240\u1295 (E.C)",
+   "sticky": 1
+  },
+  {
+   "fieldname": "date_gc",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "\u1240\u1295 (G.C)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "time_option",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "\u1240\u1295 / \u121b\u1273 \u12e8\u130a\u12dc \u12a0\u12ed\u1290\u1275",
+   "options": "\u12ad\u1295\u130b\u1271 12:00 - \u121d\u123d\u1271 4:00\n\u12ad\u121d\u123d\u1271 4:00 - \u1295\u130b\u1271 12:00",
+   "sticky": 1
+  },
+  {
+   "fieldname": "column_break_ewaa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "data_5",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "\u12a8-----------"
+  },
+  {
+   "fieldname": "data_6",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "--\u12a5\u1235\u12a8"
+  },
+  {
+   "default": "188",
+   "fieldname": "d3",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "\u1260\u12c8\u122d \u12e8\u121a\u1230\u122b\u12cd \u1230\u12a0\u1275"
+  },
+  {
+   "fieldname": "d5",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "\u12e8\u1230\u1229\u1275 \u1230\u12a0\u1275",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_rs0q",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "d4",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "\u1260\u1230\u12a0\u1275 \u12e8\u121a\u12a8\u1348\u1208\u12cd",
+   "read_only": 1
+  },
+  {
+   "fieldname": "d6",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "\u12e8\u121b\u1263\u12e3 \u122c\u1275",
+   "read_only": 1
+  },
+  {
+   "fieldname": "d7",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "\u1230\u120c\u1275",
+   "read_only": 1
+  },
+  {
+   "fieldname": "data_4",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "\u12e8\u1230\u1229\u1260\u1275 \u1240\u1295 \u12a0\u12ed\u1290\u1275",
+   "options": "\u1218\u12f0\u1260\u129b \u12e8\u1235\u122b \u1240\u1293\u1275\n\u12e8\u12a5\u1228\u134d\u1275 \u1240\u1293\u1275\n\u12e8\u1205\u12dd\u1265 \u1260\u12d3\u120b\u1275"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-08-04 11:47:55.451419",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Over Time Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

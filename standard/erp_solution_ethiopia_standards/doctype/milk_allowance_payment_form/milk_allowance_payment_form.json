@@ -1,0 +1,120 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "MilkAllowancePay-.#####",
+ "creation": "2026-08-18 14:01:31.858950",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_57pu",
+  "amended_from",
+  "budget_year",
+  "month",
+  "column_break_vcjj",
+  "date_ec",
+  "fetch_employee",
+  "section_break_y1fu",
+  "milk_allowance"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_57pu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Milk Allowance Payment Form",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "budget_year",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Budget Year",
+   "options": "Budget Year",
+   "reqd": 1
+  },
+  {
+   "fieldname": "month",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Month",
+   "options": "Budget Month",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_vcjj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_ec",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Date Ec",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_y1fu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "milk_allowance",
+   "fieldtype": "Table",
+   "label": "Milk Allowance",
+   "options": "Milk Allowance Payment Form Table"
+  },
+  {
+   "fieldname": "fetch_employee",
+   "fieldtype": "Button",
+   "label": "Fetch Employee"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-08-18 14:40:29.045868",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Milk Allowance Payment Form",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

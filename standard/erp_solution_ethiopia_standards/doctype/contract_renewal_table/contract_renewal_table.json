@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-08-13 22:00:52.043861",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_6lpc",
+  "first_name",
+  "full_name",
+  "employment_type",
+  "designation",
+  "column_break_5",
+  "extended_date_ec",
+  "gender"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_6lpc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "ID",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "first_name.employee_name",
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u12e8\u1230\u122b\u1270\u129e\u127d \u1235\u121d"
+  },
+  {
+   "fetch_from": "first_name.employment_type",
+   "fieldname": "employment_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u12e8\u1245\u1325\u122d \u1201\u1294\u1273"
+  },
+  {
+   "fetch_from": "first_name.designation",
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u12e8\u1235\u122b \u1218\u12f0\u1265"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "extended_date_ec",
+   "fieldtype": "Data",
+   "label": "\u12e8\u121a\u122b\u12d8\u121d\u1260\u1275 \u1240\u1295"
+  },
+  {
+   "fetch_from": "first_name.gender",
+   "fieldname": "gender",
+   "fieldtype": "Data",
+   "label": "Gender"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-08-13 22:03:31.268133",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Contract Renewal Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

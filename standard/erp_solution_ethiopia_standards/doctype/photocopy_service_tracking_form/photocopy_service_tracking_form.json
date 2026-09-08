@@ -1,0 +1,126 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "PhotoCopyTra-.#####",
+ "creation": "2026-08-17 11:51:17.349538",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_fiyj",
+  "amended_from",
+  "depar",
+  "pho_num",
+  "\u1325\u1228\u12db_\u1265\u12db\u1275",
+  "column_break_z3uq",
+  "date_ec",
+  "name_sened",
+  "page_num"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_fiyj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Photocopy Service Tracking Form",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "depar",
+   "fieldtype": "Link",
+   "label": "\u12e8\u1320\u12e8\u1240\u12cd \u12ad\u134d\u120d ",
+   "options": "Department"
+  },
+  {
+   "fieldname": "pho_num",
+   "fieldtype": "Data",
+   "label": "\u12e8\u1320\u12e8\u1240\u12cd \u12a0\u1308\u120d\u130d\u120e\u1275 \u134e\u1276 \u12ae\u1352 \u1265\u12db\u1275"
+  },
+  {
+   "fieldname": "\u1325\u1228\u12db_\u1265\u12db\u1275",
+   "fieldtype": "Data",
+   "label": "\u1325\u1228\u12db \u1265\u12db\u1275"
+  },
+  {
+   "fieldname": "column_break_z3uq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_ec",
+   "fieldtype": "Data",
+   "label": "Date Ec"
+  },
+  {
+   "fieldname": "name_sened",
+   "fieldtype": "Data",
+   "label": "\u12a5\u1295\u12f2\u1230\u122b\u1208\u1275 \u12e8\u1320\u12e8\u1240\u12cd \u12e8\u1230\u1290\u12f1 \u1235\u121d"
+  },
+  {
+   "fieldname": "page_num",
+   "fieldtype": "Data",
+   "label": "\u12e8\u1308\u133d \u1265\u12db\u1275"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-08-17 11:51:17.349538",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Photocopy Service Tracking Form",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Common Role",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

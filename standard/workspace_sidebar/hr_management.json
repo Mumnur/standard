@@ -1,0 +1,42 @@
+{
+ "app": "standard",
+ "creation": "2026-07-27 08:57:17.641501",
+ "docstatus": 0,
+ "doctype": "Workspace Sidebar",
+ "header_icon": "hr",
+ "idx": 0,
+ "items": [
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "home",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Human Resource",
+   "link_to": "Human Resource",
+   "link_type": "Workspace",
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "chart",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Dashboard",
+   "link_to": "Human Resource",
+   "link_type": "Dashboard",
+   "show_arrow": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-08-13 16:44:05.365675",
+ "modified_by": "assegagebeyehu21@gmail.com",
+ "module": "ERP Solution Ethiopia Standards",
+ "module_onboarding": "",
+ "name": "HR Management",
+ "owner": "assegagebeyehu21@gmail.com",
+ "standard": 1,
+ "title": "HR Management"
+}

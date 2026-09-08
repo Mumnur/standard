@@ -1,0 +1,460 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-02-02 21:12:40.668560",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "fuel_consumption_status",
+  "section_break_mags",
+  "naming_series",
+  "amended_from",
+  "location",
+  "company_id",
+  "column_break_u5zo",
+  "date",
+  "request_date_ec",
+  "gas_station",
+  "section_break_0wym",
+  "plate_no",
+  "make",
+  "owner1",
+  "column_break_wk45",
+  "equipment_type",
+  "model",
+  "chassis_no",
+  "column_break_snko",
+  "standard_fuel_consumption",
+  "operator_name",
+  "fuel_tanker_capacity",
+  "section_break_hwt2",
+  "previous_record_column",
+  "previous_km_reading",
+  "previous_filled_fuel_litter",
+  "previous_filled_fuel_date",
+  "previous_fuel_renaming_litter_in_tanker",
+  "current_record_column",
+  "current_km_reading",
+  "previous_fuel_consumption",
+  "current_fuel_renaming_in_tanker",
+  "fuel_requested",
+  "current_filled__fuel_in_litter",
+  "current_filling_date",
+  "specific_fuel_type_section",
+  "item_code",
+  "item_name",
+  "column_break_qnl2",
+  "warehouse",
+  "uom",
+  "column_break_mjh7",
+  "unit_price",
+  "total_price",
+  "approval_section",
+  "requested_by",
+  "requested_date",
+  "column_break_h7ad",
+  "approved_by",
+  "approved_date",
+  "column_break_v3ly",
+  "authorized_by",
+  "authorized_date",
+  "more_info_tab",
+  "status_section",
+  "status",
+  "column_break_uxkt",
+  "per_issued"
+ ],
+ "fields": [
+  {
+   "fieldname": "fuel_consumption_status",
+   "fieldtype": "HTML",
+   "label": "Fuel Consumption Status"
+  },
+  {
+   "fieldname": "section_break_mags",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "naming_series",
+   "options": "EAD-FRM.-"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Fuel Request Form",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Location",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Company Id",
+   "options": "Equipment Birth Certificate",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_u5zo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Request Date GC"
+  },
+  {
+   "fieldname": "request_date_ec",
+   "fieldtype": "Data",
+   "label": "Request Date EC",
+   "read_only": 1
+  },
+  {
+   "fieldname": "gas_station",
+   "fieldtype": "Select",
+   "label": "Gas Station",
+   "options": "Inside\nOutside"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_0wym",
+   "fieldtype": "Section Break",
+   "label": "Equipment Information"
+  },
+  {
+   "fetch_from": "company_id.plate_no",
+   "fieldname": "plate_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Plate No",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "company_id.make",
+   "fieldname": "make",
+   "fieldtype": "Data",
+   "label": "Make",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "company_id.owner1",
+   "fieldname": "owner1",
+   "fieldtype": "Data",
+   "label": "Owner",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_wk45",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "company_id.equipment_type",
+   "fieldname": "equipment_type",
+   "fieldtype": "Link",
+   "label": "Equipment Type",
+   "options": "Equipment Type",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "company_id.model",
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "label": "Model",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "company_id.chassis_no",
+   "fieldname": "chassis_no",
+   "fieldtype": "Data",
+   "label": "Chassis No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_snko",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "company_id.standard_fuel_consumption",
+   "fieldname": "standard_fuel_consumption",
+   "fieldtype": "Float",
+   "label": "Standard Fuel Consumption",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "company_id.operator_name",
+   "fieldname": "operator_name",
+   "fieldtype": "Data",
+   "label": "Operator Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "company_id.fuel_tanker_capacity",
+   "fetch_if_empty": 1,
+   "fieldname": "fuel_tanker_capacity",
+   "fieldtype": "Float",
+   "label": "Fuel tanker capacity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_hwt2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "previous_record_column",
+   "fieldtype": "Column Break",
+   "label": "Previous Record"
+  },
+  {
+   "fieldname": "previous_km_reading",
+   "fieldtype": "Float",
+   "label": "Previous KM Reading",
+   "read_only": 1
+  },
+  {
+   "fieldname": "previous_filled_fuel_litter",
+   "fieldtype": "Float",
+   "label": "Previous Filled Fuel Litter",
+   "read_only": 1
+  },
+  {
+   "fieldname": "previous_filled_fuel_date",
+   "fieldtype": "Date",
+   "label": "Previous Filled Fuel Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "previous_fuel_renaming_litter_in_tanker",
+   "fieldtype": "Float",
+   "label": "Previous Fuel Renaming Litter in tanker",
+   "read_only": 1
+  },
+  {
+   "fieldname": "current_record_column",
+   "fieldtype": "Column Break",
+   "label": "Current Record"
+  },
+  {
+   "fieldname": "current_km_reading",
+   "fieldtype": "Float",
+   "label": "Current KM Reading",
+   "reqd": 1
+  },
+  {
+   "fieldname": "previous_fuel_consumption",
+   "fieldtype": "Float",
+   "label": "Previous Fuel Consumption",
+   "read_only": 1
+  },
+  {
+   "fieldname": "current_fuel_renaming_in_tanker",
+   "fieldtype": "Float",
+   "label": "Current Fuel Renaming in tanker"
+  },
+  {
+   "fieldname": "fuel_requested",
+   "fieldtype": "Float",
+   "label": "Current Fuel Requested",
+   "reqd": 1
+  },
+  {
+   "fieldname": "current_filled__fuel_in_litter",
+   "fieldtype": "Float",
+   "label": "Current Filled  fuel in Litter",
+   "read_only_depends_on": "eval:doc.gas_station == \"Inside\""
+  },
+  {
+   "fieldname": "current_filling_date",
+   "fieldtype": "Date",
+   "label": "Current Filling date",
+   "read_only_depends_on": "eval:doc.gas_station == \"Inside\""
+  },
+  {
+   "fieldname": "specific_fuel_type_section",
+   "fieldtype": "Section Break",
+   "label": "Specific Fuel Type"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "item_code.item_name",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_qnl2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "label": "Warehouse",
+   "options": "Warehouse",
+   "read_only_depends_on": "eval:doc.gas_station == \"Outside\""
+  },
+  {
+   "fetch_from": "item_code.stock_uom",
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_mjh7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "unit_price",
+   "fieldtype": "Currency",
+   "label": "Unit Price",
+   "read_only_depends_on": "eval:doc.gas_station == \"Inside\""
+  },
+  {
+   "fieldname": "total_price",
+   "fieldtype": "Currency",
+   "label": "Total Price",
+   "read_only": 1
+  },
+  {
+   "fieldname": "approval_section",
+   "fieldtype": "Section Break",
+   "label": "Approval"
+  },
+  {
+   "fieldname": "requested_by",
+   "fieldtype": "Data",
+   "label": "Requested By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "requested_date",
+   "fieldtype": "Date",
+   "label": "Requested Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_h7ad",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Data",
+   "label": "Approved By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "approved_date",
+   "fieldtype": "Data",
+   "label": "Approved Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_v3ly",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "authorized_by",
+   "fieldtype": "Data",
+   "label": "Authorized By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "authorized_date",
+   "fieldtype": "Data",
+   "label": "Authorized Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "more_info_tab",
+   "fieldtype": "Tab Break",
+   "label": "More Info"
+  },
+  {
+   "fieldname": "status_section",
+   "fieldtype": "Section Break",
+   "label": "Status"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nDraft\nSubmitted\nStopped\nCancelled\nPending\nPartially Issued\nIssued",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_uxkt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "per_issued",
+   "fieldtype": "Percent",
+   "label": "% Issued",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-08-08 14:16:23.512753",
+ "modified_by": "aymen.dev@erp.com",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Fuel Request Form",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Common Role",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

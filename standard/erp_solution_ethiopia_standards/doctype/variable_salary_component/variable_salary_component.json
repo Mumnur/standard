@@ -1,0 +1,192 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-07-27 13:54:39.066451",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "section_break_kycw",
+  "employee_id",
+  "employee_name",
+  "column_break_m1zc",
+  "budget_year",
+  "budget_month",
+  "earning_component_tab",
+  "acting_allowance",
+  "incentive_allowance",
+  "column_break_xami",
+  "other_taxable_allowance",
+  "other_nontaxable_allowance",
+  "deduction_component_tab",
+  "advance_deduction",
+  "penalty_deduction",
+  "column_break_wza9",
+  "other_variable_deduction_one",
+  "other_variable_deduction_two"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_kycw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee ID",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee_id.employee_name",
+   "fetch_if_empty": 1,
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "budget_year",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Budget Year",
+   "options": "Budget Year",
+   "reqd": 1
+  },
+  {
+   "fieldname": "budget_month",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Budget Month",
+   "options": "Budget Month",
+   "reqd": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "naming_series",
+   "options": "VAR.-.SAL.-.####"
+  },
+  {
+   "fieldname": "earning_component_tab",
+   "fieldtype": "Tab Break",
+   "label": "Earning Component"
+  },
+  {
+   "fieldname": "column_break_m1zc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "acting_allowance",
+   "fieldtype": "Currency",
+   "label": "Acting Allowance"
+  },
+  {
+   "fieldname": "incentive_allowance",
+   "fieldtype": "Currency",
+   "label": "Incentive Allowance"
+  },
+  {
+   "fieldname": "other_taxable_allowance",
+   "fieldtype": "Currency",
+   "label": "Other Taxable Allowance"
+  },
+  {
+   "fieldname": "other_nontaxable_allowance",
+   "fieldtype": "Currency",
+   "label": "Other NonTaxable Allowance"
+  },
+  {
+   "fieldname": "column_break_xami",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "deduction_component_tab",
+   "fieldtype": "Tab Break",
+   "label": "Deduction Component"
+  },
+  {
+   "fieldname": "advance_deduction",
+   "fieldtype": "Currency",
+   "label": "Advance Deduction"
+  },
+  {
+   "fieldname": "penalty_deduction",
+   "fieldtype": "Currency",
+   "label": "Penalty Deduction"
+  },
+  {
+   "fieldname": "column_break_wza9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "other_variable_deduction_one",
+   "fieldtype": "Currency",
+   "label": "Other Variable Deduction One"
+  },
+  {
+   "fieldname": "other_variable_deduction_two",
+   "fieldtype": "Currency",
+   "label": "Other Variable Deduction Two"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-08-31 10:00:58.300626",
+ "modified_by": "assegagebeyehu21@gmail.com",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Variable Salary Component",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Payroll Accountant",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Administration User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

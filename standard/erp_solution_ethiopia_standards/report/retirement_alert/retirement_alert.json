@@ -1,0 +1,42 @@
+{
+ "add_total_row": 0,
+ "add_translate_data": 0,
+ "columns": [],
+ "creation": "2026-08-17 16:43:44.174412",
+ "disable_prepared_report_automation": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": null,
+ "modified": "2026-08-17 16:43:44.174412",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Retirement Alert",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT\n    em.name AS \"Employee ID:Link/Employee:150\",\n    em.employee_name AS \"Employee Name:150\",\n    em.custom_birth_date_ec AS \"Date of Birth E.C:150\",\n    em.date_of_birth,\n    CONCAT(\n        FLOOR(TIMESTAMPDIFF(MONTH, CURDATE(), DATE_ADD(em.date_of_birth, INTERVAL 60 YEAR)) / 12), ' year(s), ',\n        MOD(TIMESTAMPDIFF(MONTH, CURDATE(), DATE_ADD(em.date_of_birth, INTERVAL 60 YEAR)), 12), ' month(s), ',\n        DATEDIFF(\n            DATE_ADD(em.date_of_birth, INTERVAL 60 YEAR),\n            DATE_ADD(\n                CURDATE(),\n                INTERVAL TIMESTAMPDIFF(MONTH, CURDATE(), DATE_ADD(em.date_of_birth, INTERVAL 60 YEAR)) MONTH\n            )\n        ), ' day(s)'\n    ) AS \"Time Remaining to Retirement\"\nFROM\n    `tabEmployee` em\nWHERE\n    em.status = 'Active'\nORDER BY\n    DATE_ADD(em.date_of_birth, INTERVAL 60 YEAR);\n",
+ "ref_doctype": "Employee",
+ "report_name": "Retirement Alert",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "HR User"
+  },
+  {
+   "role": "Employee"
+  },
+  {
+   "role": "HR Manager"
+  },
+  {
+   "role": "Employee Self Service"
+  },
+  {
+   "role": "Common Role"
+  }
+ ],
+ "timeout": 0
+}

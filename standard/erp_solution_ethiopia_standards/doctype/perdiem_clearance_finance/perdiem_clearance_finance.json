@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-08-11 12:01:47.337787",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_sf9o",
+  "location_type",
+  "date_range",
+  "daily_perdiem_rate",
+  "no_of_days",
+  "total_perdiem_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_sf9o",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "date_range",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Date Range"
+  },
+  {
+   "fieldname": "daily_perdiem_rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Daily Perdiem Amount"
+  },
+  {
+   "fieldname": "no_of_days",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "No of Days"
+  },
+  {
+   "fieldname": "total_perdiem_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Perdiem Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "location_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Location Type",
+   "options": "\nAddis Ababa\nRegion City\nZone City\nWoreda City\nBahir Dar City"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-08-11 14:52:25.675558",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Perdiem Clearance Finance",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,117 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-08-04 10:28:16.413308",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_ieee",
+  "source_type",
+  "destination_place",
+  "destination_date",
+  "destination_time",
+  "column_break_uao4",
+  "arrival_place",
+  "arrival_date",
+  "arrival_time",
+  "section_break_jfmf",
+  "total_days",
+  "column_break_17ia",
+  "remark"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_ieee",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "destination_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Departure Date"
+  },
+  {
+   "fieldname": "destination_time",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Departure Time",
+   "options": "\n\u12a8 1 \u1230\u12a0\u1275 \u1260\u134a\u1275\n\u12a8 6:30 \u1260\u134a\u1275\n\u12a8 6:30 \u1260\u128b\u120b"
+  },
+  {
+   "fieldname": "destination_place",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Departure Place",
+   "sticky": 1
+  },
+  {
+   "fieldname": "arrival_place",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Arrival Place"
+  },
+  {
+   "fieldname": "arrival_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Arrival Date"
+  },
+  {
+   "fieldname": "arrival_time",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Arrival time",
+   "options": "\n\u12a8\u1320\u12cb\u1271 2:00 \u1260\u128b\u120b\n\u12a8 6:30 \u1260\u128b\u120b\n\u12a8\u121d\u123d\u1271 2:30 \u1260\u128b\u120b"
+  },
+  {
+   "fieldname": "column_break_uao4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_jfmf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_days",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Days",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Remark"
+  },
+  {
+   "fieldname": "source_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Source Type",
+   "options": "\u12cd\u12f0 \u1218\u1235\u12ad\n\u1260\u1235\u122b \u120b\u12ed\n\u12a8 \u1218\u1235\u12ad",
+   "sticky": 1
+  },
+  {
+   "fieldname": "column_break_17ia",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-08-11 14:52:38.034692",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Perdiem Clearance Payment Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

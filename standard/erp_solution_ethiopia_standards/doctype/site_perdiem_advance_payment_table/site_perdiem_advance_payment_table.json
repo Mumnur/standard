@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-08-11 15:32:14.905343",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_a0gv",
+  "employee_id",
+  "employee_name",
+  "basic_salary",
+  "rate_pd",
+  "total_adv",
+  "sign"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_a0gv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee Id",
+   "options": "Employee",
+   "sticky": 1
+  },
+  {
+   "fetch_from": "employee_id.employee_name",
+   "fetch_if_empty": 1,
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee_id.custom_basic_salary",
+   "fetch_if_empty": 1,
+   "fieldname": "basic_salary",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Basic Salary",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rate_pd",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Rate P.D"
+  },
+  {
+   "fieldname": "total_adv",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Adv",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sign",
+   "fieldtype": "Data",
+   "label": "Sign"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-08-12 08:39:55.128003",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Site Perdiem Advance Payment Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

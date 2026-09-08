@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-07-28 09:24:35.419066",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_vd1t",
+  "effective_from_date",
+  "employee_income_tax_slab_sheet_tab",
+  "employee_income_tax_slab_table",
+  "naming_series"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_vd1t",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "effective_from_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Effective From Date"
+  },
+  {
+   "fieldname": "employee_income_tax_slab_sheet_tab",
+   "fieldtype": "Section Break",
+   "label": "Employee Income Tax Slab Sheet"
+  },
+  {
+   "fieldname": "employee_income_tax_slab_table",
+   "fieldtype": "Table",
+   "options": "Employee Income Tax Slab Table"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "naming_series",
+   "options": "EITS.-.SAL.-.####"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-28 09:30:58.935635",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Employee Income Tax Slab",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Payroll Accountant",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

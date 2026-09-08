@@ -1,0 +1,41 @@
+{
+ "allow_roles": [
+  {
+   "role": "Purchase Manager"
+  },
+  {
+   "role": "Purchase User"
+  }
+ ],
+ "creation": "2026-07-29 09:40:35.458117",
+ "docstatus": 0,
+ "doctype": "Module Onboarding",
+ "idx": 0,
+ "is_complete": 0,
+ "modified": "2026-07-29 09:40:35.458117",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Procurement Onboarding",
+ "owner": "Administrator",
+ "steps": [
+  {
+   "step": "Create Supplier"
+  },
+  {
+   "step": "Create Item"
+  },
+  {
+   "step": "Create Purchase Order"
+  },
+  {
+   "step": "Create Purchase Invoice"
+  },
+  {
+   "step": "View Purchase Order Analysis"
+  },
+  {
+   "step": "Review Buying Settings"
+  }
+ ],
+ "title": "Procurement Setup"
+}

@@ -1,0 +1,21 @@
+{
+ "app": "standard",
+ "bg_color": "blue",
+ "creation": "2026-07-31 11:13:17.701570",
+ "docstatus": 0,
+ "doctype": "Desktop Icon",
+ "hidden": 1,
+ "icon_type": "Link",
+ "idx": 0,
+ "label": "Financial Document",
+ "link_to": "Financial Document",
+ "link_type": "Workspace Sidebar",
+ "modified": "2026-08-11 10:30:10.774222",
+ "modified_by": "Administrator",
+ "name": "Financial Document",
+ "owner": "Administrator",
+ "parent_icon": "Accounting",
+ "restrict_removal": 0,
+ "roles": [],
+ "standard": 1
+}

@@ -1,0 +1,122 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-08-26 14:29:52.958972",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_aokh",
+  "employee",
+  "employee_name",
+  "guarantee_type",
+  "gur_name",
+  "salary",
+  "salary_amount",
+  "column_break_6",
+  "was_mes_name",
+  "was_add_name",
+  "remove_date_ec",
+  "begin_date_ec",
+  "other_remove_date_ec",
+  "attach"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_aokh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u12e8\u1230\u122b\u1270\u129b\u12c9 \u1235\u121d",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "guarantee_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "\u12e8\u12cb\u1235\u1275\u1293 \u12a0\u12ed\u1290\u1275",
+   "options": "\n\u1260\u12f0\u1218\u12c8\u12dd\n\u1260\u124b\u121a \u1295\u1265\u1228\u1275\n\u1260\u1270\u1295\u1240\u1233\u1243\u123d \u1295\u1265\u1228\u1275"
+  },
+  {
+   "fieldname": "gur_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u12e8\u12cb\u1231 \u1235\u121d"
+  },
+  {
+   "fieldname": "salary",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u12e8\u12cb\u1231 \u12f0\u1218\u12c8\u12dd"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "attach",
+   "fieldtype": "Attach Image",
+   "label": "Attach"
+  },
+  {
+   "fieldname": "salary_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "\u12cb\u1235 \u12e8\u1206\u1291\u1260\u1275 \u12e8\u1265\u122d \u1218\u1320\u1295"
+  },
+  {
+   "fieldname": "was_mes_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u12e8\u12cb\u1231 \u1218/\u1264\u1275 \u1235\u121d"
+  },
+  {
+   "fieldname": "was_add_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u12e8\u12cb\u1231 \u1218/\u1264\u1275 \u12a0\u12f5\u122b\u123b"
+  },
+  {
+   "fieldname": "remove_date_ec",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u12cb\u1231 \u1321\u1228\u1273 \u12e8\u121a\u12c8\u1323\u1260\u1275 \u1240\u1295"
+  },
+  {
+   "fieldname": "begin_date_ec",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u12cb\u1235\u1275\u1293 \u12e8\u1270\u1308\u1263\u1260\u1275 \u1240\u1295"
+  },
+  {
+   "fieldname": "other_remove_date_ec",
+   "fieldtype": "Data",
+   "label": "\u12cb\u1235\u1275\u1293\u12cd \u12e8\u1270\u1290\u1233\u1260\u1275 \u1240\u1295"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-08-26 14:44:51.817987",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Gurantee",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

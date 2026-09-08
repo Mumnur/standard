@@ -1,0 +1,324 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-08-19 10:51:42.369828",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_vw4e",
+  "labor_id",
+  "full_name",
+  "position",
+  "project",
+  "column_break_ocma",
+  "daily_salary_rate",
+  "total_days",
+  "total_gross_amount",
+  "section_break_d5vn",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "7",
+  "8",
+  "9",
+  "10",
+  "column_break_ciwo",
+  "11",
+  "12",
+  "13",
+  "14",
+  "15",
+  "16",
+  "17",
+  "18",
+  "19",
+  "20",
+  "column_break_atak",
+  "21",
+  "22",
+  "23",
+  "24",
+  "25",
+  "26",
+  "27",
+  "28",
+  "29",
+  "30"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_vw4e",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "labor_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Labor ID",
+   "options": "Daily Labor Employee"
+  },
+  {
+   "fetch_from": "labor_id.employee_full_name",
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Full Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "labor_id.position",
+   "fieldname": "position",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Position",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "labor_id.project",
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ocma",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "labor_id.daily_salary_rate",
+   "fieldname": "daily_salary_rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Daily salary Rate",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_days",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Days",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_gross_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Gross Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_d5vn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "1",
+   "fieldtype": "Select",
+   "label": "1",
+   "options": "1\n0.5\n0"
+  },
+  {
+   "fieldname": "2",
+   "fieldtype": "Select",
+   "label": "2",
+   "options": "1\n0.5\n0"
+  },
+  {
+   "fieldname": "3",
+   "fieldtype": "Select",
+   "label": "3",
+   "options": "1\n0.5\n0"
+  },
+  {
+   "fieldname": "4",
+   "fieldtype": "Select",
+   "label": "4",
+   "options": "1\n0.5\n0"
+  },
+  {
+   "fieldname": "5",
+   "fieldtype": "Select",
+   "label": "5",
+   "options": "1\n0.5\n0"
+  },
+  {
+   "fieldname": "6",
+   "fieldtype": "Select",
+   "label": "6",
+   "options": "1\n0.5\n0"
+  },
+  {
+   "fieldname": "7",
+   "fieldtype": "Select",
+   "label": "7",
+   "options": "1\n0.5\n0"
+  },
+  {
+   "fieldname": "8",
+   "fieldtype": "Select",
+   "label": "8",
+   "options": "1\n0.5\n0"
+  },
+  {
+   "fieldname": "9",
+   "fieldtype": "Select",
+   "label": "9",
+   "options": "1\n0.5\n0"
+  },
+  {
+   "fieldname": "10",
+   "fieldtype": "Select",
+   "label": "10",
+   "options": "1\n0.5\n0"
+  },
+  {
+   "fieldname": "11",
+   "fieldtype": "Select",
+   "label": "11",
+   "options": "1\n0.5\n0"
+  },
+  {
+   "fieldname": "12",
+   "fieldtype": "Select",
+   "label": "12",
+   "options": "1\n0.5\n0"
+  },
+  {
+   "fieldname": "13",
+   "fieldtype": "Select",
+   "label": "13",
+   "options": "1\n0.5\n0"
+  },
+  {
+   "fieldname": "14",
+   "fieldtype": "Select",
+   "label": "14",
+   "options": "1\n0.5\n0"
+  },
+  {
+   "fieldname": "15",
+   "fieldtype": "Select",
+   "label": "15",
+   "options": "1\n0.5\n0"
+  },
+  {
+   "fieldname": "16",
+   "fieldtype": "Select",
+   "label": "16",
+   "options": "1\n0.5\n0"
+  },
+  {
+   "fieldname": "17",
+   "fieldtype": "Select",
+   "label": "17",
+   "options": "1\n0.5\n0"
+  },
+  {
+   "fieldname": "18",
+   "fieldtype": "Select",
+   "label": "18",
+   "options": "1\n0.5\n0"
+  },
+  {
+   "fieldname": "19",
+   "fieldtype": "Select",
+   "label": "19",
+   "options": "1\n0.5\n0"
+  },
+  {
+   "fieldname": "20",
+   "fieldtype": "Select",
+   "label": "20",
+   "options": "1\n0.5\n0"
+  },
+  {
+   "fieldname": "21",
+   "fieldtype": "Select",
+   "label": "21",
+   "options": "1\n0.5\n0"
+  },
+  {
+   "fieldname": "22",
+   "fieldtype": "Select",
+   "label": "22",
+   "options": "1\n0.5\n0"
+  },
+  {
+   "fieldname": "23",
+   "fieldtype": "Select",
+   "label": "23",
+   "options": "1\n0.5\n0"
+  },
+  {
+   "fieldname": "24",
+   "fieldtype": "Select",
+   "label": "24",
+   "options": "1\n0.5\n0"
+  },
+  {
+   "fieldname": "25",
+   "fieldtype": "Select",
+   "label": "25",
+   "options": "1\n0.5\n0"
+  },
+  {
+   "fieldname": "26",
+   "fieldtype": "Select",
+   "label": "26",
+   "options": "1\n0.5\n0"
+  },
+  {
+   "fieldname": "27",
+   "fieldtype": "Select",
+   "label": "27",
+   "options": "1\n0.5\n0"
+  },
+  {
+   "fieldname": "28",
+   "fieldtype": "Select",
+   "label": "28",
+   "options": "1\n0.5\n0"
+  },
+  {
+   "fieldname": "29",
+   "fieldtype": "Select",
+   "label": "29",
+   "options": "1\n0.5\n0"
+  },
+  {
+   "fieldname": "30",
+   "fieldtype": "Select",
+   "label": "30",
+   "options": "1\n0.5\n0"
+  },
+  {
+   "fieldname": "column_break_ciwo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_atak",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-08-19 19:30:17.773073",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Labor Attendance Sheet Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

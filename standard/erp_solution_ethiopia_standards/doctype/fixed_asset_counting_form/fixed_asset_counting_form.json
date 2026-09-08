@@ -1,0 +1,179 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-08-13 15:23:56.995811",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_buy0",
+  "amended_from",
+  "naming_series",
+  "section_break_bahz",
+  "requested_at",
+  "warehouse",
+  "project",
+  "asset_location",
+  "employee_id",
+  "employee_name",
+  "column_break_nqls",
+  "counting_date_ec",
+  "counting_date_gc",
+  "section_break_wiwl",
+  "items"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_buy0",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Fixed Asset Counting Form",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "naming_series",
+   "options": "INV-FACF-.YYYY.-"
+  },
+  {
+   "fieldname": "section_break_bahz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "requested_at",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Requested At",
+   "options": "Requested At",
+   "reqd": 1
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fieldname": "asset_location",
+   "fieldtype": "Link",
+   "label": "Asset Location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "label": "Employee Id",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "column_break_nqls",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "counting_date_ec",
+   "fieldtype": "Data",
+   "label": "Counting Date EC",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "counting_date_gc",
+   "fieldtype": "Date",
+   "label": "Counting Date GC",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_wiwl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Fixed Asset Counting Form Table"
+  },
+  {
+   "fetch_from": "employee_id.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-08-13 16:03:05.497789",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Fixed Asset Counting Form",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "aymen.dev@erp.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock User",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "cancel": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

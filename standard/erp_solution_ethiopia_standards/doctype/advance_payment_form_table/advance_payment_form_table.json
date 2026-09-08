@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-08-03 09:06:13.237335",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_ynxs",
+  "location_type",
+  "rate_per_day",
+  "no_of_days",
+  "total_amount",
+  "remark"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_ynxs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "location_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "\u12e8 \u12a0\u12a8\u134b\u1348\u120d \u1201\u1294\u1273",
+   "options": "\u12a0\u1260\u120d \u1208 \u12a0\u12f2\u1235 \u12a0\u1260\u1263\n\u12a0\u1260\u120d \u12a8\u12a0\u12f2\u1235 \u12a0\u1260\u1263 \u12cd\u132a\n\u12a0\u1260\u120d \u1208 \u12a0\u1295\u12f0\u129b \u12f0\u1228\u1303 \u12e8\u12a0\u12e8\u122d \u1340\u1263\u12ed\n\u12a0\u1260\u120d \u1208 \u1201\u1208\u1270\u129b \u12f0\u1228\u1303 \u12e8\u12a0\u12e8\u122d \u1340\u1263\u12ed\n\u1208 \u1225\u122b \u121b\u1235\u12ac\u1303\n\u1208\u130d\u12e2 \u1245\u12f5\u1218 \u12ad\u134d\u12eb\n\u120c\u120e\u127d \u1245\u12f5\u121a\u12eb \u12ad\u134d\u12eb\u12ce\u127d"
+  },
+  {
+   "fieldname": "rate_per_day",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "\u12e8\u12a0\u1295\u12f5 \u1240\u1295 (\u1320\u1245\u120b\u120b) \u1265\u122d"
+  },
+  {
+   "fieldname": "no_of_days",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "\u1218\u1320\u1295 (\u1240\u1295)"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "\u12f5\u121d\u122d"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Remark",
+   "mandatory_depends_on": "eval:doc.location_type===\"\u12e8\u1225\u122b \u121b\u1235\u12ac\u1303\""
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-08-10 10:34:10.178184",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Advance Payment Form Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,235 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-08-21 14:24:14.667851",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "amended_from",
+  "naming_series",
+  "section_break_7wzh",
+  "company_branch",
+  "cost_center",
+  "project",
+  "column_break_xw3v",
+  "posting_date",
+  "budget_year",
+  "customer",
+  "section_break_niwt",
+  "approved_amount",
+  "deducted_from_advance_payment",
+  "cash_amount",
+  "recognized_tax_withhold_amount",
+  "column_break_gvaa",
+  "unrecognized_tax_withhold_amount",
+  "recognized_vat_receipt",
+  "unrecognized_vat_receipt",
+  "approved_but_not_received",
+  "column_break_nh51",
+  "retention_amount",
+  "retention_vat",
+  "ld_if_any",
+  "under_legal_case",
+  "remark"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_7wzh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Account Receivable Followup",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "company_branch",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company Branch",
+   "options": "Company Branch"
+  },
+  {
+   "fieldname": "cost_center",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Cost Center",
+   "options": "Cost Center"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "budget_year",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Budget Year",
+   "options": "Budget Year"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "column_break_xw3v",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_niwt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "naming_series",
+   "options": "ACC.-.Receive.-.FUP.-.####"
+  },
+  {
+   "fieldname": "approved_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Approved Amount"
+  },
+  {
+   "fieldname": "deducted_from_advance_payment",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Deducted From Advance Payment"
+  },
+  {
+   "fieldname": "cash_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Cash Amount"
+  },
+  {
+   "fieldname": "recognized_tax_withhold_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Recognized Tax Withhold Amount"
+  },
+  {
+   "fieldname": "unrecognized_tax_withhold_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "UnRecognized Tax Withhold Amount"
+  },
+  {
+   "fieldname": "recognized_vat_receipt",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Recognized Vat Receipt"
+  },
+  {
+   "fieldname": "unrecognized_vat_receipt",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "UnRecognized Vat Receipt"
+  },
+  {
+   "fieldname": "approved_but_not_received",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Approved But Not Received"
+  },
+  {
+   "fieldname": "retention_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Retention Amount"
+  },
+  {
+   "fieldname": "retention_vat",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Retention VAT"
+  },
+  {
+   "fieldname": "ld_if_any",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Liquidity Damage if any"
+  },
+  {
+   "fieldname": "under_legal_case",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Under Legal Case"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Remark"
+  },
+  {
+   "fieldname": "column_break_gvaa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_nh51",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-08-24 10:33:23.510022",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Account Receivable Followup",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

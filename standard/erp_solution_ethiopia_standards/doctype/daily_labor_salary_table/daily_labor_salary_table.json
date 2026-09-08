@@ -1,0 +1,142 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-08-19 11:04:38.119816",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_dqgm",
+  "labor_id",
+  "full_name",
+  "position",
+  "project",
+  "skill_type",
+  "column_break_9ann",
+  "account_no",
+  "salary_per_day",
+  "working_days",
+  "total_gross_salary",
+  "column_break_c4yg",
+  "income_tax",
+  "pension",
+  "net_payment"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_dqgm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "labor_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Labor ID",
+   "options": "Daily Labor Employee"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Full Name",
+   "read_only": 1,
+   "sticky": 1
+  },
+  {
+   "fieldname": "position",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Position",
+   "read_only": 1
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "read_only": 1
+  },
+  {
+   "fieldname": "skill_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Skill Type",
+   "options": "Skilled\nNon Skilled\nSemi skill",
+   "read_only": 1
+  },
+  {
+   "fieldname": "account_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Account No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "salary_per_day",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Salary Per Day",
+   "read_only": 1
+  },
+  {
+   "fieldname": "working_days",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Working Days",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_gross_salary",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Gross Salary",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_9ann",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_c4yg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "income_tax",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Income Tax",
+   "read_only": 1
+  },
+  {
+   "fieldname": "pension",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Pension",
+   "read_only": 1
+  },
+  {
+   "fieldname": "net_payment",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Net Payment",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-08-19 19:39:02.816267",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Daily Labor Salary Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

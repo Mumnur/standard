@@ -1,0 +1,147 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-07-24 10:49:21.802883",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_vbzf",
+  "amended_from",
+  "naming_series",
+  "column_break_ikar",
+  "requested_date_ec",
+  "requested_date_gc",
+  "section_break_ozuc",
+  "items",
+  "section_break_uavs",
+  "requested_by",
+  "requested_date",
+  "column_break_gbti",
+  "approved_by",
+  "approved_date",
+  "connections_tab"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_vbzf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Item Request",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "requested_date_ec",
+   "fieldtype": "Data",
+   "label": "Requested Date EC"
+  },
+  {
+   "fieldname": "section_break_ozuc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_uavs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "requested_by",
+   "fieldtype": "Data",
+   "label": "Requested By",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "requested_date",
+   "fieldtype": "Date",
+   "label": "Requested Date",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_gbti",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Data",
+   "label": "Approved By",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "approved_date",
+   "fieldtype": "Date",
+   "label": "Approved Date",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Item",
+   "options": "Item Request Table"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "INV-IR-.YYYY.-"
+  },
+  {
+   "fieldname": "connections_tab",
+   "fieldtype": "Tab Break",
+   "label": "Connections",
+   "show_dashboard": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "requested_date_gc",
+   "fieldtype": "Date",
+   "label": "Requested Date GC",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ikar",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-09-03 15:30:31.582321",
+ "modified_by": "aymen.dev@erp.com",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Item Request",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

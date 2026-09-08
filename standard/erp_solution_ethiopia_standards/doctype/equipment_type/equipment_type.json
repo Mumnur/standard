@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-08-11 09:30:32.409750",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_yxwb",
+  "equipment_type_name",
+  "equipment_category_name",
+  "column_break_abc",
+  "requires_inspection",
+  "standard_lifespan",
+  "section_break_details",
+  "description",
+  "image"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_yxwb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "equipment_type_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Equipment Type Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_abc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "requires_inspection",
+   "fieldtype": "Check",
+   "label": "Requires Inspection"
+  },
+  {
+   "fieldname": "standard_lifespan",
+   "fieldtype": "Int",
+   "label": "Standard Lifespan (Years)"
+  },
+  {
+   "fieldname": "section_break_details",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "equipment_category_name",
+   "fieldtype": "Link",
+   "label": "Equipment Category",
+   "options": "Equipment Category",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-02 11:30:31.783581",
+ "modified_by": "teshager@gmail.com",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Equipment Type",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

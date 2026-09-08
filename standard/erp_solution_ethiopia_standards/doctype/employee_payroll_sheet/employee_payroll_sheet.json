@@ -1,0 +1,508 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-07-28 10:23:47.971174",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_aqfv",
+  "employee_id",
+  "employee_name",
+  "company_branch",
+  "department",
+  "cost_center",
+  "column_break_t23k",
+  "project",
+  "employment_type",
+  "designation",
+  "bank_ac_no",
+  "date_of_joining_ec",
+  "column_break_k06z",
+  "date_of_joining",
+  "tin_number",
+  "pension_no",
+  "pension",
+  "working_days",
+  "hold_salary",
+  "section_break_qgmw",
+  "basic_salary",
+  "taxable_transport_allowance",
+  "taxable_professional_allowance",
+  "taxable_positional_allowance",
+  "acting_allowance",
+  "incentive_allowance",
+  "overtime",
+  "column_break_et2e",
+  "working_days_salary",
+  "other_taxable_allowance",
+  "nontaxable_transport_allowance",
+  "other_taxable_allowance_two",
+  "other_nontaxable_allowance",
+  "other_nontaxable_allowance_two",
+  "deduction_component_tab",
+  "credit_association_awwce",
+  "ada",
+  "edir",
+  "aids_fund",
+  "andm",
+  "cost_sharing",
+  "red_cross",
+  "column_break_7pn8",
+  "operator_association",
+  "abay_dam",
+  "credit_association_drilling",
+  "shemachoche",
+  "defense_contribution",
+  "advance_deduction",
+  "penalty_deduction",
+  "column_break_por3",
+  "other_variable_deduction_one",
+  "other_variable_deduction_two",
+  "recurring_deduction_one",
+  "recurring_deduction_two",
+  "other_one",
+  "other_two",
+  "other_three",
+  "remark",
+  "gov_deduction_and_net_tab",
+  "total_taxable_allowance",
+  "total_non_taxable_amount",
+  "total_earning",
+  "column_break_eyo0",
+  "pension_7",
+  "pension_11",
+  "income_tax",
+  "column_break_xpsi",
+  "total_deduction",
+  "net_payment"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_aqfv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee Id",
+   "options": "Employee",
+   "reqd": 1,
+   "sticky": 1
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name",
+   "sticky": 1
+  },
+  {
+   "fieldname": "company_branch",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company Branch",
+   "options": "Company Branch",
+   "reqd": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "cost_center",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Cost Center",
+   "options": "Cost Center"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "employment_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employment Type",
+   "options": "Employment Type"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "bank_ac_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bank A/C No."
+  },
+  {
+   "fieldname": "date_of_joining_ec",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Date of Joining EC"
+  },
+  {
+   "fieldname": "date_of_joining",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Joining"
+  },
+  {
+   "fieldname": "tin_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "TIN Number"
+  },
+  {
+   "fieldname": "pension_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Pension No"
+  },
+  {
+   "default": "0",
+   "description": "\u1321\u1228\u1273 \u1208\u121b\u12ed\u12a8\u134d\u1209 \u1230\u122b\u1270\u129e\u127d \u12ed\u1205\u1295\u1295 \u12ed\u132b\u1291",
+   "fieldname": "pension",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Pension"
+  },
+  {
+   "fieldname": "working_days",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Working Days"
+  },
+  {
+   "fieldname": "column_break_t23k",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_k06z",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_qgmw",
+   "fieldtype": "Tab Break",
+   "label": "Earning Component"
+  },
+  {
+   "fieldname": "basic_salary",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Basic Salary"
+  },
+  {
+   "fieldname": "working_days_salary",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Working Days Salary"
+  },
+  {
+   "fieldname": "taxable_transport_allowance",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Taxable Transport Allowance"
+  },
+  {
+   "fieldname": "taxable_professional_allowance",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Taxable Professional Allowance"
+  },
+  {
+   "fieldname": "other_taxable_allowance",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Taxable House Allowance"
+  },
+  {
+   "fieldname": "taxable_positional_allowance",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Taxable Positional Allowance"
+  },
+  {
+   "fieldname": "nontaxable_transport_allowance",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "NonTaxable Transport Allowance"
+  },
+  {
+   "fieldname": "other_nontaxable_allowance",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Other NonTaxable Allowance"
+  },
+  {
+   "fieldname": "acting_allowance",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Acting Allowance"
+  },
+  {
+   "fieldname": "incentive_allowance",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Incentive Allowance"
+  },
+  {
+   "fieldname": "other_taxable_allowance_two",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Other Taxable Allowance Two"
+  },
+  {
+   "fieldname": "other_nontaxable_allowance_two",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Other NonTaxable Allowance Two"
+  },
+  {
+   "fieldname": "column_break_et2e",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "deduction_component_tab",
+   "fieldtype": "Tab Break",
+   "label": "Deduction Component"
+  },
+  {
+   "fieldname": "credit_association_awwce",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Credit Association awwce"
+  },
+  {
+   "fieldname": "ada",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "ADA"
+  },
+  {
+   "fieldname": "edir",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Edir"
+  },
+  {
+   "fieldname": "aids_fund",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "AIDS Fund"
+  },
+  {
+   "fieldname": "andm",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "ANDM"
+  },
+  {
+   "fieldname": "cost_sharing",
+   "fieldtype": "Currency",
+   "label": "Cost Sharing"
+  },
+  {
+   "fieldname": "red_cross",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Red Cross"
+  },
+  {
+   "fieldname": "operator_association",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Operator Association"
+  },
+  {
+   "fieldname": "abay_dam",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Abay DAM"
+  },
+  {
+   "fieldname": "credit_association_drilling",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Credit Association Drilling"
+  },
+  {
+   "fieldname": "shemachoche",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Shemachoche"
+  },
+  {
+   "fieldname": "defense_contribution",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Defense Contribution"
+  },
+  {
+   "fieldname": "other_one",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Other One"
+  },
+  {
+   "fieldname": "other_two",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Other Two"
+  },
+  {
+   "fieldname": "other_three",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Other Three"
+  },
+  {
+   "fieldname": "advance_deduction",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Advance Deduction"
+  },
+  {
+   "fieldname": "penalty_deduction",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Penalty Deduction"
+  },
+  {
+   "fieldname": "other_variable_deduction_one",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Other Variable Deduction One"
+  },
+  {
+   "fieldname": "other_variable_deduction_two",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Other Variable Deduction Two"
+  },
+  {
+   "fieldname": "column_break_7pn8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_por3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Remark"
+  },
+  {
+   "fieldname": "gov_deduction_and_net_tab",
+   "fieldtype": "Tab Break",
+   "label": "Gov Deduction & Net"
+  },
+  {
+   "fieldname": "recurring_deduction_one",
+   "fieldtype": "Currency",
+   "label": "Recurring Deduction one"
+  },
+  {
+   "fieldname": "recurring_deduction_two",
+   "fieldtype": "Currency",
+   "label": "Recurring Deduction Two"
+  },
+  {
+   "fieldname": "total_taxable_allowance",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Taxable Allowance"
+  },
+  {
+   "fieldname": "total_non_taxable_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Non Taxable Amount"
+  },
+  {
+   "fieldname": "total_earning",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Earning"
+  },
+  {
+   "fieldname": "pension_7",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Pension 7%"
+  },
+  {
+   "fieldname": "pension_11",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Pension 11%"
+  },
+  {
+   "fieldname": "income_tax",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Income Tax"
+  },
+  {
+   "fieldname": "total_deduction",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Deduction"
+  },
+  {
+   "fieldname": "net_payment",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Net Payment"
+  },
+  {
+   "fieldname": "column_break_eyo0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_xpsi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "overtime",
+   "fieldtype": "Currency",
+   "label": "Overtime"
+  },
+  {
+   "default": "0",
+   "fieldname": "hold_salary",
+   "fieldtype": "Check",
+   "label": "Hold Salary"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-08-10 10:10:01.880487",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Employee Payroll Sheet",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

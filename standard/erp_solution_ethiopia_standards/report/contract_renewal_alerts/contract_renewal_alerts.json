@@ -1,0 +1,42 @@
+{
+ "add_total_row": 0,
+ "add_translate_data": 0,
+ "columns": [],
+ "creation": "2026-08-13 22:07:06.132425",
+ "disable_prepared_report_automation": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": null,
+ "modified": "2026-08-13 22:17:06.342768",
+ "modified_by": "Administrator",
+ "module": "ERP Solution Ethiopia Standards",
+ "name": "Contract Renewal Alerts",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT \n    em.custom_employee_id AS \"Employee ID:Link/Employee:150\",\n    em.employee_name AS \"Employee Name:150\",\n    \n    -- Contract Details\n    em.custom_contract_end_date_ec AS \"Last Contract Renewal (E.C):150\",\n    em.contract_end_date AS \"Last Contract Renewal (G.C):150\",\n    CURDATE() AS \"Today:100\",\n    \n    -- Days Remaining since last renewal\n    DATEDIFF(em.contract_end_date, CURDATE()) AS \"Days Remaining Since Renewal\",\n\n    -- \ud83c\udfa8 Visual status badge (does not alter existing logic/fields)\n    CASE\n        WHEN em.contract_end_date IS NULL THEN\n            '<span style=\"background-color:#f4f4f4;color:#8d99a6;padding:3px 10px;border-radius:10px;font-weight:600;\">\u26aa No Date</span>'\n        WHEN DATEDIFF(em.contract_end_date, CURDATE()) < 0 THEN\n            '<span style=\"background-color:#fce3e3;color:#c0392b;padding:3px 10px;border-radius:10px;font-weight:600;\">\ud83d\udd34 Expired</span>'\n        WHEN DATEDIFF(em.contract_end_date, CURDATE()) <= 15 THEN\n            '<span style=\"background-color:#fdebd0;color:#d35400;padding:3px 10px;border-radius:10px;font-weight:600;\">\ud83d\udfe0 Urgent</span>'\n        WHEN DATEDIFF(em.contract_end_date, CURDATE()) <= 30 THEN\n            '<span style=\"background-color:#fef9e7;color:#b7950b;padding:3px 10px;border-radius:10px;font-weight:600;\">\ud83d\udfe1 Soon</span>'\n        ELSE\n            '<span style=\"background-color:#eafaf1;color:#1e8449;padding:3px 10px;border-radius:10px;font-weight:600;\">\ud83d\udfe2 Active</span>'\n    END AS \"Status:HTML:130\"\n\nFROM \n    `tabEmployee` em\nWHERE \n    em.status = 'Active'\n    AND em.employment_type = '\u12ae\u1295\u1275\u122b\u1275'\nORDER BY \n    (em.contract_end_date IS NULL) ASC,  -- put NULLs at the end\n    DATEDIFF(em.contract_end_date, CURDATE()) ASC;",
+ "ref_doctype": "Employee",
+ "report_name": "Contract Renewal Alerts",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "HR User"
+  },
+  {
+   "role": "Employee"
+  },
+  {
+   "role": "HR Manager"
+  },
+  {
+   "role": "Employee Self Service"
+  },
+  {
+   "role": "Common Role"
+  }
+ ],
+ "timeout": 0
+}
