@@ -36,7 +36,7 @@ def get_daily_routes():
         return routes
 
     rows = frappe.get_all(
-        "Child table",
+        "Daily Routes",
         filters={"parent": parent, "parenttype": "Attendance Control"},
         fields=["day_of_week", "strat_time", "end_time", "late_cutoff", "early_exist", "break_start", "break_end"],
     )
@@ -46,12 +46,26 @@ def get_daily_routes():
 
 
 def time_to_minutes(value):
-    """Convert a Frappe Time field value (timedelta/str/None) to minutes since midnight."""
+    """Convert a time value (timedelta/str/None) to minutes since midnight.
+    Returns None for missing, placeholder, or unparseable values instead
+    of raising, since fields like custom_check_in_times are free-text
+    Data fields and can contain '-', blanks, or garbage from the device.
+    """
     if not value:
         return None
+
     if isinstance(value, timedelta):
         return value.total_seconds() / 60
-    t = get_time(value)
+
+    value = str(value).strip()
+    if not value or value == "-":
+        return None
+
+    try:
+        t = get_time(value)
+    except Exception:
+        return None
+
     return t.hour * 60 + t.minute + t.second / 60
 
 
@@ -85,25 +99,45 @@ def get_data(filters, routes):
         return []
 
     # Collapse each employee's raw device scans for a day into one row:
-    # earliest scan = check-in, latest scan = check-out.
+    # the punch with the smallest parsed time = check-in (first punch),
+    # the punch with the largest parsed time = check-out (last punch).
+    # custom_check_in_times can hold MULTIPLE punches as one comma-separated
+    # string on a single row (e.g. "8:34:45,12:27:54,13:23:38,17:24:23"),
+    # so each row's value is split and every punch is parsed individually
+    # before comparing - a single unparsed multi-punch string would
+    # otherwise fail time_to_minutes() entirely and silently drop the row.
     grouped = {}
     for row in checkins:
         key = (row.employee, row.check_in_date)
-        g = grouped.get(key)
-        if not g:
-            grouped[key] = {
-                "employee": row.employee,
-                "employee_id": row.employee_id,
-                "employee_name": row.employee_name,
-                "check_in_date": row.check_in_date,
-                "check_in_time": row.check_in_time,
-                "check_out_time": row.check_in_time,
-            }
-        else:
-            if row.check_in_time < g["check_in_time"]:
-                g["check_in_time"] = row.check_in_time
-            if row.check_in_time > g["check_out_time"]:
-                g["check_out_time"] = row.check_in_time
+        raw_punches = str(row.check_in_time or "").split(",")
+
+        for raw_punch in raw_punches:
+            punch = raw_punch.strip()
+            minutes = time_to_minutes(punch)
+            if minutes is None:
+                # skip garbage/unparseable punches - they can't be
+                # meaningfully compared as "earlier" or "later"
+                continue
+
+            g = grouped.get(key)
+            if not g:
+                grouped[key] = {
+                    "employee": row.employee,
+                    "employee_id": row.employee_id,
+                    "employee_name": row.employee_name,
+                    "check_in_date": row.check_in_date,
+                    "check_in_time": punch,
+                    "check_in_minutes": minutes,
+                    "check_out_time": punch,
+                    "check_out_minutes": minutes,
+                }
+            else:
+                if minutes < g["check_in_minutes"]:
+                    g["check_in_time"] = punch
+                    g["check_in_minutes"] = minutes
+                if minutes > g["check_out_minutes"]:
+                    g["check_out_time"] = punch
+                    g["check_out_minutes"] = minutes
 
     employees = list({d.employee for d in checkins if d.employee})
 
@@ -140,8 +174,8 @@ def get_data(filters, routes):
         early_exit_minutes = 0
 
         if route:
-            in_minutes = time_to_minutes(g["check_in_time"])
-            out_minutes = time_to_minutes(g["check_out_time"])
+            in_minutes = g["check_in_minutes"]
+            out_minutes = g["check_out_minutes"]
             late_cutoff = time_to_minutes(route.late_cutoff)
             early_cutoff = time_to_minutes(route.early_exist)
 
